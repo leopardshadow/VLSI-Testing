@@ -42,6 +42,58 @@ double avgFanoutsOfFunc(GATEFUNC gateFunc) {
     return 1. * fanoutCnt / gateCnt;
 }
 
+bool isSigNet(GATE *gate) {
+    switch(gate->GetFunction()) {
+        case G_PI:
+        case G_PO:
+        case G_PPI:
+        case G_PPO:
+            return false;
+        case G_NOT:
+        case G_AND:
+        case G_NAND:
+        case G_OR:
+        case G_NOR:
+        case G_DFF:
+        case G_BUF:
+        case G_BAD:
+            return true;
+    }
+    return true;
+}
+
+size_t stemNetCnt() {
+    size_t cnt = 0;
+        for(size_t i=0; i<Circuit.No_Gate() ; i++) {
+            if(isSigNet(Circuit.Gate(i)) && Circuit.Gate(i)->No_Fanout() >= 2) {
+                cnt++;
+            }
+    }
+    return cnt;
+}
+
+size_t branchNetCnt() {
+    size_t cnt = 0;
+        for(size_t i=0; i<Circuit.No_Gate() ; i++) {
+            if(isSigNet(Circuit.Gate(i)) && Circuit.Gate(i)->No_Fanout() >= 2) {
+                cnt += Circuit.Gate(i)->No_Fanout();
+            }
+    }
+    return cnt;
+}
+
+size_t oneOutputNetCnt() {
+    size_t cnt = 0;
+        for(size_t i=0; i<Circuit.No_Gate() ; i++) {
+            if(isSigNet(Circuit.Gate(i)) && Circuit.Gate(i)->No_Fanout() == 2) {
+                cnt += Circuit.Gate(i)->No_Fanout();
+            }
+    }
+    return cnt;
+}
+
+
+
 int SetupOption(int argc, char ** argv)
 {
     option.usage("[options] input_circuit_file");
@@ -160,21 +212,27 @@ int main(int argc, char ** argv)
         cout << " - Number of dff: " << gateCountOfFunc(G_DFF) << endl;
 
         // Total number of signal nets.
-        // A net is any wire connecting between (PI, PPI, gate outputs) to (PO, PPO and gate inputs). Note that a gate connecting to different gates will be counted as different nets.
-        // TBD
+        // A net is any wire connecting between (PI, PPI, gate outputs) to (PO, PPO and gate inputs).
+        // Note that a gate connecting to different gates will be counted as different nets.
+
+        size_t branchCnt = branchNetCnt(),
+               stemCount = stemNetCnt(),
+               oneOutputCnt = oneOutputNetCnt();
+
+        cout << "Total number of signal nets: " << branchCnt + stemCount + oneOutputCnt << endl;
 
         // Number of branch nets
-        // TBD
+        cout << " - Number of branch nets: " << branchCnt << endl;
 
         // Number of stem nets
-        // TBD
+        cout << " - Number of stem nets: " << stemCount << endl;
 
         // Average number of fanouts of each gate (all types)
-        cout << " - Average number of fanouts  of gates inverter: " << avgFanoutsOfFunc(G_NOT) << endl;
-        cout << " - Average number of fanouts  of gates or: " << avgFanoutsOfFunc(G_OR) << endl;
-        cout << " - Average number of fanouts  of gates nor: " << avgFanoutsOfFunc(G_NOR) << endl;
-        cout << " - Average number of fanouts  of gates and: " << avgFanoutsOfFunc(G_AND) << endl;
-        cout << " - Average number of fanouts  of gates nand: " << avgFanoutsOfFunc(G_NAND) << endl;
+        cout << "Average number of fanouts of gates inverter: " << avgFanoutsOfFunc(G_NOT) << endl;
+        cout << "Average number of fanouts of gates or: " << avgFanoutsOfFunc(G_OR) << endl;
+        cout << "Average number of fanouts of gates nor: " << avgFanoutsOfFunc(G_NOR) << endl;
+        cout << "Average number of fanouts of gates and: " << avgFanoutsOfFunc(G_AND) << endl;
+        cout << "Average number of fanouts of gates nand: " << avgFanoutsOfFunc(G_NAND) << endl;
     }
     
     else {
