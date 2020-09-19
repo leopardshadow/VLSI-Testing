@@ -22,8 +22,8 @@ bool matchGateType(GATE *gate, GATEFUNC gateFunc) {
     return gate->GetFunction() == gateFunc;
 }
 
-int gateCountOfFunc(GATEFUNC gateFunc) {
-    int cnt = 0;
+size_t gateCountOfFunc(GATEFUNC gateFunc) {
+    size_t cnt = 0;
     for(size_t i=0; i<Circuit.No_Gate(); i++) {
         if(matchGateType(Circuit.Gate(i), gateFunc))
             cnt += 1;
@@ -31,6 +31,16 @@ int gateCountOfFunc(GATEFUNC gateFunc) {
     return cnt;
 }
 
+double avgFanoutsOfFunc(GATEFUNC gateFunc) {
+    size_t gateCnt = 0, fanoutCnt = 0;
+    for(size_t i=0; i<Circuit.No_Gate(); i++) {
+        if(matchGateType(Circuit.Gate(i), gateFunc)) {
+            gateCnt += 1;
+            fanoutCnt += Circuit.Gate(i)->No_Fanout();
+        }
+    }
+    return 1. * fanoutCnt / gateCnt;
+}
 
 int SetupOption(int argc, char ** argv)
 {
@@ -148,6 +158,23 @@ int main(int argc, char ** argv)
 
         // Number of flip-flops (if available)
         cout << " - Number of dff: " << gateCountOfFunc(G_DFF) << endl;
+
+        // Total number of signal nets.
+        // A net is any wire connecting between (PI, PPI, gate outputs) to (PO, PPO and gate inputs). Note that a gate connecting to different gates will be counted as different nets.
+        // TBD
+
+        // Number of branch nets
+        // TBD
+
+        // Number of stem nets
+        // TBD
+
+        // Average number of fanouts of each gate (all types)
+        cout << " - Average number of fanouts  of gates inverter: " << avgFanoutsOfFunc(G_NOT) << endl;
+        cout << " - Average number of fanouts  of gates or: " << avgFanoutsOfFunc(G_OR) << endl;
+        cout << " - Average number of fanouts  of gates nor: " << avgFanoutsOfFunc(G_NOR) << endl;
+        cout << " - Average number of fanouts  of gates and: " << avgFanoutsOfFunc(G_AND) << endl;
+        cout << " - Average number of fanouts  of gates nand: " << avgFanoutsOfFunc(G_NAND) << endl;
     }
     
     else {
