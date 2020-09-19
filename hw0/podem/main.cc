@@ -16,6 +16,22 @@ extern void Interactive();
 
 GetLongOpt option;
 
+
+
+bool matchGateType(GATE *gate, GATEFUNC gateFunc) {
+    return gate->GetFunction() == gateFunc;
+}
+
+int gateCountOfFunc(GATEFUNC gateFunc) {
+    int cnt = 0;
+    for(size_t i=0; i<Circuit.No_Gate(); i++) {
+        if(matchGateType(Circuit.Gate(i), gateFunc))
+            cnt += 1;
+    }
+    return cnt;
+}
+
+
 int SetupOption(int argc, char ** argv)
 {
     option.usage("[options] input_circuit_file");
@@ -113,7 +129,25 @@ int main(int argc, char ** argv)
         Circuit.TFAtpg();
     }
     else if (option.retrieve("ass0")) {
-        cout << "hello world" << endl;
+
+        // Number of inputs
+        cout << "Number of inputs: " << Circuit.No_PI() << endl;
+
+        // Number of outputs
+        cout << "Number of outputs: " << Circuit.No_PO() << endl;
+
+        // Total number of gates including inverter, or, nor, and, nand
+        cout << "Total number of gates: " << Circuit.No_Gate() << endl;
+
+        // Number of gates for each type
+        cout << " - Number of gates inverter: " << gateCountOfFunc(G_NOT) << endl;
+        cout << " - Number of gates or: " << gateCountOfFunc(G_OR) << endl;
+        cout << " - Number of gates nor: " << gateCountOfFunc(G_NOR) << endl;
+        cout << " - Number of gates and: " << gateCountOfFunc(G_AND) << endl;
+        cout << " - Number of gates nand: " << gateCountOfFunc(G_NAND) << endl;
+
+        // Number of flip-flops (if available)
+        cout << " - Number of dff: " << gateCountOfFunc(G_DFF) << endl;
     }
     
     else {
