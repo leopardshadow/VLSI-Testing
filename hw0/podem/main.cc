@@ -37,6 +37,8 @@ int SetupOption(int argc, char ** argv)
             "set the output pattern file", 0);
     option.enroll("bt", GetLongOpt::OptionalValue,
             "set the backtrack limit", 0);
+    option.enroll("ass0", GetLongOpt::NoValue,
+            "assignment 0", 0);
     int optind = option.parse(argc, argv);
     if ( optind < 1 ) { exit(0); }
     if ( option.retrieve("help") ) {
@@ -110,6 +112,10 @@ int main(int argc, char ** argv)
         }
         Circuit.TFAtpg();
     }
+    else if (option.retrieve("ass0")) {
+        cout << "hello world" << endl;
+    }
+    
     else {
         Circuit.GenerateAllFaultList();
         Circuit.SortFaninByLevel();
