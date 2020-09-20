@@ -18,7 +18,36 @@ GetLongOpt option;
 
 
 /***********************************************/
-string pi, po;
+
+
+#define debug(x) cerr << #x << ": " << (x) << endl
+#define FOR(x) for(size_t i=0; i<(x) ;i++)
+
+string piStr, poStr;
+size_t pi, po;
+
+void getPiPo() {
+
+    FOR(Circuit.No_PI())
+    {
+        if(Circuit.PIGate(i)->GetName() == piStr) {
+            pi = i;
+        }
+    }  
+    FOR(Circuit.No_PO())
+
+        if(Circuit.POGate(i)->GetName() == poStr) {
+            po = i;
+        }
+    }
+
+    for(size_t i=0; i<Circuit.No_Gate(); i++) {
+
+        debug(Circuit.Gate(i)->GetName());
+    }
+
+    
+}
 /***********************************************/
 
 
@@ -101,19 +130,6 @@ int main(int argc, char ** argv)
     Circuit.InitializeQueue();
 
 
-    /***********************************************/
-    if (option.retrieve("start"))
-    {
-        pi = option.retrieve("start");
-    }
-    if (option.retrieve("end"))
-    {
-        po = option.retrieve("end");
-    }
-    /***********************************************/
-
-
-
     if (option.retrieve("logicsim")) {
         //logic simulator
         Circuit.InitPattern(option.retrieve("input"));
@@ -142,7 +158,13 @@ int main(int argc, char ** argv)
     }
     /***********************************************/
     else if (option.retrieve("path")) {
-        cout << pi << endl << po << endl;
+
+        piStr = option.retrieve("start");
+        poStr = option.retrieve("end");
+
+        getPiPo();
+
+        cout << piStr << endl << poStr << endl;
     }
     /***********************************************/
     else {
