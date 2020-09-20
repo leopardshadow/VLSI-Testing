@@ -85,8 +85,8 @@ size_t branchNetCnt() {
 size_t oneOutputNetCnt() {
     size_t cnt = 0;
         for(size_t i=0; i<Circuit.No_Gate() ; i++) {
-            if(isSigNet(Circuit.Gate(i)) && Circuit.Gate(i)->No_Fanout() == 2) {
-                cnt += Circuit.Gate(i)->No_Fanout();
+            if(isSigNet(Circuit.Gate(i)) && Circuit.Gate(i)->No_Fanout() == 1) {
+                cnt ++;
             }
     }
     return cnt;
