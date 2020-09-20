@@ -18,35 +18,34 @@ GetLongOpt option;
 
 
 /***********************************************/
-
-
 #define debug(x) cerr << #x << ": " << (x) << endl
 #define FOR(x) for(size_t i=0; i<(x) ;i++)
 
 string piStr, poStr;
 size_t pi, po;
 
+enum GSTATE {START, END};
+
+struct GInfo {
+    GSTATE gstate;
+};
+
+vector<GInfo> ginfo;
+
+
+
 void getPiPo() {
 
-    FOR(Circuit.No_PI())
-    {
+    FOR(Circuit.No_PI()) {
         if(Circuit.PIGate(i)->GetName() == piStr) {
             pi = i;
         }
     }  
-    FOR(Circuit.No_PO())
-
+    FOR(Circuit.No_PO()) {
         if(Circuit.POGate(i)->GetName() == poStr) {
             po = i;
         }
-    }
-
-    for(size_t i=0; i<Circuit.No_Gate(); i++) {
-
-        debug(Circuit.Gate(i)->GetName());
-    }
-
-    
+    }    
 }
 /***********************************************/
 
