@@ -16,6 +16,12 @@ extern void Interactive();
 
 GetLongOpt option;
 
+
+/***********************************************/
+string pi, po;
+/***********************************************/
+
+
 int SetupOption(int argc, char ** argv)
 {
     option.usage("[options] input_circuit_file");
@@ -37,6 +43,16 @@ int SetupOption(int argc, char ** argv)
             "set the output pattern file", 0);
     option.enroll("bt", GetLongOpt::OptionalValue,
             "set the backtrack limit", 0);
+
+    /***********************************************/
+    option.enroll("start", GetLongOpt::MandatoryValue,
+            "start point of a circuit", 0);
+    option.enroll("end", GetLongOpt::MandatoryValue,
+            "end point of a circuit", 0);
+    option.enroll("path", GetLongOpt::NoValue,
+            "output all possible path with given pi & po", 0);
+    /***********************************************/
+
     int optind = option.parse(argc, argv);
     if ( optind < 1 ) { exit(0); }
     if ( option.retrieve("help") ) {
@@ -84,6 +100,20 @@ int main(int argc, char ** argv)
     Circuit.Check_Levelization();
     Circuit.InitializeQueue();
 
+
+    /***********************************************/
+    if (option.retrieve("start"))
+    {
+        pi = option.retrieve("start");
+    }
+    if (option.retrieve("end"))
+    {
+        po = option.retrieve("end");
+    }
+    /***********************************************/
+
+
+
     if (option.retrieve("logicsim")) {
         //logic simulator
         Circuit.InitPattern(option.retrieve("input"));
@@ -110,6 +140,11 @@ int main(int argc, char ** argv)
         }
         Circuit.TFAtpg();
     }
+    /***********************************************/
+    else if (option.retrieve("path")) {
+        cout << pi << endl << po << endl;
+    }
+    /***********************************************/
     else {
         Circuit.GenerateAllFaultList();
         Circuit.SortFaninByLevel();
