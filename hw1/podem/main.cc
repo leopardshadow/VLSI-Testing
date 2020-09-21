@@ -18,35 +18,44 @@ GetLongOpt option;
 
 
 /***********************************************/
-#define debug(x) cerr << #x << ": " << (x) << endl
-#define FOR(x) for(size_t i=0; i<(x) ;i++)
+#define debug(x) cerr << #x << ": " << (x) << endl;
+#define FOR(x) for(size_t i=0; i<(x); i++)
 
 string piStr, poStr;
 size_t pi, po;
 
-enum GSTATE {START, END};
+enum GSTATE {START, END, PATH, NON};
 
 struct GInfo {
     GSTATE gstate;
+    GInfo() {
+        gstate = NON;
+    }
+    int toStr() {
+        return gstate;
+    }
 };
 
-vector<GInfo> ginfo;
+vector<GInfo> ginfos;
 
 
 
 void getPiPo() {
 
-    FOR(Circuit.No_PI()) {
-        if(Circuit.PIGate(i)->GetName() == piStr) {
+    FOR(Circuit.No_Gate()) {
+        if(Circuit.Gate(i)->GetName() == piStr) {
             pi = i;
+            debug(pi);
         }
     }  
-    FOR(Circuit.No_PO()) {
-        if(Circuit.POGate(i)->GetName() == poStr) {
+    FOR(Circuit.No_Gate()) {
+        if(Circuit.Gate(i)->GetName() == poStr) {
             po = i;
+            debug(po);
         }
-    }    
+    }
 }
+
 /***********************************************/
 
 
@@ -163,7 +172,20 @@ int main(int argc, char ** argv)
 
         getPiPo();
 
-        cout << piStr << endl << poStr << endl;
+        debug(piStr);
+        debug(poStr);
+
+        // init all gates states with value NON
+        FOR(Circuit.No_Gate()) {
+            ginfos.push_back(GInfo());
+        }
+        // specify inpu and output
+        ginfos.at(pi).gstate = START;
+        ginfos.at(po).gstate = END;  
+
+        FOR(Circuit.No_Gate()) {
+            cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
+        }
     }
     /***********************************************/
     else {
