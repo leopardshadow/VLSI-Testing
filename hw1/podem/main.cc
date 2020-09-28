@@ -69,15 +69,14 @@ void getPiPo() {
 }
 
 
-void searchPathDFS(GATE *g) {
+void searchPathDFS(GATE *g, string s) {
     if(g->GetName() == poStr) {
-        cout << poStr << endl;
         totCount ++;
+        cout << s << totCount << endl;
         return;
     }
     FOR(g->No_Fanout()) {
-        cout << g->GetName() << " ";
-        searchPathDFS(g->Fanout(i));
+        searchPathDFS(g->Fanout(i), s+g->GetName()+" ");
     }
 } 
 
@@ -231,9 +230,9 @@ int main(int argc, char ** argv)
         // //     cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
         // // }
 
-        searchPathDFS(Circuit.Gate(pi));
+        searchPathDFS(Circuit.Gate(pi), "");
 
-        cout << "The paths from " << piStr << " to " << poStr << " : " << totCount << endl;
+        cout << "The paths from " << piStr << " to " << poStr << ": " << totCount << endl;
     }
     /***********************************************/
     else {
