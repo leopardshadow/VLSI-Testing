@@ -30,6 +30,30 @@ dfs (g, path)
 dfs(start_gate, "")
 ```
 
+However, the whole process can be very long.
+
+To shorten the time, I applied following strategies below.
+
+
+
+### Remove non-active gate
+
+Consider the case below. The only path from PI to PO is the upper one. However, when doing DFS search, the path PI --> G1 --> O1 is also considered. It will not know it's an unvalid path until they reach O1, which has no fanout.
+
+When the circuit size become bigger, the differcnes will affect the execution time significantly. 
+
+```
+I1 --┐
+     ┢━━━━━━━━━━━PO
+  ┏━━┛
+PI
+  └--┐
+     |--- G1 --- O1
+I2 --┘
+```
+
+
+
 
 
 
