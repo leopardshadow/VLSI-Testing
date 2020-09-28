@@ -26,6 +26,7 @@ GetLongOpt option;
 
 string piStr, poStr;
 size_t pi, po;
+size_t totCount = 0;
 
 map<string, int> getGateNumberByName;
 
@@ -66,6 +67,19 @@ void getPiPo() {
     //     }
     // }
 }
+
+
+void searchPathDFS(GATE *g) {
+    if(g->GetName() == poStr) {
+        cout << poStr << endl;
+        totCount ++;
+        return;
+    }
+    FOR(g->No_Fanout()) {
+        cout << g->GetName() << " ";
+        searchPathDFS(g->Fanout(i));
+    }
+} 
 
 /***********************************************/
 
@@ -189,30 +203,37 @@ int main(int argc, char ** argv)
         }
 
         
-        FOR(Circuit.No_Gate()) {
-            debug(i);
-            debug(Circuit.Gate(i)->GetName())
-            cout << "\n";
-        }
+        // FOR(Circuit.No_Gate()) {
+        //     debug(i);
+        //     debug(Circuit.Gate(i)->GetName())
+        //     cout << "\n";
+        // }
         
 
-        debug(piStr);
-        debug(poStr);
+        // debug(piStr);
+        // debug(poStr);
 
         getPiPo();
 
 
-        // init all gates states with value NON
-        FOR(Circuit.No_Gate()) {
-            ginfos.push_back(GInfo());
-        }
-        // specify inpu and output
-        ginfos.at(pi).gstate = START;
-        ginfos.at(po).gstate = END;  
+        
 
+
+        // // init all gates states with value NON
         // FOR(Circuit.No_Gate()) {
-        //     cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
+        //     ginfos.push_back(GInfo());
         // }
+        // // specify inpu and output
+        // ginfos.at(pi).gstate = START;
+        // ginfos.at(po).gstate = END;  
+
+        // // FOR(Circuit.No_Gate()) {
+        // //     cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
+        // // }
+
+        searchPathDFS(Circuit.Gate(pi));
+
+        cout << "The paths from " << piStr << " to " << poStr << " : " << totCount << endl;
     }
     /***********************************************/
     else {
