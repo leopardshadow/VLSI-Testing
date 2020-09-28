@@ -3,6 +3,9 @@
 #include "circuit.h"
 #include "GetLongOpt.h"
 #include "ReadPattern.h"
+
+#include <map>
+
 using namespace std;
 
 // All defined in readcircuit.l
@@ -24,6 +27,8 @@ GetLongOpt option;
 string piStr, poStr;
 size_t pi, po;
 
+map<string, int> getGateNumberByName;
+
 enum GSTATE {START, END, PATH, NON};
 
 struct GInfo {
@@ -42,18 +47,24 @@ vector<GInfo> ginfos;
 
 void getPiPo() {
 
-    FOR(Circuit.No_Gate()) {
-        if(Circuit.Gate(i)->GetName() == piStr) {
-            pi = i;
-            debug(pi);
-        }
-    }  
-    FOR(Circuit.No_Gate()) {
-        if(Circuit.Gate(i)->GetName() == poStr) {
-            po = i;
-            debug(po);
-        }
-    }
+    pi =  getGateNumberByName[piStr];
+    po =  getGateNumberByName[poStr];
+
+    debug(pi);
+    debug(po);
+
+    // FOR(Circuit.No_Gate()) {
+    //     if(Circuit.Gate(i)->GetName() == piStr) {
+    //         pi = i;
+    //         debug(pi);
+    //     }
+    // }  
+    // FOR(Circuit.No_Gate()) {
+    //     if(Circuit.Gate(i)->GetName() == poStr) {
+    //         po = i;
+    //         debug(po);
+    //     }
+    // }
 }
 
 /***********************************************/
@@ -170,10 +181,26 @@ int main(int argc, char ** argv)
         piStr = option.retrieve("start");
         poStr = option.retrieve("end");
 
-        getPiPo();
+        
+
+        
+        FOR(Circuit.No_Gate()) {
+            getGateNumberByName[Circuit.Gate(i)->GetName()] = i;
+        }
+
+        
+        FOR(Circuit.No_Gate()) {
+            debug(i);
+            debug(Circuit.Gate(i)->GetName())
+            cout << "\n";
+        }
+        
 
         debug(piStr);
         debug(poStr);
+
+        getPiPo();
+
 
         // init all gates states with value NON
         FOR(Circuit.No_Gate()) {
@@ -183,9 +210,9 @@ int main(int argc, char ** argv)
         ginfos.at(pi).gstate = START;
         ginfos.at(po).gstate = END;  
 
-        FOR(Circuit.No_Gate()) {
-            cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
-        }
+        // FOR(Circuit.No_Gate()) {
+        //     cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
+        // }
     }
     /***********************************************/
     else {
