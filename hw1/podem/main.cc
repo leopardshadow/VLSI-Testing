@@ -69,14 +69,37 @@ void getPiPo() {
 }
 
 
-void searchPathDFS(GATE *g, string s) {
-    if(g->GetName() == poStr) {
-        totCount ++;
-        cout << s << totCount << endl;
-        return;
+// void searchPathDFS(GATE *g, string s) {
+//     if(g->GetName() == poStr) {
+//         totCount ++;
+//         cout << s << totCount << endl;
+//         return;
+//     }
+//     FOR(g->No_Fanout()) {
+//         searchPathDFS(g->Fanout(i), s+g->GetName()+" ");
+//     }
+// }
+
+map<GATE*, size_t> gate2count;
+
+void searchPathCountDFS() {
+    FOR(Circuit.No_PI()) {
+        gate2count[Circuit.PIGate(i)] = 0;
     }
-    FOR(g->No_Fanout()) {
-        searchPathDFS(g->Fanout(i), s+g->GetName()+" ");
+    gate2count[Circuit.Gate(pi)] = 1;
+
+    // FOR(Circuit.No_PO()) {
+    //     gate2count[Circuit.POGate(i)] = 0;
+    // }
+    // gate2count[Circuit.Gate(po)] = 0;
+
+    // FOR()
+
+    FOR(Circuit.No_Gate()) {
+        debug(i);
+        debug(Circuit.Gate(i)->GetName());
+        debug(gate2count[Circuit.Gate(i)]);
+        cout << endl;
     }
 } 
 
@@ -230,7 +253,9 @@ int main(int argc, char ** argv)
         // //     cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
         // // }
 
-        searchPathDFS(Circuit.Gate(pi), "");
+        // searchPathCountDFS(Circuit.Gate(pi), "");
+
+        searchPathCountDFS();
 
         cout << "The paths from " << piStr << " to " << poStr << ": " << totCount << endl;
     }
