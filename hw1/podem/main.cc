@@ -6,6 +6,7 @@
 
 #include <map>
 #include <deque>
+#include <list>
 
 using namespace std;
 
@@ -37,8 +38,8 @@ void getPiPo() {
     pi =  getGateNumberByName[piStr];
     po =  getGateNumberByName[poStr];
 
-    debug(pi);
-    debug(po);
+    // debug(pi);
+    // debug(po);
 
     // FOR(Circuit.No_Gate()) {
     //     if(Circuit.Gate(i)->GetName() == piStr) {
@@ -72,6 +73,7 @@ void getPiPo() {
 class GInfo {
 public:
     size_t cnt, fanin;
+    deque<string> pathQ;
 
     GInfo() {}
 
@@ -84,10 +86,13 @@ public:
             case G_PI:
                 fanin = 0;
                 break;
+
+            case G_PO:
+                fanin = 999999999;
+                break;
             
             case G_NOT:
             case G_BUF:
-            case G_PO:
                 fanin = 1;
                 break;
 
@@ -114,8 +119,18 @@ public:
 
 
 
+void perm(deque<string> &q1, deque<string> q2) {
+    FOR(q1.size()) {
+
+    }
+}
+
+
+
 map<GATE*, GInfo> gate2count;
 deque<GATE*> bfsQueue;
+
+size_t temp = 0;
 
 void searchPathCountDFS() {
 
@@ -123,75 +138,60 @@ void searchPathCountDFS() {
         gate2count[Circuit.Gate(i)] = GInfo(Circuit.Gate(i));
     }
 
-    cout << "+++++" << endl;
-    // FOR(Circuit.No_Gate()) {
-    //     cout << Circuit.Gate(i)->GetName() << " ";
-    // }
-    // cout << endl;
-
-    // FOR(Circuit.No_PI()) {
-    //     gate2count[Circuit.PIGate(i)].cnt = 0;
-    //     gate2count[Circuit.PIGate(i)].visited = true;
-    // }
-
     gate2count[Circuit.Gate(pi)].cnt = 1;
-
-    // FOR(Circuit.No_PO()) {
-    //     gate2count[Circuit.POGate(i)] = 0;
-    // }
-    // gate2count[Circuit.Gate(po)] = 0;
-
-    // FOR()
-
+    gate2count[Circuit.Gate(pi)].pathQ.push_front(Circuit.Gate(pi)->GetName());
 
     FOR(Circuit.No_PI()) {
         bfsQueue.push_back(Circuit.PIGate(i));
     }
 
-    cout << "=====" << endl;
-
     while(! bfsQueue.empty()) {
 
         GATE* g = bfsQueue.front();
-        cout << "Now: " << g->GetName() << endl;
+        // cout << "Now: " << g->GetName() << endl;
         bfsQueue.pop_front();
 
         FOR(g->No_Fanout()) {
-
-            // cout << g->GetName() << ":add " << gate2count[g].cnt << " to "
-            //         << g->Fanout(i)->GetName() << endl;
                     
             gate2count[g->Fanout(i)].cnt += gate2count[g].cnt;
             gate2count[g->Fanout(i)].fanin -= 1;
-            // cout << g->Fanout(i)->GetName() << " ";
+
+            for(size_t qi=0; qi<gate2count[g].pathQ.size(); qi++) {
+                gate2count[g->Fanout(i)].pathQ.push_back(gate2count[g].pathQ[qi]+ " "+g->Fanout(i)->GetName());
+            }
 
             if(gate2count[g->Fanout(i)].fanin == 0) {
                 bfsQueue.push_back(g->Fanout(i));
             }
    
         }
-        cout << endl;
+        // cout << endl;
+        
+        
+        gate2count[g].pathQ.clear();
+        cout << "Now: " << (temp++) << " " << g->GetName() << endl;
     }
-
-    cout << "-----" << endl;
 
     // FOR(Circuit.No_Gate()) {
-    //     debug(i);
-    //     debug(Circuit.Gate(i)->GetName());
-    //     debug(gate2count[Circuit.Gate(i)]);
-    //     cout << endl;
+    //     cout << Circuit.Gate(i)->GetName() << " "
+    //          << gate2count[Circuit.Gate(i)].cnt << endl;
     // }
-
-    FOR(Circuit.No_Gate()) {
-        cout << Circuit.Gate(i)->GetName() << " "
-             << gate2count[Circuit.Gate(i)].cnt << endl;
-    }
 
     cout << endl << endl;
     cout << "tot.cnt." << endl
          << Circuit.Gate(po)->GetName() << endl 
          << gate2count[Circuit.Gate(po)].cnt << endl;
+
+    cout << "print path\n-------" << endl;
+    cout << gate2count[Circuit.Gate(po)].pathQ.size() << endl;
+    FOR(gate2count[Circuit.Gate(po)].pathQ.size()) {
+        cout << gate2count[Circuit.Gate(po)].pathQ[i] << endl;
+    }
 } 
+
+
+
+
 
 /***********************************************/
 
