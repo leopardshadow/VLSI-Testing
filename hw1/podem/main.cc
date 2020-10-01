@@ -177,16 +177,17 @@ void searchPathCountDFS() {
     //          << gate2count[Circuit.Gate(i)].cnt << endl;
     // }
 
-    cout << endl << endl;
-    cout << "tot.cnt." << endl
-         << Circuit.Gate(po)->GetName() << endl 
-         << gate2count[Circuit.Gate(po)].cnt << endl;
 
     cout << "print path\n-------" << endl;
     cout << gate2count[Circuit.Gate(po)].pathQ.size() << endl;
     FOR(gate2count[Circuit.Gate(po)].pathQ.size()) {
         cout << gate2count[Circuit.Gate(po)].pathQ[i] << endl;
     }
+
+    cout << endl << endl;
+    cout << "tot.cnt." << endl
+         << Circuit.Gate(po)->GetName() << endl 
+         << gate2count[Circuit.Gate(po)].cnt << endl;
 } 
 
 
