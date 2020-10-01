@@ -5,6 +5,7 @@
 #include "ReadPattern.h"
 
 #include <map>
+#include <deque>
 
 using namespace std;
 
@@ -81,6 +82,7 @@ void getPiPo() {
 // }
 
 map<GATE*, size_t> gate2count;
+deque<GATE*> bfsQueue;
 
 void searchPathCountDFS() {
     FOR(Circuit.No_PI()) {
@@ -95,12 +97,31 @@ void searchPathCountDFS() {
 
     // FOR()
 
-    FOR(Circuit.No_Gate()) {
-        debug(i);
-        debug(Circuit.Gate(i)->GetName());
-        debug(gate2count[Circuit.Gate(i)]);
-        cout << endl;
+
+    FOR(Circuit.No_PI()) {
+        bfsQueue.push_back(Circuit.PIGate(i));
     }
+
+    cout << "=====" << endl;
+    while(! bfsQueue.empty()) {
+        GATE* g = bfsQueue.front();
+        bfsQueue.pop_front();
+        FOR(g->No_Fanout()) {
+
+            cout << g->Fanout(i)->GetName() << " ";
+        }
+        cout << endl;
+        // gate2count[g]
+    }
+    cout << "-----" << endl;
+
+    // FOR(Circuit.No_Gate()) {
+    //     debug(i);
+    //     debug(Circuit.Gate(i)->GetName());
+    //     debug(gate2count[Circuit.Gate(i)]);
+    //     cout << endl;
+    // }
+
 } 
 
 /***********************************************/
