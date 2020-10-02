@@ -73,6 +73,7 @@ void getPiPo() {
 class GInfo {
 public:
     size_t cnt, fanin;
+    bool active;
     deque<string> pathQ;
 
     GInfo() {}
@@ -80,6 +81,7 @@ public:
     GInfo (GATE* g) {
 
         cnt = 0;
+        active = false;
         
         switch (g->GetFunction()) //G_PI, G_PO, G_PPI, G_PPO, G_NOT, G_AND, G_NAND, G_OR, G_NOR, G_DFF, G_BUF, G_BAD
         {
@@ -119,12 +121,6 @@ public:
 
 
 
-void perm(deque<string> &q1, deque<string> q2) {
-    FOR(q1.size()) {
-
-    }
-}
-
 
 
 map<GATE*, GInfo> gate2count;
@@ -132,7 +128,8 @@ deque<GATE*> bfsQueue;
 
 size_t temp = 0;
 
-void searchPathCountDFS() {
+
+void initBFSfromStart() {
 
     FOR(Circuit.No_Gate()) {
         gate2count[Circuit.Gate(i)] = GInfo(Circuit.Gate(i));
@@ -144,6 +141,40 @@ void searchPathCountDFS() {
     FOR(Circuit.No_PI()) {
         bfsQueue.push_back(Circuit.PIGate(i));
     }
+}
+
+void initBFSfromEnd() {
+
+    deque <GATE*> tempQ;
+
+    tempQ.push_back(Circuit.Gate(po));
+
+    while(! tempQ.empty()) {
+        
+        GATE* g = tempQ.front();
+        tempQ.pop_front();
+
+        FOR(g->No_Fanin()) {
+            gate2count[g->Fanin(i)].active = true;
+            tempQ.push_back(g->Fanin(i));
+        }
+    }
+
+    cout << "active -----" << endl;
+    FOR(Circuit.No_Gate()) {
+        cout << Circuit.Gate(i)->GetName() << " ";
+        cout << (gate2count[Circuit.Gate(i)].active ? "+" : " ") << endl;
+    }
+    cout << endl << "=====" << endl;;
+
+
+}
+
+void searchPathCountBFS() {
+
+    initBFSfromStart();
+
+    initBFSfromEnd();
 
     while(! bfsQueue.empty()) {
 
@@ -156,8 +187,13 @@ void searchPathCountDFS() {
             gate2count[g->Fanout(i)].cnt += gate2count[g].cnt;
             gate2count[g->Fanout(i)].fanin -= 1;
 
-            for(size_t qi=0; qi<gate2count[g].pathQ.size(); qi++) {
-                gate2count[g->Fanout(i)].pathQ.push_back(gate2count[g].pathQ[qi]+ " "+g->Fanout(i)->GetName());
+            if(gate2count[g].active) {
+            // if(true) {
+
+                for(size_t qi=0; qi<gate2count[g].pathQ.size(); qi++) {
+                    gate2count[g->Fanout(i)].pathQ.push_back(gate2count[g].pathQ[qi]+ " "+g->Fanout(i)->GetName());
+                }
+
             }
 
             if(gate2count[g->Fanout(i)].fanin == 0) {
@@ -169,7 +205,7 @@ void searchPathCountDFS() {
         
         
         gate2count[g].pathQ.clear();
-        cout << "Now: " << (temp++) << " " << g->GetName() << endl;
+        // cout << "Now: " << (temp++) << " " << g->GetName() << endl;
     }
 
     // FOR(Circuit.No_Gate()) {
@@ -344,9 +380,8 @@ int main(int argc, char ** argv)
         // //     cout << Circuit.Gate(i)->GetName() << " " << ginfos.at(i).gstate << endl;
         // // }
 
-        // searchPathCountDFS(Circuit.Gate(pi), "");
 
-        searchPathCountDFS();
+        searchPathCountBFS();
 
         // cout << "The paths from " << piStr << " to " << poStr << ": " << totCount << endl;
     }
