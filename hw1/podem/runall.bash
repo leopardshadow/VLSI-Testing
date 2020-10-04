@@ -6,6 +6,7 @@ for pi in "${pis[@]}"
 do
 	for po in "${pos[@]}"
 	do
+		echo $pi $po
 		./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
 	done
 done
