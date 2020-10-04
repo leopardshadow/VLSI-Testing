@@ -161,20 +161,21 @@ size_t layer = 0;
 void searchPathDFS(GATE *g, string &s) {
     if(g->GetName() == poStr) {
         totCount ++;
-        // cout << "--\n";
-        // cout << totCount << " " << layer << endl;
-        // cout << "--\n\n";
+        cout << "--\n";
+        cout << totCount << " " << layer << endl;
+        cout << "--\n\n";
         // cout << s << " " << poStr << endl;
         return;
     }
     FOR(g->No_Fanout()) {
         if(gate2count[g->Fanout(i)].active) {
             s = s + g->GetName() + " ";
-            // cout << (layer++) << endl;
+            cout << (layer++) << " ";
             searchPathDFS(g->Fanout(i), s);
             size_t rmLen = g->GetName().length() + 1;
             s = s.substr(0, s.size()-rmLen);
-            // cout << (layer--) << endl;
+            layer--;
+            // cout << (layer--) << " ";
         }
     }
 }
