@@ -105,6 +105,8 @@ void initBFSfromEnd() {
         tempQ.pop_front();
 
         FOR(g->No_Fanin()) {
+            if(gate2count[g->Fanin(i)].active)
+                continue;
             gate2count[g->Fanin(i)].active = true;
             tempQ.push_back(g->Fanin(i));
         }
@@ -154,21 +156,25 @@ void searchPathCountBFS() {
     cout << "The paths from " << piStr << " to " << poStr << ": " << gate2count[Circuit.Gate(po)].pathQ.size() << endl;
 } 
 
-
-
+size_t layer = 0;
 
 void searchPathDFS(GATE *g, string &s) {
     if(g->GetName() == poStr) {
         totCount ++;
+        // cout << "--\n";
+        // cout << totCount << " " << layer << endl;
+        // cout << "--\n\n";
         // cout << s << " " << poStr << endl;
         return;
     }
     FOR(g->No_Fanout()) {
         if(gate2count[g->Fanout(i)].active) {
             s = s + g->GetName() + " ";
+            // cout << (layer++) << endl;
             searchPathDFS(g->Fanout(i), s);
             size_t rmLen = g->GetName().length() + 1;
             s = s.substr(0, s.size()-rmLen);
+            // cout << (layer--) << endl;
         }
     }
 }
@@ -299,11 +305,20 @@ int main(int argc, char ** argv)
         // BFS search
         // searchPathCountBFS();
 
+        clock_t time_end1;
+        time_end1 = clock();
+        cout << "total CPU time = " << double(time_end1 - time_init)/CLOCKS_PER_SEC << endl;
 
         // DFS search
         string pathStr = "";
-        initBFSfromStart();
+        // initBFSfromStart();
         initBFSfromEnd();
+
+        clock_t time_end2;
+        time_end2 = clock();
+        cout << "total CPU time = " << double(time_end2 - time_init)/CLOCKS_PER_SEC << endl;
+
+        // getchar();
         gate2count[Circuit.Gate(po)].active = true;
         searchPathDFS(Circuit.Gate(pi), pathStr);
         cout << "The paths from " << piStr << " to " << poStr << ": " << totCount << endl;
