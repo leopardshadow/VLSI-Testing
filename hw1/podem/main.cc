@@ -146,7 +146,7 @@ void searchPathCountBFS() {
         gate2count[g].pathQ.clear();
     }
 
-    cout << "print path\n-------" << endl;
+    // cout << "print path\n-------" << endl;
     // cout << gate2count[Circuit.Gate(po)].pathQ.size() << endl;
     FOR(gate2count[Circuit.Gate(po)].pathQ.size()) {
         cout << gate2count[Circuit.Gate(po)].pathQ[i] << endl;
@@ -294,15 +294,15 @@ int main(int argc, char ** argv)
 
 
         // BFS search
-        searchPathCountBFS();
+        // searchPathCountBFS();
 
 
         // DFS search
-        // initBFSfromStart();
-        // initBFSfromEnd();
-        // gate2count[Circuit.Gate(po)].active = true;
-        // searchPathDFS(Circuit.Gate(pi), "");
-        // cout << "The paths from " << piStr << " to " << poStr << ": " << totCount << endl;
+        initBFSfromStart();
+        initBFSfromEnd();
+        gate2count[Circuit.Gate(po)].active = true;
+        searchPathDFS(Circuit.Gate(pi), "");
+        cout << "The paths from " << piStr << " to " << poStr << ": " << totCount << endl;
     }
     /***********************************************/
     else {
