@@ -16,7 +16,7 @@ An straightforward approach would be simply using DFS search.
 The algorithm is described as follows.
 
 ```
-dfs (g, path)
+func dfs (g, path):
     if g is not end_gate
         for every h in g's fanout 
             dfs(h, path + g)
@@ -34,7 +34,7 @@ I also tried BFS search. However, the same situation goes to BFS search. The pro
 
 ### Remove gates that don't contribute to the path
 
-Consider the case below. The only path from PI to PO is the dotted arrow. However, when doing search, the path START --> G2 --> END is also considered. It will not know it's an unvalid path until they reach O1, a gate without fanout but not the designated end node. Similar thing goes to BFS search, G2 and O1 will maintain extra useless information and leads to a long execution time.
+Consider the case below. The only path from START to END is the dotted arrow. However, when doing search, the path START --> G2 --> O1 is also considered. It will not know it's an unvalid path until they reach O1, a gate without fanout but not the designated end node. Similar thing goes to BFS search, G2 and O1 will maintain extra useless information and leads to a long execution time.
 
 When the circuit size become bigger, the differcnes will affect the execution time and memory usage significantly. 
 
@@ -46,7 +46,7 @@ graph LR;
 	I2 --> G2
 ```
 
-So I do a modification here. Starting from the designated output, mark its fanins as active, and do the same thing treated the fanins as the designated output.
+So I do a modification here. Before doing any kinds of search, starts from the designated output, marks its fanins as active, and do the same thing treated the fanins as the designated output.
 
 ```
 func mark_active_gates():
@@ -59,41 +59,28 @@ func mark_active_gates():
 		push g's every fanins into Q
 ```
 
-After the whole process, we can be certain that every non-active gates will contribute to the paths to the designated output. When doing DFS or BFS search, we can ignore every non-active gates to speed up the process !
+After the whole process, we can be certain that every non-active gates will not contribute to the paths to the designated output. When doing search, we can ignore every non-active gates to speed up the process !
 
-## Implementation
+After adding the process, the original DFS search becomes:
 
-For every gate, I maintain following information:
-
-* a flag tells whether it will affect the end gate
-
-* number of fanins that haven't been processed yet
-* list of path (i.e. list of string)
-* number of paths
-
-Let's consider the case below.
-
-```mermaid
-graph LR;
-	F1 --> G
-	F2 --> G
-	G --> H1
-	G --> H2
+```
+func dfs' (g, path):
+    if g is not end_gate
+        for every h in g's fanout
+        	if h is active // only process active gates !!
+        	do
+            dfs'(h, path + g)
+    if g is end_gate
+        print (path + g)
+        
+func main():
+	mark_active_gates()  // mark active gates first
+	dfs'(start_gate, "")  // then do the search
 ```
 
-
-
-All the paths from the start node to F1 are [p1, p2, ..., pn]; 
-
-All the paths from the start node to F2 are [q1, q2, ..., qm].
-
-For tha gate G, is has 2 fanins, F1--> G and F2 --> G, so all the paths from the start node to G would be [p1, p2, ..., pn, q1, q2, ..., qm] with G appended to the end of every paths.
-
-Let's consider G's affect to its fanouts, G --> H1 and G --> H2.
-
-H1 has fanin G, it may have other fanins. But what we can be certain is there are paths from the start node to H1, and the paths are [p1, p2, ..., pn, q1, q2, ..., qm] with G and H1 appended to the end of every paths. The similar mechanism goes to H2 or any other G's fanouts.
-
 ## Test Cases Result 
+
+For a use case, the upper result uses **BFS search**; the bottom uses **DFS search**. I use DFS seach in the assignment, BFS search is for comparison.
 
 ### Test Case 1
 
@@ -104,12 +91,19 @@ H1 has fanin G, it may have other fanins. But what we can be certain is there ar
 ```
 Start parsing input file
 Finish reading circuit file
-print path
--------
 G3 net17 G16 PO_G16
 G3 net14 net18 G16 PO_G16
 The paths from G3 to PO_G16: 2
 total CPU time = 0.000239
+```
+
+```
+Start parsing input file
+Finish reading circuit file
+G3 net14 net18 G16  PO_G16
+G3 net17 G16  PO_G16
+The paths from G3 to PO_G16: 2
+total CPU time = 0.000293
 ```
 
 ### Test Case 2
@@ -119,16 +113,15 @@ total CPU time = 0.000239
 ```
 
 ```
-Start parsing input file
-Finish reading circuit file
-print path
--------
-126GAT_30 517GAT_227 517GAT_227b 543GAT_236 581GAT_250 581GAT_250b 654GAT_270 734GAT_287 773GAT_351 789GAT_368 789GAT_368b 802GAT_372 808GAT_377 808GAT_377b 826GAT_391 837GAT_396 846GAT_407 855GAT_418 863GAT_424 PO_863GAT_424
-126GAT_30 517GAT_227 517GAT_227b 543GAT_236 581GAT_250 651GAT_271 722GAT_295 763GAT_337 773GAT_351 789GAT_368 789GAT_368b 802GAT_372 808GAT_377 808GAT_377b 826GAT_391 837GAT_396 846GAT_407 855GAT_418 863GAT_424 PO_863GAT_424
-126GAT_30 517GAT_227 517GAT_227b 543GAT_236 581GAT_250 581GAT_250b 654GAT_270 734GAT_287 773GAT_351 773GAT_351b 788GAT_367 788GAT_367b 802GAT_372 808GAT_377 808GAT_377b 826GAT_391 837GAT_396 846GAT_407 855GAT_418 863GAT_424 PO_863GAT_424
-126GAT_30 517GAT_227 517GAT_227b 543GAT_236 581GAT_250 651GAT_271 722GAT_295 763GAT_337 773GAT_351 773GAT_351b 788GAT_367 788GAT_367b 802GAT_372 808GAT_377 808GAT_377b 826GAT_391 837GAT_396 846GAT_407 855GAT_418 863GAT_424 PO_863GAT_424
+( ... ignores above ...)
 The paths from 126GAT_30 to PO_863GAT_424: 4
 total CPU time = 0.002918
+```
+
+```
+( ... ignores above ...)
+The paths from 126GAT_30 to PO_863GAT_424: 4
+total CPU time = 0.001906
 ```
 
 ### Test Case 3
@@ -143,13 +136,11 @@ The paths from 307GAT_18 to PO_2548GAT_840: 468
 total CPU time = 0.023831
 ```
 
-
-
-
-
-
-
-
+```
+( ... ignores above ...)
+The paths from 307GAT_18 to PO_2548GAT_840: 468
+total CPU time = 0.018417
+```
 
 
 ## Build
