@@ -129,10 +129,10 @@ void searchPathCountBFS() {
             gate2count[g->Fanout(i)].fanin -= 1;
 
             if(gate2count[g].active) {
-            // if(true) {
 
                 for(size_t qi=0; qi<gate2count[g].pathQ.size(); qi++) {
-                    gate2count[g->Fanout(i)].pathQ.push_back(gate2count[g].pathQ[qi]+ " "+g->Fanout(i)->GetName());
+                    // gate2count[g->Fanout(i)].pathQ.push_back(gate2count[g].pathQ[qi]+ " "+g->Fanout(i)->GetName());
+                    gate2count[g->Fanout(i)].pathQ.push_back("");
                 }
 
             }
@@ -160,7 +160,7 @@ void searchPathCountBFS() {
 void searchPathDFS(GATE *g, string s) {
     if(g->GetName() == poStr) {
         totCount ++;
-        cout << s << " " << poStr << endl;
+        // cout << s << " " << poStr << endl;
         return;
     }
     FOR(g->No_Fanout()) {
