@@ -1,0 +1,6144 @@
+1GAT_0 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 545GAT_287: 1
+total CPU time = 0.012377
+
+1GAT_0 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 1581GAT_423: 3
+total CPU time = 0.010217
+
+1GAT_0 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 1901GAT_561: 12
+total CPU time = 0.015381
+
+1GAT_0 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 2223GAT_700: 48
+total CPU time = 0.011407
+
+1GAT_0 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 2548GAT_840: 192
+total CPU time = 0.012384
+
+1GAT_0 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 2877GAT_983: 768
+total CPU time = 0.013554
+
+1GAT_0 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 3211GAT_1128: 3072
+total CPU time = 0.015123
+
+1GAT_0 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 3552GAT_1275: 12288
+total CPU time = 0.015614
+
+1GAT_0 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 3895GAT_1423: 49152
+total CPU time = 0.010459
+
+1GAT_0 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 4241GAT_1572: 196608
+total CPU time = 0.01096
+
+1GAT_0 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 4591GAT_1722: 786432
+total CPU time = 0.010459
+
+1GAT_0 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 4946GAT_1876: 3145728
+total CPU time = 0.011077
+
+1GAT_0 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 5308GAT_2031: 12582912
+total CPU time = 0.011567
+
+1GAT_0 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 5672GAT_2187: 50331648
+total CPU time = 0.011609
+
+1GAT_0 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 5971GAT_2309: 201326592
+total CPU time = 0.011866
+
+1GAT_0 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6123GAT_2368: 805306368
+total CPU time = 0.016965
+
+1GAT_0 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6150GAT_2378: 3221225469
+total CPU time = 0.016674
+
+1GAT_0 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6160GAT_2383: 4294967292
+total CPU time = 0.017311
+
+1GAT_0 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6170GAT_2388: 4294967292
+total CPU time = 0.011821
+
+1GAT_0 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6180GAT_2393: 4294967292
+total CPU time = 0.012597
+
+1GAT_0 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6190GAT_2398: 4294967292
+total CPU time = 0.013548
+
+1GAT_0 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6200GAT_2403: 4294967292
+total CPU time = 0.015033
+
+1GAT_0 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6210GAT_2408: 4294967292
+total CPU time = 0.016885
+
+1GAT_0 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6220GAT_2413: 4294967292
+total CPU time = 0.016655
+
+1GAT_0 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6230GAT_2418: 4294967292
+total CPU time = 0.018113
+
+1GAT_0 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6240GAT_2423: 4294967292
+total CPU time = 0.017891
+
+1GAT_0 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6250GAT_2428: 4294967292
+total CPU time = 0.018028
+
+1GAT_0 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6260GAT_2433: 4294967292
+total CPU time = 0.018052
+
+1GAT_0 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6270GAT_2438: 4294967292
+total CPU time = 0.013359
+
+1GAT_0 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6280GAT_2443: 4294967292
+total CPU time = 0.013178
+
+1GAT_0 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6287GAT_2444: 1431655764
+total CPU time = 0.013119
+
+1GAT_0 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 6288GAT_2447: 4294967292
+total CPU time = 0.013383
+
+18GAT_1 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 545GAT_287: 0
+total CPU time = 0.010177
+
+18GAT_1 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 1581GAT_423: 9
+total CPU time = 0.010318
+
+18GAT_1 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 1901GAT_561: 63
+total CPU time = 0.010684
+
+18GAT_1 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 2223GAT_700: 360
+total CPU time = 0.012566
+
+18GAT_1 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 2548GAT_840: 1872
+total CPU time = 0.011047
+
+18GAT_1 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 2877GAT_983: 9216
+total CPU time = 0.011146
+
+18GAT_1 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 3211GAT_1128: 43776
+total CPU time = 0.012007
+
+18GAT_1 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 3552GAT_1275: 202752
+total CPU time = 0.016147
+
+18GAT_1 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 3895GAT_1423: 921600
+total CPU time = 0.016045
+
+18GAT_1 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 4241GAT_1572: 4128768
+total CPU time = 0.014997
+
+18GAT_1 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 4591GAT_1722: 18284544
+total CPU time = 0.012177
+
+18GAT_1 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 4946GAT_1876: 80216064
+total CPU time = 0.011445
+
+18GAT_1 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 5308GAT_2031: 349175808
+total CPU time = 0.016929
+
+18GAT_1 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 5672GAT_2187: 1509949440
+total CPU time = 0.016789
+
+18GAT_1 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 5971GAT_2309: 6492782592
+total CPU time = 0.016912
+
+18GAT_1 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6123GAT_2368: 27783069696
+total CPU time = 0.016739
+
+18GAT_1 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6150GAT_2378: 118380036096
+total CPU time = 0.01258
+
+18GAT_1 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6160GAT_2383: 161061273597
+total CPU time = 0.017505
+
+18GAT_1 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6170GAT_2388: 162135015420
+total CPU time = 0.017543
+
+18GAT_1 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6180GAT_2393: 162135015420
+total CPU time = 0.015662
+
+18GAT_1 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6190GAT_2398: 162135015420
+total CPU time = 0.012487
+
+18GAT_1 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6200GAT_2403: 162135015420
+total CPU time = 0.012699
+
+18GAT_1 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6210GAT_2408: 162135015420
+total CPU time = 0.013033
+
+18GAT_1 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6220GAT_2413: 162135015420
+total CPU time = 0.012987
+
+18GAT_1 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6230GAT_2418: 162135015420
+total CPU time = 0.012898
+
+18GAT_1 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6240GAT_2423: 162135015420
+total CPU time = 0.012933
+
+18GAT_1 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6250GAT_2428: 162135015420
+total CPU time = 0.013098
+
+18GAT_1 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6260GAT_2433: 162135015420
+total CPU time = 0.013245
+
+18GAT_1 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6270GAT_2438: 162135015420
+total CPU time = 0.013167
+
+18GAT_1 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6280GAT_2443: 162135015420
+total CPU time = 0.013214
+
+18GAT_1 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6287GAT_2444: 54045005140
+total CPU time = 0.013239
+
+18GAT_1 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 6288GAT_2447: 162135015420
+total CPU time = 0.013298
+
+35GAT_2 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 545GAT_287: 0
+total CPU time = 0.010456
+
+35GAT_2 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 1581GAT_423: 0
+total CPU time = 0.010593
+
+35GAT_2 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 1901GAT_561: 81
+total CPU time = 0.010495
+
+35GAT_2 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 2223GAT_700: 891
+total CPU time = 0.010554
+
+35GAT_2 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 2548GAT_840: 6804
+total CPU time = 0.010905
+
+35GAT_2 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 2877GAT_983: 44064
+total CPU time = 0.01079
+
+35GAT_2 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 3211GAT_1128: 259200
+total CPU time = 0.010669
+
+35GAT_2 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 3552GAT_1275: 1430784
+total CPU time = 0.015928
+
+35GAT_2 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 3895GAT_1423: 7547904
+total CPU time = 0.010844
+
+35GAT_2 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 4241GAT_1572: 38486016
+total CPU time = 0.010947
+
+35GAT_2 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 4591GAT_1722: 191102976
+total CPU time = 0.011232
+
+35GAT_2 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 4946GAT_1876: 928972800
+total CPU time = 0.015779
+
+35GAT_2 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 5308GAT_2031: 4437835776
+total CPU time = 0.01655
+
+35GAT_2 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 5672GAT_2187: 20893925376
+total CPU time = 0.016639
+
+35GAT_2 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 5971GAT_2309: 97165246464
+total CPU time = 0.011568
+
+35GAT_2 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6123GAT_2368: 447096029184
+total CPU time = 0.012045
+
+35GAT_2 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6150GAT_2378: 2038431744000
+total CPU time = 0.012144
+
+35GAT_2 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6160GAT_2383: 2836289028096
+total CPU time = 0.012286
+
+35GAT_2 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6170GAT_2388: 2878970265597
+total CPU time = 0.013142
+
+35GAT_2 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6180GAT_2393: 2880044007420
+total CPU time = 0.012767
+
+35GAT_2 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6190GAT_2398: 2880044007420
+total CPU time = 0.012765
+
+35GAT_2 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6200GAT_2403: 2880044007420
+total CPU time = 0.012682
+
+35GAT_2 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6210GAT_2408: 2880044007420
+total CPU time = 0.017857
+
+35GAT_2 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6220GAT_2413: 2880044007420
+total CPU time = 0.012714
+
+35GAT_2 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6230GAT_2418: 2880044007420
+total CPU time = 0.013095
+
+35GAT_2 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6240GAT_2423: 2880044007420
+total CPU time = 0.012904
+
+35GAT_2 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6250GAT_2428: 2880044007420
+total CPU time = 0.013097
+
+35GAT_2 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6260GAT_2433: 2880044007420
+total CPU time = 0.018696
+
+35GAT_2 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6270GAT_2438: 2880044007420
+total CPU time = 0.018493
+
+35GAT_2 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6280GAT_2443: 2880044007420
+total CPU time = 0.013861
+
+35GAT_2 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6287GAT_2444: 960014669140
+total CPU time = 0.013726
+
+35GAT_2 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 6288GAT_2447: 2880044007420
+total CPU time = 0.013706
+
+52GAT_3 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 545GAT_287: 0
+total CPU time = 0.01127
+
+52GAT_3 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 1581GAT_423: 0
+total CPU time = 0.010863
+
+52GAT_3 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 1901GAT_561: 0
+total CPU time = 0.015903
+
+52GAT_3 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 2223GAT_700: 729
+total CPU time = 0.015805
+
+52GAT_3 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 2548GAT_840: 10935
+total CPU time = 0.015497
+
+52GAT_3 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 2877GAT_983: 104976
+total CPU time = 0.015527
+
+52GAT_3 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 3211GAT_1128: 816480
+total CPU time = 0.011311
+
+52GAT_3 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 3552GAT_1275: 5598720
+total CPU time = 0.012741
+
+52GAT_3 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 3895GAT_1423: 35271936
+total CPU time = 0.011035
+
+52GAT_3 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 4241GAT_1572: 209018880
+total CPU time = 0.011116
+
+52GAT_3 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 4591GAT_1722: 1182449664
+total CPU time = 0.016139
+
+52GAT_3 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 4946GAT_1876: 6449725440
+total CPU time = 0.011106
+
+52GAT_3 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 5308GAT_2031: 34159656960
+total CPU time = 0.015343
+
+52GAT_3 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 5672GAT_2187: 176579149824
+total CPU time = 0.011599
+
+52GAT_3 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 5971GAT_2309: 894361927680
+total CPU time = 0.011495
+
+52GAT_3 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6123GAT_2368: 4451934928896
+total CPU time = 0.012916
+
+52GAT_3 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6150GAT_2378: 21831603978240
+total CPU time = 0.017391
+
+52GAT_3 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6160GAT_2383: 31147237048320
+total CPU time = 0.017366
+
+52GAT_3 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6170GAT_2388: 31945094332416
+total CPU time = 0.017706
+
+52GAT_3 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6180GAT_2393: 31987775569917
+total CPU time = 0.017892
+
+52GAT_3 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6190GAT_2398: 31988849311740
+total CPU time = 0.012964
+
+52GAT_3 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6200GAT_2403: 31988849311740
+total CPU time = 0.013261
+
+52GAT_3 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6210GAT_2408: 31988849311740
+total CPU time = 0.013325
+
+52GAT_3 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6220GAT_2413: 31988849311740
+total CPU time = 0.013346
+
+52GAT_3 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6230GAT_2418: 31988849311740
+total CPU time = 0.013723
+
+52GAT_3 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6240GAT_2423: 31988849311740
+total CPU time = 0.013233
+
+52GAT_3 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6250GAT_2428: 31988849311740
+total CPU time = 0.013398
+
+52GAT_3 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6260GAT_2433: 31988849311740
+total CPU time = 0.013544
+
+52GAT_3 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6270GAT_2438: 31988849311740
+total CPU time = 0.013433
+
+52GAT_3 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6280GAT_2443: 31988849311740
+total CPU time = 0.013473
+
+52GAT_3 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6287GAT_2444: 10662949770580
+total CPU time = 0.013436
+
+52GAT_3 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 52GAT_3 to 6288GAT_2447: 31988849311740
+total CPU time = 0.013622
+
+69GAT_4 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 545GAT_287: 0
+total CPU time = 0.01104
+
+69GAT_4 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 1581GAT_423: 0
+total CPU time = 0.011354
+
+69GAT_4 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 1901GAT_561: 0
+total CPU time = 0.011392
+
+69GAT_4 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 2223GAT_700: 0
+total CPU time = 0.011151
+
+69GAT_4 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 2548GAT_840: 6561
+total CPU time = 0.011406
+
+69GAT_4 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 2877GAT_983: 124659
+total CPU time = 0.010907
+
+69GAT_4 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 3211GAT_1128: 1443420
+total CPU time = 0.010683
+
+69GAT_4 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 3552GAT_1275: 13122000
+total CPU time = 0.011867
+
+69GAT_4 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 3895GAT_1423: 102876480
+total CPU time = 0.011332
+
+69GAT_4 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 4241GAT_1572: 728953344
+total CPU time = 0.01082
+
+69GAT_4 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 4591GAT_1722: 4796983296
+total CPU time = 0.011093
+
+69GAT_4 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 4946GAT_1876: 29829980160
+total CPU time = 0.011336
+
+69GAT_4 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 5308GAT_2031: 177367449600
+total CPU time = 0.011413
+
+69GAT_4 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 5672GAT_2187: 1016906711040
+total CPU time = 0.01175
+
+69GAT_4 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 5971GAT_2309: 5656839192576
+total CPU time = 0.011621
+
+69GAT_4 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6123GAT_2368: 30676614119424
+total CPU time = 0.012177
+
+69GAT_4 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6150GAT_2378: 162773870837760
+total CPU time = 0.011849
+
+69GAT_4 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6160GAT_2383: 238863431761920
+total CPU time = 0.011899
+
+69GAT_4 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6170GAT_2388: 248179064832000
+total CPU time = 0.012142
+
+69GAT_4 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6180GAT_2393: 248976922116096
+total CPU time = 0.012538
+
+69GAT_4 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6190GAT_2398: 249019603353597
+total CPU time = 0.012297
+
+69GAT_4 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6200GAT_2403: 249020677095420
+total CPU time = 0.01252
+
+69GAT_4 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6210GAT_2408: 249020677095420
+total CPU time = 0.013053
+
+69GAT_4 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6220GAT_2413: 249020677095420
+total CPU time = 0.013253
+
+69GAT_4 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6230GAT_2418: 249020677095420
+total CPU time = 0.013437
+
+69GAT_4 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6240GAT_2423: 249020677095420
+total CPU time = 0.012823
+
+69GAT_4 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6250GAT_2428: 249020677095420
+total CPU time = 0.012869
+
+69GAT_4 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6260GAT_2433: 249020677095420
+total CPU time = 0.013611
+
+69GAT_4 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6270GAT_2438: 249020677095420
+total CPU time = 0.012988
+
+69GAT_4 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6280GAT_2443: 249020677095420
+total CPU time = 0.013186
+
+69GAT_4 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6287GAT_2444: 83006892365140
+total CPU time = 0.01324
+
+69GAT_4 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 69GAT_4 to 6288GAT_2447: 249020677095420
+total CPU time = 0.013701
+
+86GAT_5 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 545GAT_287: 0
+total CPU time = 0.010481
+
+86GAT_5 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 1581GAT_423: 0
+total CPU time = 0.01062
+
+86GAT_5 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 1901GAT_561: 0
+total CPU time = 0.010409
+
+86GAT_5 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 2223GAT_700: 0
+total CPU time = 0.010437
+
+86GAT_5 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 2548GAT_840: 0
+total CPU time = 0.010496
+
+86GAT_5 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 2877GAT_983: 59049
+total CPU time = 0.010514
+
+86GAT_5 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 3211GAT_1128: 1358127
+total CPU time = 0.010727
+
+86GAT_5 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 3552GAT_1275: 18423288
+total CPU time = 0.010678
+
+86GAT_5 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 3895GAT_1423: 191791152
+total CPU time = 0.010839
+
+86GAT_5 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 4241GAT_1572: 1693052928
+total CPU time = 0.010923
+
+86GAT_5 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 4591GAT_1722: 13332791808
+total CPU time = 0.01071
+
+86GAT_5 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 4946GAT_1876: 96504016896
+total CPU time = 0.011056
+
+86GAT_5 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 5308GAT_2031: 654485889024
+total CPU time = 0.011175
+
+86GAT_5 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 5672GAT_2187: 4214250602496
+total CPU time = 0.011603
+
+86GAT_5 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 5971GAT_2309: 26009162809344
+total CPU time = 0.011812
+
+86GAT_5 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6123GAT_2368: 154948203970560
+total CPU time = 0.011601
+
+86GAT_5 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6150GAT_2378: 895882342957056
+total CPU time = 0.01171
+
+86GAT_5 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6160GAT_2383: 1357283661447168
+total CPU time = 0.01206
+
+86GAT_5 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6170GAT_2388: 1433373222371328
+total CPU time = 0.012095
+
+86GAT_5 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6180GAT_2393: 1442688855441408
+total CPU time = 0.012785
+
+86GAT_5 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6190GAT_2398: 1443486712725504
+total CPU time = 0.012407
+
+86GAT_5 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6200GAT_2403: 1443529393963005
+total CPU time = 0.01242
+
+86GAT_5 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6210GAT_2408: 1443530467704828
+total CPU time = 0.01253
+
+86GAT_5 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6220GAT_2413: 1443530467704828
+total CPU time = 0.012923
+
+86GAT_5 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6230GAT_2418: 1443530467704828
+total CPU time = 0.012731
+
+86GAT_5 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6240GAT_2423: 1443530467704828
+total CPU time = 0.01283
+
+86GAT_5 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6250GAT_2428: 1443530467704828
+total CPU time = 0.01306
+
+86GAT_5 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6260GAT_2433: 1443530467704828
+total CPU time = 0.013723
+
+86GAT_5 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6270GAT_2438: 1443530467704828
+total CPU time = 0.01398
+
+86GAT_5 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6280GAT_2443: 1443530467704828
+total CPU time = 0.012714
+
+86GAT_5 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6287GAT_2444: 481176822568276
+total CPU time = 0.013454
+
+86GAT_5 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 86GAT_5 to 6288GAT_2447: 1443530467704828
+total CPU time = 0.016053
+
+103GAT_6 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 545GAT_287: 0
+total CPU time = 0.010507
+
+103GAT_6 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 1581GAT_423: 0
+total CPU time = 0.010573
+
+103GAT_6 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 1901GAT_561: 0
+total CPU time = 0.012344
+
+103GAT_6 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 2223GAT_700: 0
+total CPU time = 0.010988
+
+103GAT_6 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 2548GAT_840: 0
+total CPU time = 0.010576
+
+103GAT_6 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 2877GAT_983: 0
+total CPU time = 0.010823
+
+103GAT_6 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 3211GAT_1128: 531441
+total CPU time = 0.010978
+
+103GAT_6 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 3552GAT_1275: 14348907
+total CPU time = 0.011096
+
+103GAT_6 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 3895GAT_1423: 223205220
+total CPU time = 0.011128
+
+103GAT_6 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 4241GAT_1572: 2618941248
+total CPU time = 0.011122
+
+103GAT_6 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 4591GAT_1722: 25713241344
+total CPU time = 0.011027
+
+103GAT_6 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 4946GAT_1876: 222848091648
+total CPU time = 0.0115
+
+103GAT_6 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 5308GAT_2031: 1759928518656
+total CPU time = 0.011647
+
+103GAT_6 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 5672GAT_2187: 12930087075840
+total CPU time = 0.012401
+
+103GAT_6 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 5971GAT_2309: 89648603725824
+total CPU time = 0.01169
+
+103GAT_6 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6123GAT_2368: 592676880187392
+total CPU time = 0.014448
+
+103GAT_6 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6150GAT_2378: 3765241356484608
+total CPU time = 0.01129
+
+103GAT_6 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6160GAT_2383: 5916204151603200
+total CPU time = 0.01205
+
+103GAT_6 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6170GAT_2388: 6377605470093312
+total CPU time = 0.012365
+
+103GAT_6 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6180GAT_2393: 6453695031017472
+total CPU time = 0.012486
+
+103GAT_6 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6190GAT_2398: 6463010664087552
+total CPU time = 0.012716
+
+103GAT_6 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6200GAT_2403: 6463808521371648
+total CPU time = 0.012803
+
+103GAT_6 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6210GAT_2408: 6463851202609149
+total CPU time = 0.012462
+
+103GAT_6 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6220GAT_2413: 6463852276350972
+total CPU time = 0.012369
+
+103GAT_6 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6230GAT_2418: 6463852276350972
+total CPU time = 0.013034
+
+103GAT_6 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6240GAT_2423: 6463852276350972
+total CPU time = 0.013107
+
+103GAT_6 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6250GAT_2428: 6463852276350972
+total CPU time = 0.013118
+
+103GAT_6 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6260GAT_2433: 6463852276350972
+total CPU time = 0.01324
+
+103GAT_6 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6270GAT_2438: 6463852276350972
+total CPU time = 0.013731
+
+103GAT_6 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6280GAT_2443: 6463852276350972
+total CPU time = 0.013448
+
+103GAT_6 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6287GAT_2444: 2154617425450324
+total CPU time = 0.013313
+
+103GAT_6 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 103GAT_6 to 6288GAT_2447: 6463852276350972
+total CPU time = 0.012844
+
+120GAT_7 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 545GAT_287: 0
+total CPU time = 0.014974
+
+120GAT_7 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 1581GAT_423: 0
+total CPU time = 0.01543
+
+120GAT_7 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 1901GAT_561: 0
+total CPU time = 0.014588
+
+120GAT_7 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 2223GAT_700: 0
+total CPU time = 0.015304
+
+120GAT_7 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 2548GAT_840: 0
+total CPU time = 0.015386
+
+120GAT_7 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 2877GAT_983: 0
+total CPU time = 0.011034
+
+120GAT_7 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 3211GAT_1128: 0
+total CPU time = 0.011246
+
+120GAT_7 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 3552GAT_1275: 4782969
+total CPU time = 0.01094
+
+120GAT_7 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 3895GAT_1423: 148272039
+total CPU time = 0.01114
+
+120GAT_7 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 4241GAT_1572: 2601935136
+total CPU time = 0.011175
+
+120GAT_7 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 4591GAT_1722: 33978211776
+total CPU time = 0.012492
+
+120GAT_7 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 4946GAT_1876: 367332019200
+total CPU time = 0.01306
+
+120GAT_7 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 5308GAT_2031: 3474960901632
+total CPU time = 0.011403
+
+120GAT_7 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 5672GAT_2187: 29739200274432
+total CPU time = 0.015369
+
+120GAT_7 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 5971GAT_2309: 235327584780288
+total CPU time = 0.016308
+
+120GAT_7 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6123GAT_2368: 1748147772653568
+total CPU time = 0.016788
+
+120GAT_7 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6150GAT_2378: 12326683012300800
+total CPU time = 0.016915
+
+120GAT_7 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6160GAT_2383: 20200818706219008
+total CPU time = 0.012962
+
+120GAT_7 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6170GAT_2388: 22351781501337600
+total CPU time = 0.01316
+
+120GAT_7 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6180GAT_2393: 22813182819827712
+total CPU time = 0.012456
+
+120GAT_7 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6190GAT_2398: 22889272380751872
+total CPU time = 0.012973
+
+120GAT_7 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6200GAT_2403: 22898588013821952
+total CPU time = 0.012185
+
+120GAT_7 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6210GAT_2408: 22899385871106048
+total CPU time = 0.012783
+
+120GAT_7 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6220GAT_2413: 22899428552343549
+total CPU time = 0.013057
+
+120GAT_7 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6230GAT_2418: 22899429626085372
+total CPU time = 0.013271
+
+120GAT_7 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6240GAT_2423: 22899429626085372
+total CPU time = 0.016792
+
+120GAT_7 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6250GAT_2428: 22899429626085372
+total CPU time = 0.018162
+
+120GAT_7 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6260GAT_2433: 22899429626085372
+total CPU time = 0.018262
+
+120GAT_7 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6270GAT_2438: 22899429626085372
+total CPU time = 0.013349
+
+120GAT_7 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6280GAT_2443: 22899429626085372
+total CPU time = 0.013433
+
+120GAT_7 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6287GAT_2444: 7633143208695124
+total CPU time = 0.013358
+
+120GAT_7 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 120GAT_7 to 6288GAT_2447: 22899429626085372
+total CPU time = 0.013396
+
+137GAT_8 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 545GAT_287: 0
+total CPU time = 0.010632
+
+137GAT_8 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 1581GAT_423: 0
+total CPU time = 0.010642
+
+137GAT_8 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 1901GAT_561: 0
+total CPU time = 0.01066
+
+137GAT_8 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 2223GAT_700: 0
+total CPU time = 0.010611
+
+137GAT_8 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 2548GAT_840: 0
+total CPU time = 0.010647
+
+137GAT_8 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 2877GAT_983: 0
+total CPU time = 0.010726
+
+137GAT_8 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 3211GAT_1128: 0
+total CPU time = 0.010745
+
+137GAT_8 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 3552GAT_1275: 0
+total CPU time = 0.010856
+
+137GAT_8 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 3895GAT_1423: 43046721
+total CPU time = 0.011145
+
+137GAT_8 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 4241GAT_1572: 1506635235
+total CPU time = 0.011195
+
+137GAT_8 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 4591GAT_1722: 29443957164
+total CPU time = 0.011402
+
+137GAT_8 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 4946GAT_1876: 423579734640
+total CPU time = 0.016079
+
+137GAT_8 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 5308GAT_2031: 5000307111360
+total CPU time = 0.011618
+
+137GAT_8 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 5672GAT_2187: 51275876560128
+total CPU time = 0.01158
+
+137GAT_8 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 5971GAT_2309: 472756308710400
+total CPU time = 0.011749
+
+137GAT_8 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6123GAT_2368: 4008973497864192
+total CPU time = 0.011982
+
+137GAT_8 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6150GAT_2378: 31769223945338880
+total CPU time = 0.012122
+
+137GAT_8 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6160GAT_2383: 54685648272752640
+total CPU time = 0.012613
+
+137GAT_8 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6170GAT_2388: 62559783966670848
+total CPU time = 0.012526
+
+137GAT_8 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6180GAT_2393: 64710746761789440
+total CPU time = 0.012334
+
+137GAT_8 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6190GAT_2398: 65172148080279552
+total CPU time = 0.012462
+
+137GAT_8 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6200GAT_2403: 65248237641203712
+total CPU time = 0.012469
+
+137GAT_8 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6210GAT_2408: 65257553274273792
+total CPU time = 0.01254
+
+137GAT_8 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6220GAT_2413: 65258351131557888
+total CPU time = 0.012987
+
+137GAT_8 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6230GAT_2418: 65258393812795389
+total CPU time = 0.013205
+
+137GAT_8 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6240GAT_2423: 65258394886537212
+total CPU time = 0.013108
+
+137GAT_8 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6250GAT_2428: 65258394886537212
+total CPU time = 0.012954
+
+137GAT_8 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6260GAT_2433: 65258394886537212
+total CPU time = 0.012988
+
+137GAT_8 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6270GAT_2438: 65258394886537212
+total CPU time = 0.013431
+
+137GAT_8 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6280GAT_2443: 65258394886537212
+total CPU time = 0.013449
+
+137GAT_8 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6287GAT_2444: 21752798295512404
+total CPU time = 0.013022
+
+137GAT_8 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 137GAT_8 to 6288GAT_2447: 65258394886537212
+total CPU time = 0.013145
+
+154GAT_9 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 545GAT_287: 0
+total CPU time = 0.010441
+
+154GAT_9 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 1581GAT_423: 0
+total CPU time = 0.010372
+
+154GAT_9 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 1901GAT_561: 0
+total CPU time = 0.010402
+
+154GAT_9 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 2223GAT_700: 0
+total CPU time = 0.010524
+
+154GAT_9 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 2548GAT_840: 0
+total CPU time = 0.010682
+
+154GAT_9 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 2877GAT_983: 0
+total CPU time = 0.015339
+
+154GAT_9 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 3211GAT_1128: 0
+total CPU time = 0.011142
+
+154GAT_9 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 3552GAT_1275: 0
+total CPU time = 0.011045
+
+154GAT_9 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 3895GAT_1423: 0
+total CPU time = 0.015932
+
+154GAT_9 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 4241GAT_1572: 387420489
+total CPU time = 0.010894
+
+154GAT_9 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 4591GAT_1722: 15109399071
+total CPU time = 0.011085
+
+154GAT_9 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 4946GAT_1876: 325433210760
+total CPU time = 0.011008
+
+154GAT_9 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 5308GAT_2031: 5113950454800
+total CPU time = 0.011153
+
+154GAT_9 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 5672GAT_2187: 65458565821440
+total CPU time = 0.016471
+
+154GAT_9 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 5971GAT_2309: 723317152326912
+total CPU time = 0.012254
+
+154GAT_9 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6123GAT_2368: 7148075387701248
+total CPU time = 0.011557
+
+154GAT_9 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6150GAT_2378: 64673063031582720
+total CPU time = 0.012198
+
+154GAT_9 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6160GAT_2383: 117999974654115840
+total CPU time = 0.011986
+
+154GAT_9 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6170GAT_2388: 140916398981529600
+total CPU time = 0.012447
+
+154GAT_9 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6180GAT_2393: 148790534675447808
+total CPU time = 0.012287
+
+154GAT_9 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6190GAT_2398: 150941497470566400
+total CPU time = 0.012675
+
+154GAT_9 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6200GAT_2403: 151402898789056512
+total CPU time = 0.012618
+
+154GAT_9 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6210GAT_2408: 151478988349980672
+total CPU time = 0.012654
+
+154GAT_9 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6220GAT_2413: 151488303983050752
+total CPU time = 0.012674
+
+154GAT_9 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6230GAT_2418: 151489101840334848
+total CPU time = 0.017265
+
+154GAT_9 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6240GAT_2423: 151489144521572349
+total CPU time = 0.012972
+
+154GAT_9 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6250GAT_2428: 151489145595314172
+total CPU time = 0.015289
+
+154GAT_9 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6260GAT_2433: 151489145595314172
+total CPU time = 0.013183
+
+154GAT_9 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6270GAT_2438: 151489145595314172
+total CPU time = 0.013129
+
+154GAT_9 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6280GAT_2443: 151489145595314172
+total CPU time = 0.013469
+
+154GAT_9 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6287GAT_2444: 50496381865104724
+total CPU time = 0.013555
+
+154GAT_9 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 154GAT_9 to 6288GAT_2447: 151489145595314172
+total CPU time = 0.013208
+
+171GAT_10 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 545GAT_287: 0
+total CPU time = 0.010239
+
+171GAT_10 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 1581GAT_423: 0
+total CPU time = 0.010363
+
+171GAT_10 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 1901GAT_561: 0
+total CPU time = 0.010488
+
+171GAT_10 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 2223GAT_700: 0
+total CPU time = 0.010569
+
+171GAT_10 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 2548GAT_840: 0
+total CPU time = 0.010578
+
+171GAT_10 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 2877GAT_983: 0
+total CPU time = 0.010742
+
+171GAT_10 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 3211GAT_1128: 0
+total CPU time = 0.010741
+
+171GAT_10 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 3552GAT_1275: 0
+total CPU time = 0.010707
+
+171GAT_10 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 3895GAT_1423: 0
+total CPU time = 0.010849
+
+171GAT_10 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 4241GAT_1572: 0
+total CPU time = 0.011025
+
+171GAT_10 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 4591GAT_1722: 3486784401
+total CPU time = 0.010815
+
+171GAT_10 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 4946GAT_1876: 149931729243
+total CPU time = 0.011066
+
+171GAT_10 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 5308GAT_2031: 3528625813812
+total CPU time = 0.011304
+
+171GAT_10 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 5672GAT_2187: 60140057348448
+total CPU time = 0.011894
+
+171GAT_10 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 5971GAT_2309: 829687321786752
+total CPU time = 0.011289
+
+171GAT_10 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6123GAT_2368: 9828603658089216
+total CPU time = 0.011392
+
+171GAT_10 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6150GAT_2378: 103647093121668096
+total CPU time = 0.012047
+
+171GAT_10 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6160GAT_2383: 202869187193806848
+total CPU time = 0.011966
+
+171GAT_10 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6170GAT_2388: 256196098816339968
+total CPU time = 0.012209
+
+171GAT_10 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6180GAT_2393: 279112523143753728
+total CPU time = 0.012208
+
+171GAT_10 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6190GAT_2398: 286986658837671936
+total CPU time = 0.013155
+
+171GAT_10 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6200GAT_2403: 289137621632790528
+total CPU time = 0.012656
+
+171GAT_10 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6210GAT_2408: 289599022951280640
+total CPU time = 0.012749
+
+171GAT_10 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6220GAT_2413: 289675112512204800
+total CPU time = 0.012761
+
+171GAT_10 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6230GAT_2418: 289684428145274880
+total CPU time = 0.013223
+
+171GAT_10 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6240GAT_2423: 289685226002558976
+total CPU time = 0.012933
+
+171GAT_10 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6250GAT_2428: 289685268683796477
+total CPU time = 0.013168
+
+171GAT_10 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6260GAT_2433: 289685269757538300
+total CPU time = 0.012316
+
+171GAT_10 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6270GAT_2438: 289685269757538300
+total CPU time = 0.013244
+
+171GAT_10 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6280GAT_2443: 289685269757538300
+total CPU time = 0.012783
+
+171GAT_10 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6287GAT_2444: 96561756585846100
+total CPU time = 0.012751
+
+171GAT_10 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 171GAT_10 to 6288GAT_2447: 289685269757538300
+total CPU time = 0.012916
+
+188GAT_11 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 545GAT_287: 0
+total CPU time = 0.010434
+
+188GAT_11 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 1581GAT_423: 0
+total CPU time = 0.01057
+
+188GAT_11 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 1901GAT_561: 0
+total CPU time = 0.010394
+
+188GAT_11 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 2223GAT_700: 0
+total CPU time = 0.010442
+
+188GAT_11 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 2548GAT_840: 0
+total CPU time = 0.01065
+
+188GAT_11 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 2877GAT_983: 0
+total CPU time = 0.010203
+
+188GAT_11 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 3211GAT_1128: 0
+total CPU time = 0.010293
+
+188GAT_11 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 3552GAT_1275: 0
+total CPU time = 0.010625
+
+188GAT_11 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 3895GAT_1423: 0
+total CPU time = 0.010191
+
+188GAT_11 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 4241GAT_1572: 0
+total CPU time = 0.010412
+
+188GAT_11 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 4591GAT_1722: 0
+total CPU time = 0.010566
+
+188GAT_11 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 4946GAT_1876: 31381059609
+total CPU time = 0.010496
+
+188GAT_11 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 5308GAT_2031: 1474909801623
+total CPU time = 0.01109
+
+188GAT_11 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 5672GAT_2187: 37657271530800
+total CPU time = 0.011226
+
+188GAT_11 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 5971GAT_2309: 691889602259232
+total CPU time = 0.011783
+
+188GAT_11 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6123GAT_2368: 10234744305117696
+total CPU time = 0.014204
+
+188GAT_11 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6150GAT_2378: 129396410143273728
+total CPU time = 0.016142
+
+188GAT_11 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6160GAT_2383: 276175639979366400
+total CPU time = 0.012107
+
+188GAT_11 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6170GAT_2388: 375397734051505152
+total CPU time = 0.013607
+
+188GAT_11 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6180GAT_2393: 428724645674038272
+total CPU time = 0.013405
+
+188GAT_11 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6190GAT_2398: 451641070001452032
+total CPU time = 0.013683
+
+188GAT_11 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6200GAT_2403: 459515205695370240
+total CPU time = 0.014317
+
+188GAT_11 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6210GAT_2408: 461666168490488832
+total CPU time = 0.014151
+
+188GAT_11 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6220GAT_2413: 462127569808978944
+total CPU time = 0.01272
+
+188GAT_11 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6230GAT_2418: 462203659369903104
+total CPU time = 0.012623
+
+188GAT_11 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6240GAT_2423: 462212975002973184
+total CPU time = 0.013091
+
+188GAT_11 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6250GAT_2428: 462213772860257280
+total CPU time = 0.013185
+
+188GAT_11 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6260GAT_2433: 462213815541494781
+total CPU time = 0.013405
+
+188GAT_11 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6270GAT_2438: 462213816615236604
+total CPU time = 0.013466
+
+188GAT_11 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6280GAT_2443: 462213816615236604
+total CPU time = 0.015036
+
+188GAT_11 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6287GAT_2444: 154071272205078868
+total CPU time = 0.014738
+
+188GAT_11 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 188GAT_11 to 6288GAT_2447: 462213816615236604
+total CPU time = 0.017794
+
+205GAT_12 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 545GAT_287: 0
+total CPU time = 0.015531
+
+205GAT_12 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 1581GAT_423: 0
+total CPU time = 0.015549
+
+205GAT_12 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 1901GAT_561: 0
+total CPU time = 0.015559
+
+205GAT_12 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 2223GAT_700: 0
+total CPU time = 0.015661
+
+205GAT_12 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 2548GAT_840: 0
+total CPU time = 0.015642
+
+205GAT_12 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 2877GAT_983: 0
+total CPU time = 0.015808
+
+205GAT_12 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 3211GAT_1128: 0
+total CPU time = 0.015696
+
+205GAT_12 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 3552GAT_1275: 0
+total CPU time = 0.015766
+
+205GAT_12 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 3895GAT_1423: 0
+total CPU time = 0.01596
+
+205GAT_12 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 4241GAT_1572: 0
+total CPU time = 0.016215
+
+205GAT_12 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 4591GAT_1722: 0
+total CPU time = 0.016231
+
+205GAT_12 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 4946GAT_1876: 0
+total CPU time = 0.016397
+
+205GAT_12 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 5308GAT_2031: 282429536481
+total CPU time = 0.014652
+
+205GAT_12 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 5672GAT_2187: 14403906360531
+total CPU time = 0.016944
+
+205GAT_12 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 5971GAT_2309: 396531069219324
+total CPU time = 0.012105
+
+205GAT_12 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6123GAT_2368: 7813130697210384
+total CPU time = 0.011892
+
+205GAT_12 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6150GAT_2378: 123365221534900800
+total CPU time = 0.017104
+
+205GAT_12 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6160GAT_2383: 293883372189808128
+total CPU time = 0.012242
+
+205GAT_12 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6170GAT_2388: 440662602025900800
+total CPU time = 0.012562
+
+205GAT_12 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6180GAT_2393: 539884696098039552
+total CPU time = 0.012441
+
+205GAT_12 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6190GAT_2398: 593211607720572672
+total CPU time = 0.017781
+
+205GAT_12 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6200GAT_2403: 616128032047986432
+total CPU time = 0.01411
+
+205GAT_12 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6210GAT_2408: 624002167741904640
+total CPU time = 0.013074
+
+205GAT_12 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6220GAT_2413: 626153130537023232
+total CPU time = 0.018185
+
+205GAT_12 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6230GAT_2418: 626614531855513344
+total CPU time = 0.01842
+
+205GAT_12 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6240GAT_2423: 626690621416437504
+total CPU time = 0.014024
+
+205GAT_12 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6250GAT_2428: 626699937049507584
+total CPU time = 0.013319
+
+205GAT_12 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6260GAT_2433: 626700734906791680
+total CPU time = 0.01316
+
+205GAT_12 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6270GAT_2438: 626700777588029181
+total CPU time = 0.018167
+
+205GAT_12 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6280GAT_2443: 626700778661771004
+total CPU time = 0.01852
+
+205GAT_12 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6287GAT_2444: 208900259553923668
+total CPU time = 0.01341
+
+205GAT_12 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 205GAT_12 to 6288GAT_2447: 626700778661771004
+total CPU time = 0.013285
+
+222GAT_13 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 545GAT_287: 0
+total CPU time = 0.010386
+
+222GAT_13 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 1581GAT_423: 0
+total CPU time = 0.010506
+
+222GAT_13 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 1901GAT_561: 0
+total CPU time = 0.010882
+
+222GAT_13 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 2223GAT_700: 0
+total CPU time = 0.015649
+
+222GAT_13 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 2548GAT_840: 0
+total CPU time = 0.011189
+
+222GAT_13 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 2877GAT_983: 0
+total CPU time = 0.010695
+
+222GAT_13 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 3211GAT_1128: 0
+total CPU time = 0.01091
+
+222GAT_13 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 3552GAT_1275: 0
+total CPU time = 0.011351
+
+222GAT_13 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 3895GAT_1423: 0
+total CPU time = 0.010719
+
+222GAT_13 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 4241GAT_1572: 0
+total CPU time = 0.010864
+
+222GAT_13 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 4591GAT_1722: 0
+total CPU time = 0.015692
+
+222GAT_13 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 4946GAT_1876: 0
+total CPU time = 0.015837
+
+222GAT_13 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 5308GAT_2031: 0
+total CPU time = 0.015922
+
+222GAT_13 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 5672GAT_2187: 2541865828329
+total CPU time = 0.016204
+
+222GAT_13 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 5971GAT_2309: 139802620558095
+total CPU time = 0.016505
+
+222GAT_13 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6123GAT_2368: 4127990105206296
+total CPU time = 0.01646
+
+222GAT_13 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6150GAT_2378: 86830136695718640
+total CPU time = 0.012088
+
+222GAT_13 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6160GAT_2383: 239138737129192320
+total CPU time = 0.017086
+
+222GAT_13 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6170GAT_2388: 409656887784099648
+total CPU time = 0.012297
+
+222GAT_13 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6180GAT_2393: 556436117620192320
+total CPU time = 0.012507
+
+222GAT_13 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6190GAT_2398: 655658211692331072
+total CPU time = 0.012444
+
+222GAT_13 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6200GAT_2403: 708985123314864192
+total CPU time = 0.013125
+
+222GAT_13 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6210GAT_2408: 731901547642277952
+total CPU time = 0.012823
+
+222GAT_13 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6220GAT_2413: 739775683336196160
+total CPU time = 0.013051
+
+222GAT_13 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6230GAT_2418: 741926646131314752
+total CPU time = 0.01337
+
+222GAT_13 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6240GAT_2423: 742388047449804864
+total CPU time = 0.014571
+
+222GAT_13 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6250GAT_2428: 742464137010729024
+total CPU time = 0.016346
+
+222GAT_13 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6260GAT_2433: 742473452643799104
+total CPU time = 0.012609
+
+222GAT_13 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6270GAT_2438: 742474250501083200
+total CPU time = 0.013179
+
+222GAT_13 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6280GAT_2443: 742474293182320701
+total CPU time = 0.013371
+
+222GAT_13 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6287GAT_2444: 247491431418687508
+total CPU time = 0.013505
+
+222GAT_13 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 222GAT_13 to 6288GAT_2447: 742474294256062524
+total CPU time = 0.013385
+
+239GAT_14 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 545GAT_287: 0
+total CPU time = 0.015343
+
+239GAT_14 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 1581GAT_423: 0
+total CPU time = 0.010575
+
+239GAT_14 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 1901GAT_561: 0
+total CPU time = 0.010769
+
+239GAT_14 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 2223GAT_700: 0
+total CPU time = 0.010601
+
+239GAT_14 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 2548GAT_840: 0
+total CPU time = 0.010428
+
+239GAT_14 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 2877GAT_983: 0
+total CPU time = 0.011321
+
+239GAT_14 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 3211GAT_1128: 0
+total CPU time = 0.011473
+
+239GAT_14 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 3552GAT_1275: 0
+total CPU time = 0.011584
+
+239GAT_14 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 3895GAT_1423: 0
+total CPU time = 0.011114
+
+239GAT_14 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 4241GAT_1572: 0
+total CPU time = 0.010854
+
+239GAT_14 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 4591GAT_1722: 0
+total CPU time = 0.010853
+
+239GAT_14 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 4946GAT_1876: 0
+total CPU time = 0.011144
+
+239GAT_14 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 5308GAT_2031: 0
+total CPU time = 0.01234
+
+239GAT_14 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 5672GAT_2187: 0
+total CPU time = 0.01201
+
+239GAT_14 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 5971GAT_2309: 22876792454961
+total CPU time = 0.011407
+
+239GAT_14 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6123GAT_2368: 1349730754842699
+total CPU time = 0.011597
+
+239GAT_14 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6150GAT_2378: 42550833966227460
+total CPU time = 0.012103
+
+239GAT_14 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6160GAT_2383: 143564581984021920
+total CPU time = 0.012095
+
+239GAT_14 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6170GAT_2388: 295873182417495600
+total CPU time = 0.015591
+
+239GAT_14 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6180GAT_2393: 466391333072402928
+total CPU time = 0.017377
+
+239GAT_14 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6190GAT_2398: 613170562908495600
+total CPU time = 0.017629
+
+239GAT_14 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6200GAT_2403: 712392656980634352
+total CPU time = 0.017476
+
+239GAT_14 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6210GAT_2408: 765719568603167472
+total CPU time = 0.013377
+
+239GAT_14 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6220GAT_2413: 788635992930581232
+total CPU time = 0.013298
+
+239GAT_14 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6230GAT_2418: 796510128624499440
+total CPU time = 0.013254
+
+239GAT_14 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6240GAT_2423: 798661091419618032
+total CPU time = 0.013242
+
+239GAT_14 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6250GAT_2428: 799122492738108144
+total CPU time = 0.013766
+
+239GAT_14 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6260GAT_2433: 799198582299032304
+total CPU time = 0.013262
+
+239GAT_14 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6270GAT_2438: 799207897932102384
+total CPU time = 0.013264
+
+239GAT_14 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6280GAT_2443: 799208695789386480
+total CPU time = 0.013367
+
+239GAT_14 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6287GAT_2444: 266402913181455268
+total CPU time = 0.017035
+
+239GAT_14 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 239GAT_14 to 6288GAT_2447: 799208738470623981
+total CPU time = 0.018158
+
+256GAT_15 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 545GAT_287: 0
+total CPU time = 0.011044
+
+256GAT_15 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 1581GAT_423: 0
+total CPU time = 0.014752
+
+256GAT_15 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 1901GAT_561: 0
+total CPU time = 0.013881
+
+256GAT_15 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 2223GAT_700: 0
+total CPU time = 0.010816
+
+256GAT_15 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 2548GAT_840: 0
+total CPU time = 0.010852
+
+256GAT_15 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 2877GAT_983: 0
+total CPU time = 0.011515
+
+256GAT_15 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 3211GAT_1128: 0
+total CPU time = 0.010865
+
+256GAT_15 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 3552GAT_1275: 0
+total CPU time = 0.010838
+
+256GAT_15 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 3895GAT_1423: 0
+total CPU time = 0.010981
+
+256GAT_15 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 4241GAT_1572: 0
+total CPU time = 0.011344
+
+256GAT_15 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 4591GAT_1722: 0
+total CPU time = 0.011629
+
+256GAT_15 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 4946GAT_1876: 0
+total CPU time = 0.011862
+
+256GAT_15 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 5308GAT_2031: 0
+total CPU time = 0.011874
+
+256GAT_15 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 5672GAT_2187: 0
+total CPU time = 0.01168
+
+256GAT_15 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 5971GAT_2309: 0
+total CPU time = 0.011947
+
+256GAT_15 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6123GAT_2368: 205891132094649
+total CPU time = 0.012441
+
+256GAT_15 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6150GAT_2378: 12559359057773589
+total CPU time = 0.012898
+
+256GAT_15 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6160GAT_2383: 56482800571298709
+total CPU time = 0.012987
+
+256GAT_15 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6170GAT_2388: 147583271858610069
+total CPU time = 0.013009
+
+256GAT_15 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6180GAT_2393: 279172841495837589
+total CPU time = 0.01754
+
+256GAT_15 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6190GAT_2398: 419535049108880277
+total CPU time = 0.013463
+
+256GAT_15 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6200GAT_2403: 533904255312100245
+total CPU time = 0.017749
+
+256GAT_15 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6210GAT_2408: 606519624330017685
+total CPU time = 0.012936
+
+256GAT_15 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6220GAT_2413: 642827308838976405
+total CPU time = 0.013159
+
+256GAT_15 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6230GAT_2418: 657171085435108245
+total CPU time = 0.013533
+
+256GAT_15 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6240GAT_2423: 661633593709460373
+total CPU time = 0.018186
+
+256GAT_15 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6250GAT_2428: 662715413897182101
+total CPU time = 0.018795
+
+256GAT_15 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6260GAT_2433: 662915750968982421
+total CPU time = 0.013261
+
+256GAT_15 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6270GAT_2438: 662943147491621781
+total CPU time = 0.013136
+
+256GAT_15 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6280GAT_2443: 662945756684254101
+total CPU time = 0.013317
+
+256GAT_15 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6287GAT_2444: 220981971866014684
+total CPU time = 0.013978
+
+256GAT_15 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 256GAT_15 to 6288GAT_2447: 662945911303076757
+total CPU time = 0.013225
+
+273GAT_16 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 545GAT_287: 1
+total CPU time = 0.010575
+
+273GAT_16 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 1581GAT_423: 9
+total CPU time = 0.011454
+
+273GAT_16 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 1901GAT_561: 117
+total CPU time = 0.010686
+
+273GAT_16 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 2223GAT_700: 1521
+total CPU time = 0.010448
+
+273GAT_16 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 2548GAT_840: 19773
+total CPU time = 0.014554
+
+273GAT_16 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 2877GAT_983: 257049
+total CPU time = 0.014911
+
+273GAT_16 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 3211GAT_1128: 3341637
+total CPU time = 0.012623
+
+273GAT_16 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 3552GAT_1275: 43441281
+total CPU time = 0.010448
+
+273GAT_16 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 3895GAT_1423: 564736653
+total CPU time = 0.013426
+
+273GAT_16 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 4241GAT_1572: 7341576489
+total CPU time = 0.015387
+
+273GAT_16 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 4591GAT_1722: 95440494357
+total CPU time = 0.015533
+
+273GAT_16 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 4946GAT_1876: 1240726426641
+total CPU time = 0.015691
+
+273GAT_16 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 5308GAT_2031: 16129443546333
+total CPU time = 0.011213
+
+273GAT_16 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 5672GAT_2187: 209682766102329
+total CPU time = 0.011492
+
+273GAT_16 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 5971GAT_2309: 2725875959330277
+total CPU time = 0.014657
+
+273GAT_16 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6123GAT_2368: 35436387471293601
+total CPU time = 0.013671
+
+273GAT_16 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6150GAT_2378: 458820016937964972
+total CPU time = 0.011816
+
+273GAT_16 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6160GAT_2383: 1058226571596239328
+total CPU time = 0.011989
+
+273GAT_16 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6170GAT_2388: 1615082292288286224
+total CPU time = 0.012371
+
+273GAT_16 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6180GAT_2393: 2085107876284614480
+total CPU time = 0.012319
+
+273GAT_16 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6190GAT_2398: 2431768238746041936
+total CPU time = 0.015118
+
+273GAT_16 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6200GAT_2403: 2649032191064195664
+total CPU time = 0.012848
+
+273GAT_16 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6210GAT_2408: 2762649050260681296
+total CPU time = 0.012923
+
+273GAT_16 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6220GAT_2413: 2811592846425584208
+total CPU time = 0.012854
+
+273GAT_16 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6230GAT_2418: 2828767418645148240
+total CPU time = 0.012698
+
+273GAT_16 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6240GAT_2423: 2833615307852411472
+total CPU time = 0.013241
+
+273GAT_16 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6250GAT_2428: 2834697955703190096
+total CPU time = 0.013166
+
+273GAT_16 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6260GAT_2433: 2834884721211011664
+total CPU time = 0.01289
+
+273GAT_16 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6270GAT_2438: 2834908712847995472
+total CPU time = 0.01345
+
+273GAT_16 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6280GAT_2443: 2834910872881001040
+total CPU time = 0.016423
+
+273GAT_16 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6287GAT_2444: 944970332567829360
+total CPU time = 0.013403
+
+273GAT_16 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 273GAT_16 to 6288GAT_2447: 2834910994482262608
+total CPU time = 0.013701
+
+290GAT_17 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 545GAT_287: 0
+total CPU time = 0.013443
+
+290GAT_17 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 1581GAT_423: 3
+total CPU time = 0.014936
+
+290GAT_17 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 1901GAT_561: 36
+total CPU time = 0.014882
+
+290GAT_17 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 2223GAT_700: 468
+total CPU time = 0.010593
+
+290GAT_17 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 2548GAT_840: 6084
+total CPU time = 0.010079
+
+290GAT_17 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 2877GAT_983: 79092
+total CPU time = 0.010853
+
+290GAT_17 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 3211GAT_1128: 1028196
+total CPU time = 0.010781
+
+290GAT_17 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 3552GAT_1275: 13366548
+total CPU time = 0.010752
+
+290GAT_17 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 3895GAT_1423: 173765124
+total CPU time = 0.010816
+
+290GAT_17 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 4241GAT_1572: 2258946612
+total CPU time = 0.010892
+
+290GAT_17 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 4591GAT_1722: 29366305956
+total CPU time = 0.010742
+
+290GAT_17 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 4946GAT_1876: 381761977428
+total CPU time = 0.01104
+
+290GAT_17 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 5308GAT_2031: 4962905706564
+total CPU time = 0.011293
+
+290GAT_17 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 5672GAT_2187: 64517774185332
+total CPU time = 0.011397
+
+290GAT_17 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 5971GAT_2309: 838731064409316
+total CPU time = 0.011724
+
+290GAT_17 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6123GAT_2368: 10903503837321108
+total CPU time = 0.011553
+
+290GAT_17 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6150GAT_2378: 141333767620985106
+total CPU time = 0.011892
+
+290GAT_17 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6160GAT_2383: 326804808096486984
+total CPU time = 0.01179
+
+290GAT_17 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6170GAT_2388: 501320406851890872
+total CPU time = 0.012734
+
+290GAT_17 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6180GAT_2393: 651953764002461400
+total CPU time = 0.012196
+
+290GAT_17 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6190GAT_2398: 766491371148375768
+total CPU time = 0.018056
+
+290GAT_17 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6200GAT_2403: 840902282367876312
+total CPU time = 0.012546
+
+290GAT_17 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6210GAT_2408: 881359835495795928
+total CPU time = 0.017958
+
+290GAT_17 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6220GAT_2413: 899503290852584664
+total CPU time = 0.013155
+
+290GAT_17 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6230GAT_2418: 906132503668337880
+total CPU time = 0.012955
+
+290GAT_17 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6240GAT_2423: 908080067178409176
+total CPU time = 0.012909
+
+290GAT_17 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6250GAT_2428: 908532380520164568
+total CPU time = 0.017934
+
+290GAT_17 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6260GAT_2433: 908613444225739992
+total CPU time = 0.013874
+
+290GAT_17 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6270GAT_2438: 908624250833218776
+total CPU time = 0.014024
+
+290GAT_17 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6280GAT_2443: 908625259378781400
+total CPU time = 0.018281
+
+290GAT_17 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6287GAT_2444: 302875106592253000
+total CPU time = 0.013838
+
+290GAT_17 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 290GAT_17 to 6288GAT_2447: 908625318166146264
+total CPU time = 0.01466
+
+307GAT_18 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 545GAT_287: 0
+total CPU time = 0.011641
+
+307GAT_18 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 1581GAT_423: 0
+total CPU time = 0.011225
+
+307GAT_18 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 1901GAT_561: 3
+total CPU time = 0.013486
+
+307GAT_18 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 2223GAT_700: 36
+total CPU time = 0.015144
+
+307GAT_18 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 2548GAT_840: 468
+total CPU time = 0.015307
+
+307GAT_18 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 2877GAT_983: 6084
+total CPU time = 0.010725
+
+307GAT_18 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 3211GAT_1128: 79092
+total CPU time = 0.011774
+
+307GAT_18 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 3552GAT_1275: 1028196
+total CPU time = 0.01043
+
+307GAT_18 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 3895GAT_1423: 13366548
+total CPU time = 0.010571
+
+307GAT_18 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 4241GAT_1572: 173765124
+total CPU time = 0.01059
+
+307GAT_18 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 4591GAT_1722: 2258946612
+total CPU time = 0.010711
+
+307GAT_18 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 4946GAT_1876: 29366305956
+total CPU time = 0.011573
+
+307GAT_18 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 5308GAT_2031: 381761977428
+total CPU time = 0.01489
+
+307GAT_18 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 5672GAT_2187: 4962905706564
+total CPU time = 0.016154
+
+307GAT_18 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 5971GAT_2309: 64517774185332
+total CPU time = 0.016259
+
+307GAT_18 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6123GAT_2368: 838731064409316
+total CPU time = 0.016402
+
+307GAT_18 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6150GAT_2378: 10903503837321108
+total CPU time = 0.016802
+
+307GAT_18 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6160GAT_2383: 25395755368839330
+total CPU time = 0.017253
+
+307GAT_18 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6170GAT_2388: 39562648074331440
+total CPU time = 0.017298
+
+307GAT_18 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6180GAT_2393: 52656873400268712
+total CPU time = 0.017314
+
+307GAT_18 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6190GAT_2398: 63574257383248872
+total CPU time = 0.016764
+
+307GAT_18 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6200GAT_2403: 71448487518137064
+total CPU time = 0.017809
+
+307GAT_18 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6210GAT_2408: 76216708704797928
+total CPU time = 0.018029
+
+307GAT_18 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6220GAT_2413: 78592782969384168
+total CPU time = 0.01817
+
+307GAT_18 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6230GAT_2418: 79552689446989032
+total CPU time = 0.01601
+
+307GAT_18 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6240GAT_2423: 79862643547581672
+total CPU time = 0.01849
+
+307GAT_18 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6250GAT_2428: 79941282115103976
+total CPU time = 0.018663
+
+307GAT_18 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6260GAT_2433: 79956588678622440
+total CPU time = 0.013086
+
+307GAT_18 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6270GAT_2438: 79958792839900392
+total CPU time = 0.013134
+
+307GAT_18 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6280GAT_2443: 79959013946830056
+total CPU time = 0.013269
+
+307GAT_18 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6287GAT_2444: 26653009380118264
+total CPU time = 0.013107
+
+307GAT_18 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 307GAT_18 to 6288GAT_2447: 79959027737701608
+total CPU time = 0.013359
+
+324GAT_19 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 545GAT_287: 0
+total CPU time = 0.013715
+
+324GAT_19 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 1581GAT_423: 0
+total CPU time = 0.015272
+
+324GAT_19 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 1901GAT_561: 0
+total CPU time = 0.015405
+
+324GAT_19 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 2223GAT_700: 3
+total CPU time = 0.013179
+
+324GAT_19 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 2548GAT_840: 36
+total CPU time = 0.011551
+
+324GAT_19 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 2877GAT_983: 468
+total CPU time = 0.012002
+
+324GAT_19 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 3211GAT_1128: 6084
+total CPU time = 0.010923
+
+324GAT_19 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 3552GAT_1275: 79092
+total CPU time = 0.010683
+
+324GAT_19 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 3895GAT_1423: 1028196
+total CPU time = 0.010381
+
+324GAT_19 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 4241GAT_1572: 13366548
+total CPU time = 0.01055
+
+324GAT_19 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 4591GAT_1722: 173765124
+total CPU time = 0.010936
+
+324GAT_19 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 4946GAT_1876: 2258946612
+total CPU time = 0.012612
+
+324GAT_19 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 5308GAT_2031: 29366305956
+total CPU time = 0.011092
+
+324GAT_19 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 5672GAT_2187: 381761977428
+total CPU time = 0.011107
+
+324GAT_19 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 5971GAT_2309: 4962905706564
+total CPU time = 0.011204
+
+324GAT_19 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6123GAT_2368: 64517774185332
+total CPU time = 0.011707
+
+324GAT_19 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6150GAT_2378: 838731064409316
+total CPU time = 0.011792
+
+324GAT_19 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6160GAT_2383: 1957039150288404
+total CPU time = 0.011863
+
+324GAT_19 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6170GAT_2388: 3070263504510834
+total CPU time = 0.012104
+
+324GAT_19 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6180GAT_2393: 4149596314355544
+total CPU time = 0.012586
+
+324GAT_19 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6190GAT_2398: 5124806768417592
+total CPU time = 0.012431
+
+324GAT_19 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6200GAT_2403: 5904422564721144
+total CPU time = 0.012516
+
+324GAT_19 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6210GAT_2408: 6432841114684920
+total CPU time = 0.012594
+
+324GAT_19 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6220GAT_2413: 6727790779885560
+total CPU time = 0.013065
+
+324GAT_19 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6230GAT_2418: 6860710291417080
+total CPU time = 0.012852
+
+324GAT_19 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6240GAT_2423: 6908291228248056
+total CPU time = 0.013026
+
+324GAT_19 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6250GAT_2428: 6921583489722360
+total CPU time = 0.013226
+
+324GAT_19 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6260GAT_2433: 6924413436569592
+total CPU time = 0.013386
+
+324GAT_19 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6270GAT_2438: 6924856411695096
+total CPU time = 0.013109
+
+324GAT_19 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6280GAT_2443: 6924904440670200
+total CPU time = 0.012985
+
+324GAT_19 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6287GAT_2444: 2308302587519656
+total CPU time = 0.013125
+
+324GAT_19 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 324GAT_19 to 6288GAT_2447: 6924907661895672
+total CPU time = 0.013197
+
+341GAT_20 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 545GAT_287: 0
+total CPU time = 0.010437
+
+341GAT_20 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 1581GAT_423: 0
+total CPU time = 0.010229
+
+341GAT_20 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 1901GAT_561: 0
+total CPU time = 0.010371
+
+341GAT_20 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 2223GAT_700: 0
+total CPU time = 0.015779
+
+341GAT_20 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 2548GAT_840: 3
+total CPU time = 0.015521
+
+341GAT_20 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 2877GAT_983: 36
+total CPU time = 0.015609
+
+341GAT_20 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 3211GAT_1128: 468
+total CPU time = 0.010807
+
+341GAT_20 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 3552GAT_1275: 6084
+total CPU time = 0.011056
+
+341GAT_20 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 3895GAT_1423: 79092
+total CPU time = 0.01125
+
+341GAT_20 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 4241GAT_1572: 1028196
+total CPU time = 0.01617
+
+341GAT_20 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 4591GAT_1722: 13366548
+total CPU time = 0.011482
+
+341GAT_20 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 4946GAT_1876: 173765124
+total CPU time = 0.016534
+
+341GAT_20 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 5308GAT_2031: 2258946612
+total CPU time = 0.011521
+
+341GAT_20 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 5672GAT_2187: 29366305956
+total CPU time = 0.011354
+
+341GAT_20 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 5971GAT_2309: 381761977428
+total CPU time = 0.015575
+
+341GAT_20 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6123GAT_2368: 4962905706564
+total CPU time = 0.01689
+
+341GAT_20 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6150GAT_2378: 64517774185332
+total CPU time = 0.017562
+
+341GAT_20 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6160GAT_2383: 150541473099108
+total CPU time = 0.017623
+
+341GAT_20 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6170GAT_2388: 236565172012884
+total CPU time = 0.017545
+
+341GAT_20 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6180GAT_2393: 322024011853698
+total CPU time = 0.012413
+
+341GAT_20 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6190GAT_2398: 403968173018304
+total CPU time = 0.01261
+
+341GAT_20 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6200GAT_2403: 475905262952040
+total CPU time = 0.012687
+
+341GAT_20 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6210GAT_2408: 530557200348552
+total CPU time = 0.012834
+
+341GAT_20 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6220GAT_2413: 564980622612744
+total CPU time = 0.01307
+
+341GAT_20 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6230GAT_2418: 582453508850952
+total CPU time = 0.013091
+
+341GAT_20 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6240GAT_2423: 589456616248584
+total CPU time = 0.013261
+
+341GAT_20 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6250GAT_2428: 591630894830856
+total CPU time = 0.013421
+
+341GAT_20 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6260GAT_2433: 592141466735880
+total CPU time = 0.018717
+
+341GAT_20 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6270GAT_2438: 592228984427784
+total CPU time = 0.013424
+
+341GAT_20 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6280GAT_2443: 592239307134216
+total CPU time = 0.013307
+
+341GAT_20 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6287GAT_2444: 197413360327768
+total CPU time = 0.013247
+
+341GAT_20 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 341GAT_20 to 6288GAT_2447: 592240055817480
+total CPU time = 0.014932
+
+358GAT_21 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 545GAT_287: 0
+total CPU time = 0.015253
+
+358GAT_21 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 1581GAT_423: 0
+total CPU time = 0.015154
+
+358GAT_21 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 1901GAT_561: 0
+total CPU time = 0.015371
+
+358GAT_21 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 2223GAT_700: 0
+total CPU time = 0.015485
+
+358GAT_21 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 2548GAT_840: 0
+total CPU time = 0.015479
+
+358GAT_21 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 2877GAT_983: 3
+total CPU time = 0.01538
+
+358GAT_21 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 3211GAT_1128: 36
+total CPU time = 0.015572
+
+358GAT_21 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 3552GAT_1275: 468
+total CPU time = 0.015593
+
+358GAT_21 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 3895GAT_1423: 6084
+total CPU time = 0.015707
+
+358GAT_21 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 4241GAT_1572: 79092
+total CPU time = 0.01599
+
+358GAT_21 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 4591GAT_1722: 1028196
+total CPU time = 0.015894
+
+358GAT_21 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 4946GAT_1876: 13366548
+total CPU time = 0.015965
+
+358GAT_21 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 5308GAT_2031: 173765124
+total CPU time = 0.016166
+
+358GAT_21 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 5672GAT_2187: 2258946612
+total CPU time = 0.015661
+
+358GAT_21 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 5971GAT_2309: 29366305956
+total CPU time = 0.012077
+
+358GAT_21 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6123GAT_2368: 381761977428
+total CPU time = 0.012187
+
+358GAT_21 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6150GAT_2378: 4962905706564
+total CPU time = 0.012063
+
+358GAT_21 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6160GAT_2383: 11580113315316
+total CPU time = 0.012706
+
+358GAT_21 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6170GAT_2388: 18197320924068
+total CPU time = 0.012562
+
+358GAT_21 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6180GAT_2393: 24814528532820
+total CPU time = 0.013112
+
+358GAT_21 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6190GAT_2398: 31368974022354
+total CPU time = 0.015173
+
+358GAT_21 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6200GAT_2403: 37560793934184
+total CPU time = 0.017702
+
+358GAT_21 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6210GAT_2408: 42801883966008
+total CPU time = 0.012968
+
+358GAT_21 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6220GAT_2413: 46544948107032
+total CPU time = 0.013098
+
+358GAT_21 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6230GAT_2418: 48706188740376
+total CPU time = 0.013555
+
+358GAT_21 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6240GAT_2423: 49687069152024
+total CPU time = 0.013207
+
+358GAT_21 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6250GAT_2428: 50029245346584
+total CPU time = 0.013654
+
+358GAT_21 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6260GAT_2433: 50118753547032
+total CPU time = 0.013252
+
+358GAT_21 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6270GAT_2438: 50135702336280
+total CPU time = 0.013359
+
+358GAT_21 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6280GAT_2443: 50137893729048
+total CPU time = 0.014079
+
+358GAT_21 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6287GAT_2444: 16712691011848
+total CPU time = 0.015773
+
+358GAT_21 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 358GAT_21 to 6288GAT_2447: 50138066744088
+total CPU time = 0.018578
+
+375GAT_22 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 545GAT_287: 0
+total CPU time = 0.01414
+
+375GAT_22 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 1581GAT_423: 0
+total CPU time = 0.01043
+
+375GAT_22 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 1901GAT_561: 0
+total CPU time = 0.011558
+
+375GAT_22 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 2223GAT_700: 0
+total CPU time = 0.010651
+
+375GAT_22 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 2548GAT_840: 0
+total CPU time = 0.012347
+
+375GAT_22 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 2877GAT_983: 0
+total CPU time = 0.01234
+
+375GAT_22 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 3211GAT_1128: 3
+total CPU time = 0.011826
+
+375GAT_22 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 3552GAT_1275: 36
+total CPU time = 0.011777
+
+375GAT_22 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 3895GAT_1423: 468
+total CPU time = 0.012231
+
+375GAT_22 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 4241GAT_1572: 6084
+total CPU time = 0.01115
+
+375GAT_22 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 4591GAT_1722: 79092
+total CPU time = 0.012099
+
+375GAT_22 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 4946GAT_1876: 1028196
+total CPU time = 0.011355
+
+375GAT_22 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 5308GAT_2031: 13366548
+total CPU time = 0.012813
+
+375GAT_22 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 5672GAT_2187: 173765124
+total CPU time = 0.011542
+
+375GAT_22 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 5971GAT_2309: 2258946612
+total CPU time = 0.012381
+
+375GAT_22 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6123GAT_2368: 29366305956
+total CPU time = 0.011951
+
+375GAT_22 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6150GAT_2378: 381761977428
+total CPU time = 0.017285
+
+375GAT_22 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6160GAT_2383: 890777947332
+total CPU time = 0.011852
+
+375GAT_22 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6170GAT_2388: 1399793917236
+total CPU time = 0.01421
+
+375GAT_22 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6180GAT_2393: 1908809887140
+total CPU time = 0.017483
+
+375GAT_22 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6190GAT_2398: 2417825857044
+total CPU time = 0.014522
+
+375GAT_22 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6200GAT_2403: 2919868258146
+total CPU time = 0.012608
+
+375GAT_22 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6210GAT_2408: 3384718292304
+total CPU time = 0.014104
+
+375GAT_22 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6220GAT_2413: 3760461613992
+total CPU time = 0.012966
+
+375GAT_22 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6230GAT_2418: 4009360597800
+total CPU time = 0.012752
+
+375GAT_22 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6240GAT_2423: 4138876675368
+total CPU time = 0.013294
+
+375GAT_22 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6250GAT_2428: 4190300686632
+total CPU time = 0.013306
+
+375GAT_22 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6260GAT_2433: 4205465147688
+total CPU time = 0.013698
+
+375GAT_22 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6270GAT_2438: 4208670742824
+total CPU time = 0.013338
+
+375GAT_22 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6280GAT_2443: 4209129232680
+total CPU time = 0.014399
+
+375GAT_22 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6287GAT_2444: 1403056840120
+total CPU time = 0.013434
+
+375GAT_22 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 375GAT_22 to 6288GAT_2447: 4209168947496
+total CPU time = 0.014565
+
+392GAT_23 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 545GAT_287: 0
+total CPU time = 0.015438
+
+392GAT_23 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 1581GAT_423: 0
+total CPU time = 0.015449
+
+392GAT_23 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 1901GAT_561: 0
+total CPU time = 0.010697
+
+392GAT_23 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 2223GAT_700: 0
+total CPU time = 0.010417
+
+392GAT_23 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 2548GAT_840: 0
+total CPU time = 0.010845
+
+392GAT_23 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 2877GAT_983: 0
+total CPU time = 0.010611
+
+392GAT_23 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 3211GAT_1128: 0
+total CPU time = 0.01064
+
+392GAT_23 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 3552GAT_1275: 3
+total CPU time = 0.010792
+
+392GAT_23 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 3895GAT_1423: 36
+total CPU time = 0.010867
+
+392GAT_23 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 4241GAT_1572: 468
+total CPU time = 0.011477
+
+392GAT_23 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 4591GAT_1722: 6084
+total CPU time = 0.011722
+
+392GAT_23 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 4946GAT_1876: 79092
+total CPU time = 0.01198
+
+392GAT_23 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 5308GAT_2031: 1028196
+total CPU time = 0.01483
+
+392GAT_23 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 5672GAT_2187: 13366548
+total CPU time = 0.012611
+
+392GAT_23 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 5971GAT_2309: 173765124
+total CPU time = 0.013288
+
+392GAT_23 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6123GAT_2368: 2258946612
+total CPU time = 0.014611
+
+392GAT_23 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6150GAT_2378: 29366305956
+total CPU time = 0.012422
+
+392GAT_23 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6160GAT_2383: 68521380564
+total CPU time = 0.012345
+
+392GAT_23 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6170GAT_2388: 107676455172
+total CPU time = 0.012493
+
+392GAT_23 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6180GAT_2393: 146831529780
+total CPU time = 0.013094
+
+392GAT_23 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6190GAT_2398: 185986604388
+total CPU time = 0.013713
+
+392GAT_23 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6200GAT_2403: 225141678996
+total CPU time = 0.012901
+
+392GAT_23 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6210GAT_2408: 263521912626
+total CPU time = 0.013666
+
+392GAT_23 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6220GAT_2413: 298114034808
+total CPU time = 0.01548
+
+392GAT_23 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6230GAT_2418: 324489016248
+total CPU time = 0.01354
+
+392GAT_23 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6240GAT_2423: 340422244920
+total CPU time = 0.017545
+
+392GAT_23 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6250GAT_2428: 347731485240
+total CPU time = 0.013028
+
+392GAT_23 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6260GAT_2433: 350196713016
+total CPU time = 0.013351
+
+392GAT_23 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6270GAT_2438: 350785996344
+total CPU time = 0.013134
+
+392GAT_23 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6280GAT_2443: 350880269880
+total CPU time = 0.013177
+
+392GAT_23 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6287GAT_2444: 116963235688
+total CPU time = 0.01342
+
+392GAT_23 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 392GAT_23 to 6288GAT_2447: 350889313848
+total CPU time = 0.014314
+
+409GAT_24 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 545GAT_287: 0
+total CPU time = 0.010452
+
+409GAT_24 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 1581GAT_423: 0
+total CPU time = 0.010337
+
+409GAT_24 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 1901GAT_561: 0
+total CPU time = 0.010431
+
+409GAT_24 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 2223GAT_700: 0
+total CPU time = 0.010046
+
+409GAT_24 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 2548GAT_840: 0
+total CPU time = 0.010401
+
+409GAT_24 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 2877GAT_983: 0
+total CPU time = 0.01215
+
+409GAT_24 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 3211GAT_1128: 0
+total CPU time = 0.010258
+
+409GAT_24 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 3552GAT_1275: 0
+total CPU time = 0.010714
+
+409GAT_24 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 3895GAT_1423: 3
+total CPU time = 0.010505
+
+409GAT_24 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 4241GAT_1572: 36
+total CPU time = 0.011035
+
+409GAT_24 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 4591GAT_1722: 468
+total CPU time = 0.011843
+
+409GAT_24 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 4946GAT_1876: 6084
+total CPU time = 0.012001
+
+409GAT_24 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 5308GAT_2031: 79092
+total CPU time = 0.013546
+
+409GAT_24 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 5672GAT_2187: 1028196
+total CPU time = 0.013076
+
+409GAT_24 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 5971GAT_2309: 13366548
+total CPU time = 0.015668
+
+409GAT_24 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6123GAT_2368: 173765124
+total CPU time = 0.013099
+
+409GAT_24 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6150GAT_2378: 2258946612
+total CPU time = 0.016903
+
+409GAT_24 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6160GAT_2383: 5270875428
+total CPU time = 0.011884
+
+409GAT_24 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6170GAT_2388: 8282804244
+total CPU time = 0.012621
+
+409GAT_24 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6180GAT_2393: 11294733060
+total CPU time = 0.017861
+
+409GAT_24 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6190GAT_2398: 14306661876
+total CPU time = 0.011901
+
+409GAT_24 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6200GAT_2403: 17318590692
+total CPU time = 0.012762
+
+409GAT_24 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6210GAT_2408: 20330519508
+total CPU time = 0.012043
+
+409GAT_24 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6220GAT_2413: 23256354882
+total CPU time = 0.012322
+
+409GAT_24 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6230GAT_2418: 25799552736
+total CPU time = 0.013223
+
+409GAT_24 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6240GAT_2423: 27599796072
+total CPU time = 0.013105
+
+409GAT_24 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6250GAT_2428: 28570046664
+total CPU time = 0.01325
+
+409GAT_24 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6260GAT_2433: 28950961992
+total CPU time = 0.012867
+
+409GAT_24 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6270GAT_2438: 29055580488
+total CPU time = 0.013201
+
+409GAT_24 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6280GAT_2443: 29074559304
+total CPU time = 0.013739
+
+409GAT_24 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6287GAT_2444: 9692232472
+total CPU time = 0.014681
+
+409GAT_24 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 409GAT_24 to 6288GAT_2447: 29076599112
+total CPU time = 0.01482
+
+426GAT_25 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 545GAT_287: 0
+total CPU time = 0.010455
+
+426GAT_25 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 1581GAT_423: 0
+total CPU time = 0.010604
+
+426GAT_25 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 1901GAT_561: 0
+total CPU time = 0.010805
+
+426GAT_25 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 2223GAT_700: 0
+total CPU time = 0.010739
+
+426GAT_25 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 2548GAT_840: 0
+total CPU time = 0.010675
+
+426GAT_25 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 2877GAT_983: 0
+total CPU time = 0.010721
+
+426GAT_25 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 3211GAT_1128: 0
+total CPU time = 0.010966
+
+426GAT_25 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 3552GAT_1275: 0
+total CPU time = 0.010896
+
+426GAT_25 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 3895GAT_1423: 0
+total CPU time = 0.011107
+
+426GAT_25 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 4241GAT_1572: 3
+total CPU time = 0.011211
+
+426GAT_25 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 4591GAT_1722: 36
+total CPU time = 0.015877
+
+426GAT_25 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 4946GAT_1876: 468
+total CPU time = 0.011407
+
+426GAT_25 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 5308GAT_2031: 6084
+total CPU time = 0.011781
+
+426GAT_25 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 5672GAT_2187: 79092
+total CPU time = 0.016354
+
+426GAT_25 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 5971GAT_2309: 1028196
+total CPU time = 0.012598
+
+426GAT_25 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6123GAT_2368: 13366548
+total CPU time = 0.016746
+
+426GAT_25 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6150GAT_2378: 173765124
+total CPU time = 0.012524
+
+426GAT_25 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6160GAT_2383: 405451956
+total CPU time = 0.012786
+
+426GAT_25 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6170GAT_2388: 637138788
+total CPU time = 0.012438
+
+426GAT_25 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6180GAT_2393: 868825620
+total CPU time = 0.012623
+
+426GAT_25 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6190GAT_2398: 1100512452
+total CPU time = 0.012661
+
+426GAT_25 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6200GAT_2403: 1332199284
+total CPU time = 0.012809
+
+426GAT_25 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6210GAT_2408: 1563886116
+total CPU time = 0.012944
+
+426GAT_25 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6220GAT_2413: 1795572948
+total CPU time = 0.013122
+
+426GAT_25 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6230GAT_2418: 2017693842
+total CPU time = 0.013125
+
+426GAT_25 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6240GAT_2423: 2201550984
+total CPU time = 0.013189
+
+426GAT_25 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6250GAT_2428: 2319863736
+total CPU time = 0.013806
+
+426GAT_25 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6260GAT_2433: 2375085912
+total CPU time = 0.013827
+
+426GAT_25 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6270GAT_2438: 2392866648
+total CPU time = 0.013302
+
+426GAT_25 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6280GAT_2443: 2396588376
+total CPU time = 0.013378
+
+426GAT_25 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6287GAT_2444: 799022536
+total CPU time = 0.017737
+
+426GAT_25 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 426GAT_25 to 6288GAT_2447: 2397043032
+total CPU time = 0.018108
+
+443GAT_26 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 545GAT_287: 0
+total CPU time = 0.015295
+
+443GAT_26 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 1581GAT_423: 0
+total CPU time = 0.01535
+
+443GAT_26 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 1901GAT_561: 0
+total CPU time = 0.01536
+
+443GAT_26 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 2223GAT_700: 0
+total CPU time = 0.013061
+
+443GAT_26 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 2548GAT_840: 0
+total CPU time = 0.010514
+
+443GAT_26 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 2877GAT_983: 0
+total CPU time = 0.011736
+
+443GAT_26 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 3211GAT_1128: 0
+total CPU time = 0.010107
+
+443GAT_26 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 3552GAT_1275: 0
+total CPU time = 0.010647
+
+443GAT_26 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 3895GAT_1423: 0
+total CPU time = 0.010613
+
+443GAT_26 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 4241GAT_1572: 0
+total CPU time = 0.015951
+
+443GAT_26 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 4591GAT_1722: 3
+total CPU time = 0.012317
+
+443GAT_26 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 4946GAT_1876: 36
+total CPU time = 0.01089
+
+443GAT_26 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 5308GAT_2031: 468
+total CPU time = 0.010714
+
+443GAT_26 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 5672GAT_2187: 6084
+total CPU time = 0.01104
+
+443GAT_26 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 5971GAT_2309: 79092
+total CPU time = 0.010973
+
+443GAT_26 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6123GAT_2368: 1028196
+total CPU time = 0.011677
+
+443GAT_26 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6150GAT_2378: 13366548
+total CPU time = 0.014049
+
+443GAT_26 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6160GAT_2383: 31188612
+total CPU time = 0.015252
+
+443GAT_26 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6170GAT_2388: 49010676
+total CPU time = 0.011744
+
+443GAT_26 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6180GAT_2393: 66832740
+total CPU time = 0.011759
+
+443GAT_26 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6190GAT_2398: 84654804
+total CPU time = 0.013728
+
+443GAT_26 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6200GAT_2403: 102476868
+total CPU time = 0.012249
+
+443GAT_26 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6210GAT_2408: 120298932
+total CPU time = 0.012286
+
+443GAT_26 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6220GAT_2413: 138120996
+total CPU time = 0.0121
+
+443GAT_26 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6230GAT_2418: 155943060
+total CPU time = 0.013065
+
+443GAT_26 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6240GAT_2423: 172702242
+total CPU time = 0.01245
+
+443GAT_26 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6250GAT_2428: 185682288
+total CPU time = 0.013128
+
+443GAT_26 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6260GAT_2433: 193059240
+total CPU time = 0.012537
+
+443GAT_26 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6270GAT_2438: 195916392
+total CPU time = 0.012731
+
+443GAT_26 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6280GAT_2443: 196622184
+total CPU time = 0.013437
+
+443GAT_26 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6287GAT_2444: 65576056
+total CPU time = 0.012583
+
+443GAT_26 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 443GAT_26 to 6288GAT_2447: 196722024
+total CPU time = 0.013385
+
+460GAT_27 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 545GAT_287: 0
+total CPU time = 0.009985
+
+460GAT_27 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 1581GAT_423: 0
+total CPU time = 0.0105
+
+460GAT_27 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 1901GAT_561: 0
+total CPU time = 0.010403
+
+460GAT_27 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 2223GAT_700: 0
+total CPU time = 0.010075
+
+460GAT_27 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 2548GAT_840: 0
+total CPU time = 0.010441
+
+460GAT_27 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 2877GAT_983: 0
+total CPU time = 0.010191
+
+460GAT_27 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 3211GAT_1128: 0
+total CPU time = 0.010121
+
+460GAT_27 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 3552GAT_1275: 0
+total CPU time = 0.010477
+
+460GAT_27 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 3895GAT_1423: 0
+total CPU time = 0.010316
+
+460GAT_27 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 4241GAT_1572: 0
+total CPU time = 0.010809
+
+460GAT_27 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 4591GAT_1722: 0
+total CPU time = 0.01064
+
+460GAT_27 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 4946GAT_1876: 3
+total CPU time = 0.010889
+
+460GAT_27 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 5308GAT_2031: 36
+total CPU time = 0.010804
+
+460GAT_27 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 5672GAT_2187: 468
+total CPU time = 0.011285
+
+460GAT_27 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 5971GAT_2309: 6084
+total CPU time = 0.010898
+
+460GAT_27 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6123GAT_2368: 79092
+total CPU time = 0.011155
+
+460GAT_27 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6150GAT_2378: 1028196
+total CPU time = 0.01179
+
+460GAT_27 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6160GAT_2383: 2399124
+total CPU time = 0.011932
+
+460GAT_27 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6170GAT_2388: 3770052
+total CPU time = 0.011632
+
+460GAT_27 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6180GAT_2393: 5140980
+total CPU time = 0.012113
+
+460GAT_27 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6190GAT_2398: 6511908
+total CPU time = 0.01175
+
+460GAT_27 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6200GAT_2403: 7882836
+total CPU time = 0.012175
+
+460GAT_27 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6210GAT_2408: 9253764
+total CPU time = 0.012363
+
+460GAT_27 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6220GAT_2413: 10624692
+total CPU time = 0.012084
+
+460GAT_27 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6230GAT_2418: 11995620
+total CPU time = 0.012609
+
+460GAT_27 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6240GAT_2423: 13366548
+total CPU time = 0.012725
+
+460GAT_27 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6250GAT_2428: 14619378
+total CPU time = 0.012589
+
+460GAT_27 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6260GAT_2433: 15504792
+total CPU time = 0.013144
+
+460GAT_27 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6270GAT_2438: 15930936
+total CPU time = 0.012889
+
+460GAT_27 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6280GAT_2443: 16059000
+total CPU time = 0.01252
+
+460GAT_27 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6287GAT_2444: 5360680
+total CPU time = 0.012578
+
+460GAT_27 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 460GAT_27 to 6288GAT_2447: 16080504
+total CPU time = 0.013748
+
+477GAT_28 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 545GAT_287: 0
+total CPU time = 0.010026
+
+477GAT_28 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 1581GAT_423: 0
+total CPU time = 0.010463
+
+477GAT_28 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 1901GAT_561: 0
+total CPU time = 0.010492
+
+477GAT_28 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 2223GAT_700: 0
+total CPU time = 0.010163
+
+477GAT_28 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 2548GAT_840: 0
+total CPU time = 0.010207
+
+477GAT_28 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 2877GAT_983: 0
+total CPU time = 0.010069
+
+477GAT_28 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 3211GAT_1128: 0
+total CPU time = 0.010127
+
+477GAT_28 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 3552GAT_1275: 0
+total CPU time = 0.01173
+
+477GAT_28 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 3895GAT_1423: 0
+total CPU time = 0.010325
+
+477GAT_28 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 4241GAT_1572: 0
+total CPU time = 0.01065
+
+477GAT_28 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 4591GAT_1722: 0
+total CPU time = 0.010765
+
+477GAT_28 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 4946GAT_1876: 0
+total CPU time = 0.010407
+
+477GAT_28 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 5308GAT_2031: 3
+total CPU time = 0.01055
+
+477GAT_28 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 5672GAT_2187: 36
+total CPU time = 0.0109
+
+477GAT_28 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 5971GAT_2309: 468
+total CPU time = 0.012616
+
+477GAT_28 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6123GAT_2368: 6084
+total CPU time = 0.011685
+
+477GAT_28 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6150GAT_2378: 79092
+total CPU time = 0.016568
+
+477GAT_28 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6160GAT_2383: 184548
+total CPU time = 0.013029
+
+477GAT_28 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6170GAT_2388: 290004
+total CPU time = 0.011891
+
+477GAT_28 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6180GAT_2393: 395460
+total CPU time = 0.01295
+
+477GAT_28 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6190GAT_2398: 500916
+total CPU time = 0.012165
+
+477GAT_28 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6200GAT_2403: 606372
+total CPU time = 0.011889
+
+477GAT_28 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6210GAT_2408: 711828
+total CPU time = 0.013269
+
+477GAT_28 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6220GAT_2413: 817284
+total CPU time = 0.012126
+
+477GAT_28 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6230GAT_2418: 922740
+total CPU time = 0.015408
+
+477GAT_28 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6240GAT_2423: 1028196
+total CPU time = 0.01471
+
+477GAT_28 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6250GAT_2428: 1133652
+total CPU time = 0.012375
+
+477GAT_28 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6260GAT_2433: 1225986
+total CPU time = 0.012416
+
+477GAT_28 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6270GAT_2438: 1283328
+total CPU time = 0.013241
+
+477GAT_28 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6280GAT_2443: 1305192
+total CPU time = 0.013726
+
+477GAT_28 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6287GAT_2444: 436696
+total CPU time = 0.01277
+
+477GAT_28 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 477GAT_28 to 6288GAT_2447: 1309704
+total CPU time = 0.012455
+
+494GAT_29 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 545GAT_287: 0
+total CPU time = 0.009819
+
+494GAT_29 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 1581GAT_423: 0
+total CPU time = 0.011009
+
+494GAT_29 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 1901GAT_561: 0
+total CPU time = 0.010061
+
+494GAT_29 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 2223GAT_700: 0
+total CPU time = 0.011667
+
+494GAT_29 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 2548GAT_840: 0
+total CPU time = 0.010063
+
+494GAT_29 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 2877GAT_983: 0
+total CPU time = 0.010588
+
+494GAT_29 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 3211GAT_1128: 0
+total CPU time = 0.010352
+
+494GAT_29 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 3552GAT_1275: 0
+total CPU time = 0.010872
+
+494GAT_29 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 3895GAT_1423: 0
+total CPU time = 0.010272
+
+494GAT_29 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 4241GAT_1572: 0
+total CPU time = 0.011211
+
+494GAT_29 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 4591GAT_1722: 0
+total CPU time = 0.010995
+
+494GAT_29 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 4946GAT_1876: 0
+total CPU time = 0.010649
+
+494GAT_29 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 5308GAT_2031: 0
+total CPU time = 0.010725
+
+494GAT_29 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 5672GAT_2187: 3
+total CPU time = 0.011197
+
+494GAT_29 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 5971GAT_2309: 36
+total CPU time = 0.011327
+
+494GAT_29 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6123GAT_2368: 468
+total CPU time = 0.011457
+
+494GAT_29 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6150GAT_2378: 6084
+total CPU time = 0.013693
+
+494GAT_29 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6160GAT_2383: 14196
+total CPU time = 0.011774
+
+494GAT_29 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6170GAT_2388: 22308
+total CPU time = 0.01196
+
+494GAT_29 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6180GAT_2393: 30420
+total CPU time = 0.011992
+
+494GAT_29 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6190GAT_2398: 38532
+total CPU time = 0.011932
+
+494GAT_29 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6200GAT_2403: 46644
+total CPU time = 0.012523
+
+494GAT_29 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6210GAT_2408: 54756
+total CPU time = 0.012451
+
+494GAT_29 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6220GAT_2413: 62868
+total CPU time = 0.01225
+
+494GAT_29 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6230GAT_2418: 70980
+total CPU time = 0.012716
+
+494GAT_29 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6240GAT_2423: 79092
+total CPU time = 0.0159
+
+494GAT_29 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6250GAT_2428: 87204
+total CPU time = 0.017566
+
+494GAT_29 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6260GAT_2433: 95316
+total CPU time = 0.017682
+
+494GAT_29 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6270GAT_2438: 101970
+total CPU time = 0.013479
+
+494GAT_29 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6280GAT_2443: 105384
+total CPU time = 0.013764
+
+494GAT_29 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6287GAT_2444: 35464
+total CPU time = 0.013293
+
+494GAT_29 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 494GAT_29 to 6288GAT_2447: 106296
+total CPU time = 0.013121
+
+511GAT_30 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 545GAT_287: 0
+total CPU time = 0.010556
+
+511GAT_30 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 1581GAT_423: 0
+total CPU time = 0.010475
+
+511GAT_30 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 1901GAT_561: 0
+total CPU time = 0.010422
+
+511GAT_30 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 2223GAT_700: 0
+total CPU time = 0.010469
+
+511GAT_30 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 2548GAT_840: 0
+total CPU time = 0.010424
+
+511GAT_30 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 2877GAT_983: 0
+total CPU time = 0.010513
+
+511GAT_30 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 3211GAT_1128: 0
+total CPU time = 0.010585
+
+511GAT_30 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 3552GAT_1275: 0
+total CPU time = 0.010664
+
+511GAT_30 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 3895GAT_1423: 0
+total CPU time = 0.011705
+
+511GAT_30 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 4241GAT_1572: 0
+total CPU time = 0.012793
+
+511GAT_30 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 4591GAT_1722: 0
+total CPU time = 0.011251
+
+511GAT_30 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 4946GAT_1876: 0
+total CPU time = 0.011364
+
+511GAT_30 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 5308GAT_2031: 0
+total CPU time = 0.012166
+
+511GAT_30 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 5672GAT_2187: 0
+total CPU time = 0.013478
+
+511GAT_30 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 5971GAT_2309: 3
+total CPU time = 0.014005
+
+511GAT_30 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6123GAT_2368: 36
+total CPU time = 0.011602
+
+511GAT_30 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6150GAT_2378: 468
+total CPU time = 0.012592
+
+511GAT_30 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6160GAT_2383: 1092
+total CPU time = 0.017235
+
+511GAT_30 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6170GAT_2388: 1716
+total CPU time = 0.012638
+
+511GAT_30 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6180GAT_2393: 2340
+total CPU time = 0.012732
+
+511GAT_30 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6190GAT_2398: 2964
+total CPU time = 0.016962
+
+511GAT_30 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6200GAT_2403: 3588
+total CPU time = 0.014394
+
+511GAT_30 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6210GAT_2408: 4212
+total CPU time = 0.015484
+
+511GAT_30 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6220GAT_2413: 4836
+total CPU time = 0.012878
+
+511GAT_30 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6230GAT_2418: 5460
+total CPU time = 0.016679
+
+511GAT_30 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6240GAT_2423: 6084
+total CPU time = 0.01685
+
+511GAT_30 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6250GAT_2428: 6708
+total CPU time = 0.018479
+
+511GAT_30 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6260GAT_2433: 7332
+total CPU time = 0.015364
+
+511GAT_30 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6270GAT_2438: 7956
+total CPU time = 0.018593
+
+511GAT_30 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6280GAT_2443: 8418
+total CPU time = 0.013276
+
+511GAT_30 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6287GAT_2444: 2872
+total CPU time = 0.013149
+
+511GAT_30 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 511GAT_30 to 6288GAT_2447: 8592
+total CPU time = 0.013278
+
+528GAT_31 545GAT_287
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 545GAT_287: 0
+total CPU time = 0.010568
+
+528GAT_31 1581GAT_423
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 1581GAT_423: 0
+total CPU time = 0.010376
+
+528GAT_31 1901GAT_561
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 1901GAT_561: 0
+total CPU time = 0.010368
+
+528GAT_31 2223GAT_700
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 2223GAT_700: 0
+total CPU time = 0.010838
+
+528GAT_31 2548GAT_840
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 2548GAT_840: 0
+total CPU time = 0.011084
+
+528GAT_31 2877GAT_983
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 2877GAT_983: 0
+total CPU time = 0.011016
+
+528GAT_31 3211GAT_1128
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 3211GAT_1128: 0
+total CPU time = 0.012123
+
+528GAT_31 3552GAT_1275
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 3552GAT_1275: 0
+total CPU time = 0.012615
+
+528GAT_31 3895GAT_1423
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 3895GAT_1423: 0
+total CPU time = 0.010886
+
+528GAT_31 4241GAT_1572
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 4241GAT_1572: 0
+total CPU time = 0.012767
+
+528GAT_31 4591GAT_1722
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 4591GAT_1722: 0
+total CPU time = 0.011001
+
+528GAT_31 4946GAT_1876
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 4946GAT_1876: 0
+total CPU time = 0.010974
+
+528GAT_31 5308GAT_2031
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 5308GAT_2031: 0
+total CPU time = 0.011266
+
+528GAT_31 5672GAT_2187
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 5672GAT_2187: 0
+total CPU time = 0.01133
+
+528GAT_31 5971GAT_2309
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 5971GAT_2309: 0
+total CPU time = 0.012715
+
+528GAT_31 6123GAT_2368
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6123GAT_2368: 3
+total CPU time = 0.011684
+
+528GAT_31 6150GAT_2378
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6150GAT_2378: 36
+total CPU time = 0.013659
+
+528GAT_31 6160GAT_2383
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6160GAT_2383: 84
+total CPU time = 0.012318
+
+528GAT_31 6170GAT_2388
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6170GAT_2388: 132
+total CPU time = 0.012963
+
+528GAT_31 6180GAT_2393
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6180GAT_2393: 180
+total CPU time = 0.017323
+
+528GAT_31 6190GAT_2398
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6190GAT_2398: 228
+total CPU time = 0.017365
+
+528GAT_31 6200GAT_2403
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6200GAT_2403: 276
+total CPU time = 0.017751
+
+528GAT_31 6210GAT_2408
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6210GAT_2408: 324
+total CPU time = 0.017694
+
+528GAT_31 6220GAT_2413
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6220GAT_2413: 372
+total CPU time = 0.018029
+
+528GAT_31 6230GAT_2418
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6230GAT_2418: 420
+total CPU time = 0.014133
+
+528GAT_31 6240GAT_2423
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6240GAT_2423: 468
+total CPU time = 0.015104
+
+528GAT_31 6250GAT_2428
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6250GAT_2428: 516
+total CPU time = 0.012841
+
+528GAT_31 6260GAT_2433
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6260GAT_2433: 564
+total CPU time = 0.014282
+
+528GAT_31 6270GAT_2438
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6270GAT_2438: 612
+total CPU time = 0.018925
+
+528GAT_31 6280GAT_2443
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6280GAT_2443: 660
+total CPU time = 0.013719
+
+528GAT_31 6287GAT_2444
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6287GAT_2444: 232
+total CPU time = 0.013489
+
+528GAT_31 6288GAT_2447
+Start parsing input file
+Finish reading circuit file
+The paths from 528GAT_31 to 6288GAT_2447: 690
+total CPU time = 0.013681
+

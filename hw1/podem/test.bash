@@ -19,6 +19,9 @@ then
 elif [ "$1" == "6" ]
 then
 	./atpg -path -start 1GAT_0 -end PO_6150GAT_2378 ../circuits/iscas85/c6288.bench
+elif [ "$1" == "7" ]
+then
+	./atpg -path -start 52GAT_3 -end PO_2548GAT_840 ../circuits/iscas85/c6288.bench
 else
 	echo ""OAO
 fi
