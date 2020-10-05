@@ -1,0 +1,197 @@
+nohup: ignoring input
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 545GAT_287: 0
+total CPU time = 0.044013
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 1581GAT_423: 0
+total CPU time = 0.015269
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 1901GAT_561: 0
+total CPU time = 0.011139
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 2223GAT_700: 0
+total CPU time = 0.01136
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 2548GAT_840: 0
+total CPU time = 0.014681
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 2877GAT_983: 0
+total CPU time = 0.054082
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 3211GAT_1128: 0
+total CPU time = 0.563631
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 3552GAT_1275: 0
+total CPU time = 7.09129
+
+Start parsing input file
+Finish reading circuit file
+The paths from 1GAT_0 to 3895GAT_1423: 0
+total CPU time = 93.1647
+
+runall.bash: line 7: 501175 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 501278 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 501414 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 501527 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 501677 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 501826 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 501998 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 502222 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 502403 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 502610 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 502799 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 502950 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 503085 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 503246 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 503404 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 503526 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 503738 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 503911 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 504068 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 504233 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 504406 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 504564 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 504758 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 545GAT_287: 0
+total CPU time = 0.017249
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 1581GAT_423: 0
+total CPU time = 0.011597
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 1901GAT_561: 0
+total CPU time = 0.010885
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 2223GAT_700: 0
+total CPU time = 0.01164
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 2548GAT_840: 0
+total CPU time = 0.017197
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 2877GAT_983: 0
+total CPU time = 0.072702
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 3211GAT_1128: 0
+total CPU time = 0.655405
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 3552GAT_1275: 0
+total CPU time = 7.76627
+
+Start parsing input file
+Finish reading circuit file
+The paths from 18GAT_1 to 3895GAT_1423: 0
+total CPU time = 95.9402
+
+runall.bash: line 7: 504929 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 505071 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 505162 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 505860 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 506354 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 506637 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 506848 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 506928 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507059 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507143 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507294 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507374 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507524 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507617 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507776 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 507876 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 508012 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 508108 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 508203 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 508332 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 508459 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 508637 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 508735 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 545GAT_287: 0
+total CPU time = 0.008228
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 1581GAT_423: 0
+total CPU time = 0.007781
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 1901GAT_561: 81
+total CPU time = 0.007875
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 2223GAT_700: 891
+total CPU time = 0.00892
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 2548GAT_840: 6804
+total CPU time = 0.018328
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 2877GAT_983: 44064
+total CPU time = 0.100092
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 3211GAT_1128: 259200
+total CPU time = 0.888738
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 3552GAT_1275: 1430784
+total CPU time = 9.23763
+
+Start parsing input file
+Finish reading circuit file
+The paths from 35GAT_2 to 3895GAT_1423: 7547904
+total CPU time = 105.615
+
+runall.bash: line 7: 508902 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 509506 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 509644 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 509738 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 509825 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 509983 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 510073 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 510178 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 510267 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 510466 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+runall.bash: line 7: 510767 Killed                  ./atpg -path -start $pi -end $po "../circuits/iscas85/c6288.bench"
+Start parsing input file
+Finish reading circuit file
+total CPU time = 0.006111
+total CPU time = 0.008108
