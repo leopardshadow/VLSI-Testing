@@ -37,6 +37,19 @@ int SetupOption(int argc, char ** argv)
             "set the output pattern file", 0);
     option.enroll("bt", GetLongOpt::OptionalValue,
             "set the backtrack limit", 0);
+    //***********************************************************************//
+    option.enroll("pattern", GetLongOpt::NoValue,
+            "generate test patterns ~", 0);
+    option.enroll("num", GetLongOpt::MandatoryValue,
+            "number of test patterns to generate", 0);
+    option.enroll("num", GetLongOpt::MandatoryValue,
+            "number of test patterns to generate", 0);
+    option.enroll("output", GetLongOpt::MandatoryValue,
+            "output file name", 0);
+    option.enroll("unknown", GetLongOpt::NoValue,
+            "output file name", 0);
+
+
     int optind = option.parse(argc, argv);
     if ( optind < 1 ) { exit(0); }
     if ( option.retrieve("help") ) {
@@ -110,6 +123,18 @@ int main(int argc, char ** argv)
         }
         Circuit.TFAtpg();
     }
+    //***********************************************************************//
+    else if (option.retrieve("pattern")) {
+        if (option.retrieve("num")) {
+            cout << atoi(option.retrieve("num")) << endl;
+        }
+        if (option.retrieve("output")) {
+            cout << option.retrieve("output") << endl;
+        }
+        cout << (option.retrieve("unknown") ? "w/" : "w/o") << " unknown" << endl;
+
+    }
+
     else {
         Circuit.GenerateAllFaultList();
         Circuit.SortFaninByLevel();
