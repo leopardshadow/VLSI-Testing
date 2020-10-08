@@ -6,11 +6,11 @@ string s[4] = {"0", "1", "X", "X"};
 
 
 int l_and(int a, int b) {
-	return (a&b) | ((a&2)|(b&2));
+	return (a&b) | ((a|b)&2);
 }
 
 int l_or(int a, int b) {
-	return (a|b) | ((a&2)|(b&2));
+	return (a|b);
 }
 
 int l_inv(int a) {
@@ -18,11 +18,11 @@ int l_inv(int a) {
 }
 
 int l_nand(int a, int b) {
-	return l_inv( (a&b) | ((a&2)|(b&2)) );
+	return l_inv( l_and(a, b) );
 }
 
 int l_nor(int a, int b) {
-	return l_inv( (a|b) | ((a&2)|(b&2)) );
+	return l_inv( l_or(a, b) );
 }
 
 void test_logic(string func, int (*f)(int, int) ) {
