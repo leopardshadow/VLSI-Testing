@@ -16,6 +16,42 @@ extern void Interactive();
 
 GetLongOpt option;
 
+
+
+//***************************************************************************//
+
+
+#include <cstdlib>
+#include <ctime>
+
+
+
+
+void genPattern(string filename, size_t num) {
+
+    ofstream fout;
+    fout.open(filename, ios::out);
+    if (!fout) {
+        cout << "cannot create output file " << filename << endl;
+        exit(-1);
+    }
+
+    for(size_t i=0; i<Circuit.No_PI(); i++) {
+        fout << "PI " << Circuit.PIGate(i)->GetName();
+    }
+    fout << endl;
+
+    for(size_t n=0; n<num; n++) {
+        for(size_t i=0; i<Circuit.No_PI(); i++) {
+            fout << (int)(rand()%2) << " ";
+        }
+        fout << endl;
+    }
+}
+
+
+
+
 int SetupOption(int argc, char ** argv)
 {
     option.usage("[options] input_circuit_file");
@@ -125,14 +161,22 @@ int main(int argc, char ** argv)
     }
     //***********************************************************************//
     else if (option.retrieve("pattern")) {
+
+        string filename;
+        size_t num = 0;
+
+        srand( time(NULL) );
+
         if (option.retrieve("num")) {
             cout << atoi(option.retrieve("num")) << endl;
+            num = atoi(option.retrieve("num"));
         }
         if (option.retrieve("output")) {
             cout << option.retrieve("output") << endl;
+            filename = option.retrieve("output");
         }
         cout << (option.retrieve("unknown") ? "w/" : "w/o") << " unknown" << endl;
-
+        genPattern(filename, num);
     }
 
     else {
