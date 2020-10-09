@@ -25,7 +25,9 @@ GetLongOpt option;
 #include <ctime>
 
 
-
+int realRandom(int size) {
+    return int((rand()/(RAND_MAX + 1.0))*size);
+}
 
 void genPattern(string filename, size_t num) {
 
@@ -37,13 +39,13 @@ void genPattern(string filename, size_t num) {
     }
 
     for(size_t i=0; i<Circuit.No_PI(); i++) {
-        fout << "PI " << Circuit.PIGate(i)->GetName();
+        fout << "PI " << Circuit.PIGate(i)->GetName() << " ";
     }
     fout << endl;
 
     for(size_t n=0; n<num; n++) {
         for(size_t i=0; i<Circuit.No_PI(); i++) {
-            fout << (int)(rand()%2) << " ";
+            fout << realRandom(2);
         }
         fout << endl;
     }
