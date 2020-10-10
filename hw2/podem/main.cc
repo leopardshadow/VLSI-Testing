@@ -29,7 +29,7 @@ int realRandom(int size) {
     return int((rand()/(RAND_MAX + 1.0))*size);
 }
 
-void genPattern(string filename, size_t num) {
+void genPattern(string filename, size_t num, bool unknown) {
 
     ofstream fout;
     fout.open(filename, ios::out);
@@ -45,7 +45,18 @@ void genPattern(string filename, size_t num) {
 
     for(size_t n=0; n<num; n++) {
         for(size_t i=0; i<Circuit.No_PI(); i++) {
-            fout << realRandom(2);
+            if (unknown) {
+                int rr = realRandom(3);
+                if(rr < 2) {
+                    fout << rr;
+                }
+                else {
+                    fout << "X";
+                }
+            }
+            else {
+                fout << realRandom(2);
+            }
         }
         fout << endl;
     }
@@ -85,6 +96,8 @@ int SetupOption(int argc, char ** argv)
     option.enroll("output", GetLongOpt::MandatoryValue,
             "output file name", 0);
     option.enroll("unknown", GetLongOpt::NoValue,
+            "output file name", 0);
+    option.enroll("mod_logicsim", GetLongOpt::NoValue,
             "output file name", 0);
 
 
@@ -166,6 +179,7 @@ int main(int argc, char ** argv)
 
         string filename;
         size_t num = 0;
+        bool unknown;
 
         srand( time(NULL) );
 
@@ -177,10 +191,14 @@ int main(int argc, char ** argv)
             cout << option.retrieve("output") << endl;
             filename = option.retrieve("output");
         }
+        unknown = option.retrieve("unknown");
         cout << (option.retrieve("unknown") ? "w/" : "w/o") << " unknown" << endl;
-        genPattern(filename, num);
+        genPattern(filename, num, unknown);
     }
+    else if (option.retrieve("mod_logicsim")) {
+        
 
+    }
     else {
         Circuit.GenerateAllFaultList();
         Circuit.SortFaninByLevel();
