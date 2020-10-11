@@ -160,6 +160,18 @@ VALUE CIRCUIT::Evaluate(GATEPTR gptr)
     return value;
 }
 
+int l_and(int a, int b) {
+	return (a&b) | ((a|b)&2);
+}
+
+int l_or(int a, int b) {
+	return (a|b);
+}
+
+int l_inv(int a) {
+	return ((~a)&1) | (a&2);
+}
+
 //evaluate the output value of gate with unknowns using bin.op.
 VALUE CIRCUIT::BinOpEvaluate(GATEPTR gptr)
 {
@@ -170,19 +182,21 @@ VALUE CIRCUIT::BinOpEvaluate(GATEPTR gptr)
         case G_AND:
         case G_NAND:
             for (unsigned i = 1;i<gptr->No_Fanin() && value != cv;++i) {
-                value = AndTable[value][gptr->Fanin(i)->GetValue()];
+                // value = AndTable[value][gptr->Fanin(i)->GetValue()];
+                value = (VALUE)(l_and(value, gptr->Fanin(i)->GetValue()));
             }
             break;
         case G_OR:
         case G_NOR:
             for (unsigned i = 1;i<gptr->No_Fanin() && value != cv;++i) {
-                value = OrTable[value][gptr->Fanin(i)->GetValue()];
+                // value = OrTable[value][gptr->Fanin(i)->GetValue()];
+                value = (VALUE)(l_or(value, gptr->Fanin(i)->GetValue()));
             }
             break;
         default: break;
     }
     //NAND, NOR and NOT
-    if (gptr->Is_Inversion()) { value = NotTable[value]; }
+    if (gptr->Is_Inversion()) { value = (VALUE)(l_inv(value)); }
     return value;
 }
 
