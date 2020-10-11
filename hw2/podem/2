@@ -1,0 +1,44 @@
+Start parsing input file
+Finish reading circuit file
+Run logic simulation
+net17: 1
+net14: 1
+n60: 2
+net25: 0
+net18: 2
+G16: 2
+G17: 2
+12010 22
+net14: 2
+net17: 2
+n60: 2
+net25: 2
+net18: 2
+G16: 2
+G17: 2
+12211 22
+net17: 2
+n60: 2
+net14: 0
+net18: 1
+net25: 1
+G17: 2
+G16: 2
+20112 22
+n60: 0
+net14: 2
+net17: 2
+net18: 2
+net25: 2
+G17: 2
+G16: 2
+21211 22
+net17: 0
+n60: 2
+net14: 2
+net18: 2
+G16: 2
+G17: 2
+10122 22
+total CPU time = 0.000289
+

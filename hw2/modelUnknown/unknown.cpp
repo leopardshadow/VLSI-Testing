@@ -2,7 +2,10 @@
 #include <iostream>
 using namespace std;
 
-string s[4] = {"0", "1", "X", "X"};
+//              0    1    2    3
+//             00   01   10   11
+string s[4] = {"0", "X", "X", "1"};
+
 
 
 int l_and(int a, int b) {

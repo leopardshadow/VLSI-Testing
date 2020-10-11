@@ -98,7 +98,7 @@ int SetupOption(int argc, char ** argv)
     option.enroll("unknown", GetLongOpt::NoValue,
             "output file name", 0);
     option.enroll("mod_logicsim", GetLongOpt::NoValue,
-            "output file name", 0);
+            "run logic simulation using bin.op~", 0);
 
 
     int optind = option.parse(argc, argv);
@@ -196,8 +196,8 @@ int main(int argc, char ** argv)
         genPattern(filename, num, unknown);
     }
     else if (option.retrieve("mod_logicsim")) {
-        
-
+        Circuit.InitPattern(option.retrieve("input"));
+        Circuit.BinOpLogicSimVectors();
     }
     else {
         Circuit.GenerateAllFaultList();
