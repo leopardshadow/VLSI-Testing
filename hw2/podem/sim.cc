@@ -23,6 +23,21 @@ void CIRCUIT::LogicSimVectors()
     return;
 }
 
+//***************************************************************************//
+// do logic simulation for test patterns with unknowns using bin.op.
+void CIRCUIT::BinOpLogicSimVectors()
+{
+    cout << "Run logic simulation" << endl;
+    //read test patterns
+    while (!Pattern.eof()) {
+        Pattern.ReadNextPattern();
+        SchedulePI();
+        BinOpLogicSim();
+        PrintIO();
+    }
+    return;
+}
+
 //do event-driven logic simulation
 void CIRCUIT::LogicSim()
 {
@@ -42,6 +57,27 @@ void CIRCUIT::LogicSim()
     }
     return;
 }
+
+//do event-driven logic simulation with unknowns using bin.op.
+void CIRCUIT::BinOpLogicSim()
+{
+    GATE* gptr;
+    VALUE new_value;
+    for (unsigned i = 0;i <= MaxLevel;i++) {
+        while (!Queue[i].empty()) {
+            gptr = Queue[i].front();
+            Queue[i].pop_front();
+            gptr->ResetFlag(SCHEDULED);
+            new_value = BinOpEvaluate(gptr);
+            if (new_value != gptr->GetValue()) {
+                gptr->SetValue(new_value);
+                ScheduleFanout(gptr);
+            }
+        }
+    }
+    return;
+}
+
 
 //Used only in the first pattern
 void CIRCUIT::SchedulePI()
@@ -100,6 +136,32 @@ void CIRCUIT::InitializeQueue()
 
 //evaluate the output value of gate
 VALUE CIRCUIT::Evaluate(GATEPTR gptr)
+{
+    GATEFUNC fun(gptr->GetFunction());
+    VALUE cv(CV[fun]); //controling value
+    VALUE value(gptr->Fanin(0)->GetValue());
+    switch (fun) {
+        case G_AND:
+        case G_NAND:
+            for (unsigned i = 1;i<gptr->No_Fanin() && value != cv;++i) {
+                value = AndTable[value][gptr->Fanin(i)->GetValue()];
+            }
+            break;
+        case G_OR:
+        case G_NOR:
+            for (unsigned i = 1;i<gptr->No_Fanin() && value != cv;++i) {
+                value = OrTable[value][gptr->Fanin(i)->GetValue()];
+            }
+            break;
+        default: break;
+    }
+    //NAND, NOR and NOT
+    if (gptr->Is_Inversion()) { value = NotTable[value]; }
+    return value;
+}
+
+//evaluate the output value of gate with unknowns using bin.op.
+VALUE CIRCUIT::BinOpEvaluate(GATEPTR gptr)
 {
     GATEFUNC fun(gptr->GetFunction());
     VALUE cv(CV[fun]); //controling value
