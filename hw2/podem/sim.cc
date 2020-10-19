@@ -125,8 +125,9 @@ VALUE CIRCUIT::Evaluate(GATEPTR gptr)
     }
     //NAND, NOR and NOT
     if (gptr->Is_Inversion()) {
+        // value = NotTable[value];
         if(value ^ 1)
-            value = (VALUE)((~ value) & 2);
+            value = (VALUE)((~ value) & 3);
     }
     return value;
 }
@@ -143,35 +144,6 @@ int l_or(int a, int b) {
 
 int l_inv(int a) {
 	return ((~a)&1) | (a&2);
-}
-
-//evaluate the output value of gate with unknowns using bin.op.
-VALUE CIRCUIT::BinOpEvaluate(GATEPTR gptr)
-{
-    GATEFUNC fun(gptr->GetFunction());
-    VALUE value(gptr->Fanin(0)->GetValue());
-    switch (fun) {
-        case G_AND:
-        case G_NAND:
-            for (unsigned i = 1; i<gptr->No_Fanin(); ++i) {
-                // value = AndTable[value][gptr->Fanin(i)->GetValue()];
-                value = (VALUE)(l_and(value, gptr->Fanin(i)->GetValue()));
-            }
-            break;
-        case G_OR:
-        case G_NOR:
-            for (unsigned i = 1; i<gptr->No_Fanin(); ++i) {
-                // value = OrTable[value][gptr->Fanin(i)->GetValue()];
-                value = (VALUE)(l_or(value, gptr->Fanin(i)->GetValue()));
-            }
-            break;
-        default: break;
-    }
-    //NAND, NOR and NOT
-    if (gptr->Is_Inversion()) { value = (VALUE)(l_inv(value)); }
-    // value = (VALUE)((value&2) | ((~value&2)&(value&1)));
-    // cout << gptr->GetName() << ": " << value << endl;
-     return value;
 }
 
 extern GATE* NameToGate(string);
@@ -232,16 +204,16 @@ void PATTERN::ReadNextPattern()
     return;
 }
 
+
+
 void CIRCUIT::PrintIO()
 {
+    string decode[4] = {"0", "X", "X", "1"};
     register unsigned i;
-    for (i = 0;i<No_PI();++i) { cout << PIGate(i)->GetValue(); }
+    for (i = 0;i<No_PI();++i) { cout << decode[PIGate(i)->GetValue()]; }
     cout << " ";
     for (i = 0;i<No_PO();++i) {
-        if(POGate(i)->GetValue()<3)
-            cout << POGate(i)->GetValue();
-        else
-            cout << 2;
+        cout << decode[POGate(i)->GetValue()];
     }
     cout << endl;
     return;
