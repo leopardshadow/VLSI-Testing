@@ -1,0 +1,13 @@
+./atpg -pattern -num 100 -output c7552-100.input c7552.bench
+./atpg -pattern -num 1000 -output c7552-1000.input c7552.bench
+./atpg -pattern -num 10000 -output c7552-10000.input c7552.bench
+
+./atpg -pattern -num 100 -unknown -output c7552X-100.input c7552.bench
+./atpg -pattern -num 1000 -unknown -output c7552X-1000.input c7552.bench
+./atpg -pattern -num 10000 -unknown -output c7552X-10000.input c7552.bench
+
+gtime -f "Average memory usage: %K \nMaximum memory usage: %M\n" ./atpg -logicsim -input c7552-100.input ../../circuits/iscas85/c7552.bench
+
+gtime -f "Average memory usage: %K \nMaximum memory usage: %M\n" ./atpg -logicsim -input c7552-1000.input ../../circuits/iscas85/c7552.bench
+
+gtime -f "Average memory usage: %K \nMaximum memory usage: %M\n" ./atpg -logicsim -input c7552-10000.input ../../circuits/iscas85/c7552.bench
