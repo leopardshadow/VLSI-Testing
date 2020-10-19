@@ -4,12 +4,6 @@
 
 [TOC]
 
-## Overview
-
-
-
-
-
 ## Part.1 
 
 The command for logic simulation on a circuit given a pattern is
@@ -39,46 +33,35 @@ Run logic simulation
 total CPU time = 0.000114
 ```
 
+
+
 ## Part.2-a
-
-
-
-
 
 ### Random Number Generation
 
+I use linear congruential generators (LCG) to generate random number. The pseudorandom sequence is defined as follows.
+$$
+X_{n+1} = (a X_n + c) mod M
+$$
+In [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes), a = 1664525, c = 1013904223 and m = 2^32 is used.
 
+### Results
 
-### Memory Usage
+#### c17.bench
 
-There are several ways to show the memory usage of a program.
+| number of patterns | CPU times | maximum memory usage |
+| :----------------: | :-------: | :------------------: |
+|        100         | 0.000548  |         808          |
+|        1000        |  0.00367  |         832          |
+|       10000        | 0.038851  |         844          |
 
-* GNU time
+#### c7552.bench
 
-
-
-### gnu-time on mac
-
-```
-brew install gnu-time
-gtime ...
-```
-
-
-
-
-
-generates different number of simulations given a circuit and print the result to designated file
-
-```
-./atpg -pattern -num <number_of_sim.> -output <output_file> <circuit_file>
-```
-
-```
-bash run2a.bash | grep 'time'
-```
-
-
+| number of patterns | CPU times | memory usage |
+| :----------------: | :-------: | :----------: |
+|        100         | 0.015249  |     2468     |
+|        1000        | 0.053402  |     2480     |
+|       10000        | 0.406807  |     2492     |
 
 
 
@@ -90,7 +73,7 @@ However, when we invert `X`, 01 becomes 10. Inverted-`X` should also be unknown,
 
 But new problems pop out ! X AND inverted-X should be still X since the two Xs might come from different places with different actual values. Hence, some modification need to be done to solve this.
 
-The only problem comes from invert. So I revise the original invert function, which shown as follows.
+The only problem comes from the invert. So I revise the original invert function, which shown as follows.
 
 |  a   | representation of a |  a'  | representation of a' |
 | :--: | :-----------------: | :--: | :------------------: |
@@ -99,21 +82,21 @@ The only problem comes from invert. So I revise the original invert function, wh
 |  X   |         01          |  X   |        **01**        |
 |  X   |         10          |  X   |          01          |
 
-In the begining, all unknows are encoded as 0.
+In the begining, all unknows are encoded as 01.
 
 By doing so, and, or, nand, nor works fine without further modification !
 
-Note that there are 3 places to modify, shown as follows:
+Note that there are 3 places to modify in the code, which shown as follows:
 
-* void PATTERN::ReadNextPattern() in sim.cc
+* <u>void PATTERN::ReadNextPattern()</u> in sim.cc
   * for input pattern `0`, `1` and `X` and stored as 00, 11 and 01 respectively
 
-* VALUE CIRCUIT::Evaluate(GATEPTR gptr) in sim.cc
+* <u>VALUE CIRCUIT::Evaluate(GATEPTR gptr)</u> in sim.cc
   * the original code uses table to comupute tha value; we directly compute the value here
   * x and y: `x & y`
   * x or y: `x | y`
   * not x: `if x != 01 then x else 01  `
-* void CIRCUIT::PrintIO() in sim.cc
+* <u>void CIRCUIT::PrintIO()</u> in sim.cc
   * convert the encoded output to original encoding
   * 00 -> `0`, 11 -> `1`, either 01 or 10 -> `X`
 
@@ -130,12 +113,6 @@ make
 
 
 
+## Reference
 
-
-
-
-```
-./atpg -mod_logicsim -input c17.input c17.bench
-
-```
-
+https://en.wikipedia.org/wiki/Linear_congruential_generator
