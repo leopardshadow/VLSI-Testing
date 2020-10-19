@@ -197,7 +197,7 @@ int main(int argc, char ** argv)
     }
     else if (option.retrieve("mod_logicsim")) {
         Circuit.InitPattern(option.retrieve("input"));
-        Circuit.BinOpLogicSimVectors();
+        Circuit.LogicSimVectors();
     }
     else {
         Circuit.GenerateAllFaultList();
