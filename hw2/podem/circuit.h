@@ -97,12 +97,9 @@ class CIRCUIT
         void SchedulePI();
         void SchedulePPI();
         void LogicSimVectors();
-        void BinOpLogicSimVectors();
         void LogicSim();
-        void BinOpLogicSim();
         void PrintIO();
         VALUE Evaluate(GATEPTR gptr);
-        VALUE BinOpEvaluate(GATEPTR gptr);
 
         //defined in atpg.cc
         void GenerateAllFaultList();

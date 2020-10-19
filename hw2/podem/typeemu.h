@@ -3,7 +3,9 @@
 #include <vector>
 #include <list>
 
-enum VALUE {S0, S1, X, D, B, ILLIGAL}; // D, B, ILLIGAL will not be used/presented in hw2 !!!!
+// tables are not used in the assignment !!!!!!
+
+enum VALUE {S0, X, X1, S1, D, B, ILLIGAL}; // D, B, ILLIGAL will not be used/presented in hw2 !!!!
 //good/faulty D = 1/0, B = D' = 0/1
 enum GATEFUNC {G_PI, G_PO, G_PPI, G_PPO, G_NOT, G_AND, G_NAND, G_OR, G_NOR, G_DFF, G_BUF, G_BAD };
 enum FLAGS { ALL_ASSIGNED, MARKED, FAULT_INJECTED, FAULTY, SCHEDULED, OUTPUT, NumFlags };
