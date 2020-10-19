@@ -103,7 +103,19 @@ In the begining, all unknows are encoded as 0.
 
 By doing so, and, or, nand, nor works fine without further modification !
 
+Note that there are 3 places to modify, shown as follows:
 
+* void PATTERN::ReadNextPattern() in sim.cc
+  * for input pattern `0`, `1` and `X` and stored as 00, 11 and 01 respectively
+
+* VALUE CIRCUIT::Evaluate(GATEPTR gptr) in sim.cc
+  * the original code uses table to comupute tha value; we directly compute the value here
+  * x and y: `x & y`
+  * x or y: `x | y`
+  * not x: `if x != 01 then x else 01  `
+* void CIRCUIT::PrintIO() in sim.cc
+  * convert the encoded output to original encoding
+  * 00 -> `0`, 11 -> `1`, either 01 or 10 -> `X`
 
 
 
