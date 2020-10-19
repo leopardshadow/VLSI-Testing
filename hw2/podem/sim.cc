@@ -24,20 +24,6 @@ void CIRCUIT::LogicSimVectors()
 }
 
 //***************************************************************************//
-// do logic simulation for test patterns with unknowns using bin.op.
-void CIRCUIT::BinOpLogicSimVectors()
-{
-    cout << "Run logic simulation" << endl;
-    //read test patterns
-    while (!Pattern.eof()) {
-        Pattern.ReadNextPattern();
-        SchedulePI();
-        BinOpLogicSim();
-        PrintIO();
-    }
-    return;
-}
-
 //do event-driven logic simulation
 void CIRCUIT::LogicSim()
 {
@@ -49,26 +35,6 @@ void CIRCUIT::LogicSim()
             Queue[i].pop_front();
             gptr->ResetFlag(SCHEDULED);
             new_value = Evaluate(gptr);
-            if (new_value != gptr->GetValue()) {
-                gptr->SetValue(new_value);
-                ScheduleFanout(gptr);
-            }
-        }
-    }
-    return;
-}
-
-//do event-driven logic simulation with unknowns using bin.op.
-void CIRCUIT::BinOpLogicSim()
-{
-    GATE* gptr;
-    VALUE new_value;
-    for (unsigned i = 0;i <= MaxLevel;i++) {
-        while (!Queue[i].empty()) {
-            gptr = Queue[i].front();
-            Queue[i].pop_front();
-            gptr->ResetFlag(SCHEDULED);
-            new_value = BinOpEvaluate(gptr);
             if (new_value != gptr->GetValue()) {
                 gptr->SetValue(new_value);
                 ScheduleFanout(gptr);
@@ -157,7 +123,6 @@ VALUE CIRCUIT::Evaluate(GATEPTR gptr)
     }
     //NAND, NOR and NOT
     if (gptr->Is_Inversion()) { value = NotTable[value]; }
-    // cout << gptr->GetName() << ": " << value << endl;
     return value;
 }
 
