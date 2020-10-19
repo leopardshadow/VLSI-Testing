@@ -63,7 +63,7 @@ In [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes), a = 166
 |        1000        | 0.053402  |     2480     |
 |       10000        | 0.406807  |     2492     |
 
-
+When the number of patterns becomes bigger, only the time take becomes longer. The memory usage has only slight difference.
 
 ## Part.2-b
 
@@ -88,7 +88,7 @@ By doing so, and, or, nand, nor works fine without further modification !
 
 Note that there are 3 places to modify in the code, which shown as follows:
 
-* <u>void PATTERN::ReadNextPattern()</u> in sim.cc
+* <u>enum VALUE {S0, X, X1, S1</u> in typeemu.h
   * for input pattern `0`, `1` and `X` and stored as 00, 11 and 01 respectively
 
 * <u>VALUE CIRCUIT::Evaluate(GATEPTR gptr)</u> in sim.cc
