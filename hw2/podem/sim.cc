@@ -110,19 +110,24 @@ VALUE CIRCUIT::Evaluate(GATEPTR gptr)
         case G_AND:
         case G_NAND:
             for (unsigned i = 1;i<gptr->No_Fanin() && value != cv;++i) {
-                value = AndTable[value][gptr->Fanin(i)->GetValue()];
+                // value = AndTable[value][gptr->Fanin(i)->GetValue()];
+                value = (VALUE)(value & gptr->Fanin(i)->GetValue());
             }
             break;
         case G_OR:
         case G_NOR:
             for (unsigned i = 1;i<gptr->No_Fanin() && value != cv;++i) {
-                value = OrTable[value][gptr->Fanin(i)->GetValue()];
+                // value = OrTable[value][gptr->Fanin(i)->GetValue()];
+                value = (VALUE)(value | gptr->Fanin(i)->GetValue());
             }
             break;
         default: break;
     }
     //NAND, NOR and NOT
-    if (gptr->Is_Inversion()) { value = NotTable[value]; }
+    if (gptr->Is_Inversion()) {
+        if(value ^ 1)
+            value = (VALUE)((~ value) & 2);
+    }
     return value;
 }
 
@@ -232,7 +237,12 @@ void CIRCUIT::PrintIO()
     register unsigned i;
     for (i = 0;i<No_PI();++i) { cout << PIGate(i)->GetValue(); }
     cout << " ";
-    for (i = 0;i<No_PO();++i) { cout << POGate(i)->GetValue(); }
+    for (i = 0;i<No_PO();++i) {
+        if(POGate(i)->GetValue()<3)
+            cout << POGate(i)->GetValue();
+        else
+            cout << 2;
+    }
     cout << endl;
     return;
 }
