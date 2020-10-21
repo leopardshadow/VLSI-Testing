@@ -43,27 +43,29 @@ I use linear congruential generators (LCG) to generate random number. The pseudo
 $$
 X_{n+1} = (a X_n + c) mod M
 $$
-In [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes), a = 1664525, c = 1013904223 and m = 2^32 is used.
+In [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes), a = 1664525, c = 1013904223 and M = 2^32 is used.
 
 ### Results
 
-#### c17.bench
+#### c17.bench (total 14 gates)
 
-| number of patterns | CPU times | maximum memory usage |
-| :----------------: | :-------: | :------------------: |
-|        100         | 0.000548  |         808          |
-|        1000        |  0.00367  |         832          |
-|       10000        | 0.038851  |         844          |
+| number of patterns | CPU times(sec) | maximum memory usage (KB) |
+| :----------------: | :------------: | :-----------------------: |
+|        100         |    0.000548    |            808            |
+|        1000        |    0.00367     |            832            |
+|       10000        |    0.038851    |            844            |
 
-#### c7552.bench
+#### c7552.bench (total 5994 gates)
 
-| number of patterns | CPU times | memory usage |
-| :----------------: | :-------: | :----------: |
-|        100         | 0.015249  |     2468     |
-|        1000        | 0.053402  |     2480     |
-|       10000        | 0.406807  |     2492     |
+| number of patterns | CPU times (sec) | maximum memory usage (KB) |
+| :----------------: | :-------------: | :-----------------------: |
+|        100         |    0.015249     |           2468            |
+|        1000        |    0.053402     |           2480            |
+|       10000        |    0.406807     |           2492            |
 
-When the number of patterns becomes bigger, only the time take becomes longer. The memory usage has only slight difference.
+When the number of patterns becomes bigger, the time take becomes longer, roughly the same as the multiple of number of patterns . The memory usage has only slight difference.
+
+
 
 ## Part.2-b
 
@@ -99,8 +101,6 @@ Note that there are 3 places to modify in the code, which shown as follows:
 * <u>void CIRCUIT::PrintIO()</u> in sim.cc
   * convert the encoded output to original encoding
   * 00 -> `0`, 11 -> `1`, either 01 or 10 -> `X`
-
-
 
 
 
