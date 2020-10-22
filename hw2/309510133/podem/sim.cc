@@ -208,7 +208,7 @@ void PATTERN::ReadNextPattern()
 
 void CIRCUIT::PrintIO()
 {
-    string decode[4] = {"0", "X", "X", "1"};
+    string decode[4] = {"0", "2", "2", "1"};
     register unsigned i;
     for (i = 0;i<No_PI();++i) { cout << decode[PIGate(i)->GetValue()]; }
     cout << " ";
