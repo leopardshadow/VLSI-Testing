@@ -23,6 +23,7 @@ bitset<PatternNum> net25[2];
 bitset<PatternNum> net18[2];
 bitset<PatternNum> temp[2];
 ofstream fout("filename",ios::out);
+int main() {
 G1[0] = 16191
 G1[1] = 15914
 G2[0] = 63350
@@ -51,3 +52,5 @@ G5[1] = 49544
 evaluate();
 printIO(16);
 
+
+}
