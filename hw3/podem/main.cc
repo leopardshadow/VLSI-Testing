@@ -37,6 +37,10 @@ int SetupOption(int argc, char ** argv)
             "set the output pattern file", 0);
     option.enroll("bt", GetLongOpt::OptionalValue,
             "set the backtrack limit", 0);
+    option.enroll("packXoutput", GetLongOpt::MandatoryValue,
+            "pack X patterns into one round", 0);
+    option.enroll("simulator", GetLongOpt::MandatoryValue,
+            "generate compiled code", 0);
     int optind = option.parse(argc, argv);
     if ( optind < 1 ) { exit(0); }
     if ( option.retrieve("help") ) {
@@ -110,6 +114,13 @@ int main(int argc, char ** argv)
         }
         Circuit.TFAtpg();
     }
+    else if (option.retrieve("packXoutput")) {
+
+    }
+    else if (option.retrieve("simulator")) {
+
+    }
+
     else {
         Circuit.GenerateAllFaultList();
         Circuit.SortFaninByLevel();
