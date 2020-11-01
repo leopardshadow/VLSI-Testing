@@ -83,6 +83,16 @@ class CIRCUIT
             }
         }
 
+        //*******************************************************************//
+        void MySchedule(GATE* gptr)
+        {
+            if (!gptr->GetFlag(SCHEDULED)) {
+                gptr->SetFlag(SCHEDULED);
+                Queue[gptr->GetLevel()].push_back(gptr);
+            }
+        }
+
+
         //defined in circuit.cc
         void Levelize();
         void FanoutList();
@@ -135,6 +145,15 @@ class CIRCUIT
 	void ParallelEvaluate(GATEPTR gptr);
 	void PrintParallelIOs(unsigned idx);
 	void ScheduleAllPIs();
+    //***********************************************************************//
+    void packXinput(unsigned int patNum);
+    void simulator();
+    void MyParallelLogicSim();
+    void MyParallelEvaluate(GATEPTR gptr);
+    void MyParallelLogicSimVectors();
+    void MyScheduleAllPIs();
+    void MyScheduleFanout(GATE* gptr);
+
 
 	//defined in stfsim.cc for single pattern single transition-fault simulation
 	void GenerateAllTFaultList();

@@ -37,7 +37,7 @@ int SetupOption(int argc, char ** argv)
             "set the output pattern file", 0);
     option.enroll("bt", GetLongOpt::OptionalValue,
             "set the backtrack limit", 0);
-    option.enroll("packXoutput", GetLongOpt::MandatoryValue,
+    option.enroll("packXinput", GetLongOpt::NoValue,
             "pack X patterns into one round", 0);
     option.enroll("simulator", GetLongOpt::MandatoryValue,
             "generate compiled code", 0);
@@ -114,10 +114,18 @@ int main(int argc, char ** argv)
         }
         Circuit.TFAtpg();
     }
-    else if (option.retrieve("packXoutput")) {
+    else if (option.retrieve("packXinput")) {
+
+        unsigned int patNum = 2;
+
+
+        Circuit.InitPattern(option.retrieve("input"));
+        Circuit.packXinput(patNum);
 
     }
     else if (option.retrieve("simulator")) {
+        Circuit.InitPattern(option.retrieve("input"));
+        Circuit.MyParallelLogicSimVectors();
 
     }
 
