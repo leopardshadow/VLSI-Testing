@@ -12,16 +12,16 @@ void CIRCUIT::ParallelLogicSimVectors()
     unsigned pattern_num(0);
     unsigned pattern_idx(0);
     while(!Pattern.eof()){ 
-	for(pattern_idx=0; pattern_idx<PatternNum; pattern_idx++){
-	    if(!Pattern.eof()){ 
-	        ++pattern_num;
-	        Pattern.ReadNextPattern(pattern_idx);
-	    }
-	    else break;
-	}
-	ScheduleAllPIs();
-	ParallelLogicSim();
-	PrintParallelIOs(pattern_idx);
+        for(pattern_idx=0; pattern_idx<PatternNum; pattern_idx++){
+            if(!Pattern.eof()){ 
+                ++pattern_num;
+                Pattern.ReadNextPattern(pattern_idx);
+            }
+            else break;
+        }
+        ScheduleAllPIs();
+        ParallelLogicSim();
+        PrintParallelIOs(pattern_idx);
     }
 }
 
@@ -60,14 +60,17 @@ void CIRCUIT::ParallelLogicSim()
             Queue[i].pop_front();
             gptr->ResetFlag(SCHEDULED);
             ParallelEvaluate(gptr);
+            cout << "*";
         }
     }
+    cout << "\n===\n";
     return;
 }
 
 //Evaluate parallel value of gptr
 void CIRCUIT::ParallelEvaluate(GATEPTR gptr)
 {
+    static int eval = 1;
     register unsigned i;
     bitset<PatternNum> new_value1(gptr->Fanin(0)->GetValue1());
     bitset<PatternNum> new_value2(gptr->Fanin(0)->GetValue2());
@@ -99,6 +102,7 @@ void CIRCUIT::ParallelEvaluate(GATEPTR gptr)
         gptr->SetValue2(new_value2);
         ScheduleFanout(gptr);
     }
+    cout << "\n--\neval: " << (eval++) << endl;
     return;
 }
 
@@ -145,6 +149,142 @@ void CIRCUIT::ScheduleAllPIs()
 {
     for (unsigned i = 0;i < No_PI();i++) {
         ScheduleFanout(PIGate(i));
+    }
+    return;
+}
+
+
+
+//***************************************************************************//
+void CIRCUIT::packXinput(unsigned int patNum) {
+
+    cout << "Run Parallel Logic simulation" << endl;
+    unsigned pattern_num(0);
+    unsigned pattern_idx(0);
+    while(!Pattern.eof()){ 
+	for(pattern_idx=0; pattern_idx<patNum; pattern_idx++){
+	    if(!Pattern.eof()){ 
+	        ++pattern_num;
+	        Pattern.ReadNextPattern(pattern_idx);
+	    }
+	    else break;
+	}
+	ScheduleAllPIs();
+	ParallelLogicSim();
+	PrintParallelIOs(pattern_idx);
+    }
+
+
+
+}
+
+void CIRCUIT::simulator() {
+    cout << "generating compiled code" << endl;
+    unsigned pattern_num(0);
+    unsigned pattern_idx(0);
+    while(!Pattern.eof()){ 
+	for(pattern_idx=0; pattern_idx<PatternNum; pattern_idx++){
+	    if(!Pattern.eof()){ 
+	        ++pattern_num;
+	        Pattern.ReadNextPattern(pattern_idx);
+	    }
+	    else break;
+	}
+	MyScheduleAllPIs();
+	// ParallelLogicSim();
+    MyParallelLogicSim();
+	// PrintParallelIOs(pattern_idx);
+    }
+
+}
+
+
+void CIRCUIT::MyParallelLogicSim() {
+
+    static unsigned evalCnt = 0;
+    cout << "eval count: " << evalCnt << endl;
+    GATE* gptr;
+    for (unsigned i = 0;i <= MaxLevel;i++) {
+
+        while (!Queue[i].empty()) {
+            gptr = Queue[i].front();
+            Queue[i].pop_front();
+            gptr->ResetFlag(SCHEDULED);
+            MyParallelEvaluate(gptr);
+            evalCnt++;
+            // cout << "*";
+        }
+    }
+    cout << "eval count: " << evalCnt << endl;
+    return;
+}
+
+
+
+//Evaluate parallel value of gptr
+void CIRCUIT::MyParallelEvaluate(GATEPTR gptr)
+{
+    // cout << "evaluating " << gptr->GetName() << endl;
+    register unsigned i;
+    bitset<PatternNum> new_value1(gptr->Fanin(0)->GetValue1());
+    bitset<PatternNum> new_value2(gptr->Fanin(0)->GetValue2());
+    switch(gptr->GetFunction()) {
+        case G_AND:
+        case G_NAND:
+            for (i = 1; i < gptr->No_Fanin(); ++i) {
+                new_value1 &= gptr->Fanin(i)->GetValue1();
+                new_value2 &= gptr->Fanin(i)->GetValue2();
+            }
+            break;
+        case G_OR:
+        case G_NOR:
+            for (i = 1; i < gptr->No_Fanin(); ++i) {
+                new_value1 |= gptr->Fanin(i)->GetValue1();
+                new_value2 |= gptr->Fanin(i)->GetValue2();
+            }
+            break;
+        default: break;
+    } 
+    //swap new_value1 and new_value2 to avoid unknown value masked
+    if (gptr->Is_Inversion()) {
+        new_value1.flip(); new_value2.flip();
+        bitset<PatternNum> value(new_value1);
+        new_value1 = new_value2; new_value2 = value;
+    }
+    // do it anyway !!
+    // if (gptr->GetValue1() != new_value1 || gptr->GetValue2() != new_value2) {
+        gptr->SetValue1(new_value1);
+        gptr->SetValue2(new_value2);
+        ScheduleFanout(gptr);
+    // }
+    return;
+}
+
+
+// ~~Event-driven Parallel Pattern Logic simulation~~
+void CIRCUIT::MyParallelLogicSimVectors()
+{
+    cout << "Run Parallel Logic simulation" << endl;
+    unsigned pattern_num(0);
+    unsigned pattern_idx(0);
+    while(!Pattern.eof()){ 
+        for(pattern_idx=0; pattern_idx<PatternNum; pattern_idx++){
+            if(!Pattern.eof()){ 
+                ++pattern_num;
+                Pattern.ReadNextPattern(pattern_idx);
+            }
+            else break;
+        }
+        MyScheduleAllPIs();
+        MyParallelLogicSim();
+        PrintParallelIOs(pattern_idx);
+    }
+}
+
+void CIRCUIT::MyScheduleAllPIs()
+{
+    for (unsigned i = 0;i < No_PI();i++) {
+        MyScheduleFanout(PIGate(i));
     }
     return;
 }

@@ -192,3 +192,14 @@ void CIRCUIT::PrintIO()
     return;
 }
 
+
+//***************************************************************************//
+
+//schedule all fanouts of gate to Queue
+void CIRCUIT::MyScheduleFanout(GATE* gptr)
+{
+    for (unsigned j = 0;j < gptr->No_Fanout();j++) {
+        MySchedule(gptr->Fanout(j));
+    }
+    return;
+}
