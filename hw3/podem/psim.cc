@@ -60,10 +60,8 @@ void CIRCUIT::ParallelLogicSim()
             Queue[i].pop_front();
             gptr->ResetFlag(SCHEDULED);
             ParallelEvaluate(gptr);
-            cout << "*";
         }
     }
-    cout << "\n===\n";
     return;
 }
 
@@ -179,7 +177,7 @@ void CIRCUIT::packXinput(unsigned int patNum) {
 }
 
 void CIRCUIT::simulator() {
-    cout << "generating compiled code" << endl;
+    // cout << "generating compiled code" << endl;
     unsigned pattern_num(0);
     unsigned pattern_idx(0);
     while(!Pattern.eof()){ 
@@ -202,7 +200,6 @@ void CIRCUIT::simulator() {
 void CIRCUIT::MyParallelLogicSim() {
 
     static unsigned evalCnt = 0;
-    cout << "eval count: " << evalCnt << endl;
     GATE* gptr;
     for (unsigned i = 0;i <= MaxLevel;i++) {
 
@@ -277,7 +274,7 @@ void CIRCUIT::MyParallelLogicSimVectors()
         }
         MyScheduleAllPIs();
         MyParallelLogicSim();
-        PrintParallelIOs(pattern_idx);
+        // PrintParallelIOs(pattern_idx);
     }
 }
 

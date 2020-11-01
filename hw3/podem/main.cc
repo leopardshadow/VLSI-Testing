@@ -54,7 +54,7 @@ int main(int argc, char ** argv)
 {
     int optind = SetupOption(argc, argv);
     clock_t time_init, time_end;
-    time_init = clock();
+
     //Setup File
     if (optind < argc) {
         if ((yyin = fopen(argv[optind], "r")) == NULL) {
@@ -87,6 +87,9 @@ int main(int argc, char ** argv)
     Circuit.Levelize();
     Circuit.Check_Levelization();
     Circuit.InitializeQueue();
+
+    // ignores the tome of pre-processing :)
+    time_init = clock();
 
     if (option.retrieve("logicsim")) {
         //logic simulator
@@ -124,6 +127,7 @@ int main(int argc, char ** argv)
 
     }
     else if (option.retrieve("simulator")) {
+        
         Circuit.InitPattern(option.retrieve("input"));
         Circuit.MyParallelLogicSimVectors();
 
