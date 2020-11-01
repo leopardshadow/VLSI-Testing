@@ -228,7 +228,7 @@ void CIRCUIT::simulator(string filename) {
 
     for(int i=0; i<No_Gate(); i++) {
         // "bitset<PatternNum> G_G1[2];"
-        fout << "bitset<PatternNum> " << Gate(i)->GetName() << "[" << 2 << "];" << endl;
+        fout << "bitset<PatternNum> " << "G_" << Gate(i)->GetName() << "[" << 2 << "];" << endl;
     }
     fout << "bitset<PatternNum> temp;" << endl;
 
@@ -253,8 +253,8 @@ void CIRCUIT::simulator(string filename) {
 	    }
 
         for (int i = 0; i < No_PI(); i++) {
-            fout << PIGate(i)->GetName() << "[0] = " << (int)(PIGate(i)->GetValue1().to_ulong()) << ";" << endl;
-            fout << PIGate(i)->GetName() << "[1] = " << (int)(PIGate(i)->GetValue2().to_ulong()) << ";" <<  endl;
+            fout << "G_" << PIGate(i)->GetName() << "[0] = " << (int)(PIGate(i)->GetValue1().to_ulong()) << ";" << endl;
+            fout << "G_" << PIGate(i)->GetName() << "[1] = " << (int)(PIGate(i)->GetValue2().to_ulong()) << ";" <<  endl;
         }
 
         fout << "\nevaluate();\n";
@@ -287,16 +287,16 @@ void CIRCUIT::simulator(string filename) {
     
     for(int i=0; i<No_PI(); i++) {
 
-        fout << "    if(" << PIGate(i)->GetName() << "[0][j]==0)\n";
+        fout << "    if(" << "G_" << PIGate(i)->GetName() << "[0][j]==0)\n";
         fout << "    {\n";
-        fout << "        if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "        if(" << "G_" << PIGate(i)->GetName() << "[1][j]==1)\n";
         fout << "            fout<<\"F\";\n";
         fout << "        else\n";
         fout << "            fout<<\"0\";\n";
         fout << "    }\n";
         fout << "    else\n";
         fout << "    {\n";
-        fout << "        if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "        if(" << "G_" << PIGate(i)->GetName() << "[1][j]==1)\n";
         fout << "            fout<<\"1\";\n";
         fout << "        else\n";
         fout << "            fout<<\"2\";\n";
@@ -308,16 +308,16 @@ void CIRCUIT::simulator(string filename) {
 
     for(int i=0; i<No_PO(); i++) {
 
-        fout << "    if(" << POGate(i)->GetName() << "[0][j]==0)\n";
+        fout << "    if(" << "G_" << POGate(i)->GetName() << "[0][j]==0)\n";
         fout << "    {\n";
-        fout << "        if(" << POGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "        if(" << "G_" << POGate(i)->GetName() << "[1][j]==1)\n";
         fout << "            fout<<\"F\";\n";
         fout << "        else\n";
         fout << "            fout<<\"0\";\n";
         fout << "    }\n";
         fout << "    else\n";
         fout << "    {\n";
-        fout << "        if(" << POGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "        if(" << "G_" << POGate(i)->GetName() << "[1][j]==1)\n";
         fout << "            fout<<\"1\";\n";
         fout << "        else\n";
         fout << "            fout<<\"2\";\n";
@@ -424,26 +424,26 @@ void CIRCUIT::MyParallelEvaluate(GATEPTR gptr, fstream &fout)
     // cout << "evaluating " << gptr->GetName() << endl;
     register unsigned i;
     bitset<PatternNum> new_value1(gptr->Fanin(0)->GetValue1());
-    fout << gptr->GetName() << "[0] = " << gptr->Fanin(0)->GetName() << "[0];" << endl;
+    fout << "G_" << gptr->GetName() << "[0] = " << "G_" << gptr->Fanin(0)->GetName() << "[0];" << endl;
     bitset<PatternNum> new_value2(gptr->Fanin(0)->GetValue2());
-    fout << gptr->GetName() << "[1] = " << gptr->Fanin(0)->GetName() << "[1];" << endl;
+    fout << "G_" << gptr->GetName() << "[1] = " << "G_" << gptr->Fanin(0)->GetName() << "[1];" << endl;
     switch(gptr->GetFunction()) {
         case G_AND:
         case G_NAND:
             for (i = 1; i < gptr->No_Fanin(); ++i) {
                 new_value1 &= gptr->Fanin(i)->GetValue1();
-                fout << gptr->GetName() << "[0] &= " << gptr->Fanin(i)->GetName() << "[0];" << endl;
+                fout << "G_" << gptr->GetName() << "[0] &= " << "G_" << gptr->Fanin(i)->GetName() << "[0];" << endl;
                 new_value2 &= gptr->Fanin(i)->GetValue2();
-                fout << gptr->GetName() << "[1] &= " << gptr->Fanin(i)->GetName() << "[1];" << endl;
+                fout << "G_" << gptr->GetName() << "[1] &= " << "G_" << gptr->Fanin(i)->GetName() << "[1];" << endl;
             }
             break;
         case G_OR:
         case G_NOR:
             for (i = 1; i < gptr->No_Fanin(); ++i) {
                 new_value1 |= gptr->Fanin(i)->GetValue1();
-                fout << gptr->GetName() << "[0] |= " << gptr->Fanin(i)->GetName() << "[0];" << endl;
+                fout << "G_" << gptr->GetName() << "[0] |= " << "G_" << gptr->Fanin(i)->GetName() << "[0];" << endl;
                 new_value2 |= gptr->Fanin(i)->GetValue2();
-                fout << gptr->GetName() << "[1] |= " << gptr->Fanin(i)->GetName() << "[1];" << endl;
+                fout << "G_" << gptr->GetName() << "[1] |= " << "G_" << gptr->Fanin(i)->GetName() << "[1];" << endl;
             }
             break;
         default: break;
@@ -452,10 +452,10 @@ void CIRCUIT::MyParallelEvaluate(GATEPTR gptr, fstream &fout)
     if (gptr->Is_Inversion()) {
         new_value1.flip(); new_value2.flip();
         bitset<PatternNum> value(new_value1);
-        fout << "temp = " << gptr->GetName() << "[0];\n";
+        fout << "temp = " << "G_" << gptr->GetName() << "[0];\n";
         new_value1 = new_value2; new_value2 = value;
-        fout << gptr->GetName() << "[0] = ~" << gptr->GetName() << "[1];\n";
-        fout << gptr->GetName() << "[1] = " << "~temp;\n";
+        fout << "G_" << gptr->GetName() << "[0] = ~" << "G_" << gptr->GetName() << "[1];\n";
+        fout << "G_" << gptr->GetName() << "[1] = " << "~temp;\n";
     }
     // do it anyway !!
     // if (gptr->GetValue1() != new_value1 || gptr->GetValue2() != new_value2) {
