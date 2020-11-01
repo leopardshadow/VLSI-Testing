@@ -232,9 +232,12 @@ void CIRCUIT::simulator(string filename) {
     }
     fout << "bitset<PatternNum> temp;" << endl;
 
-    fout << "ofstream fout(\"" << "filename" << "\",ios::out);" << endl;
+    fout << "ofstream fout(\"" << GetName() << ".out" << "\",ios::out);" << endl;
 
     fout << "\n\nint main() {\n";
+
+    fout << "clock_t time_init, time_end;\n";
+    fout << "time_init = clock();\n";
 
 
     // prepare input !!
@@ -260,6 +263,9 @@ void CIRCUIT::simulator(string filename) {
         MyScheduleAllPIs();
         // // PrintParallelIOs(pattern_idx);
     }
+
+    fout << "time_end = clock();\n";
+    fout << "cout << \"Total CPU Time = \" << double(time_end - time_init)/CLOCKS_PER_SEC << endl;\n";
 
 
     fout << "fout.close();\n";
