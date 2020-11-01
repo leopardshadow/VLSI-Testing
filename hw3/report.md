@@ -4,11 +4,11 @@
 
 [TOC]
 
-## Test Cases & Discussion
+## Different Pack Numbers
 
 parallel logic simulation with different input pack number.
 
-### c17.bench (5 inputs / 2 outputs)
+### c17.bench
 
 * c17.input (24 cases)
 
@@ -46,13 +46,28 @@ In this example, n = 10000, x = 1, 4, 8, 16 for different cases and c = 5787. To
 
 ![image-20201101210338558](/Users/cheng/Desktop/VLSI-Testing/hw3/image-20201101210338558.png)
 
+
+
+## Event-driven vs. Compiled Code
+
+### c7522.bench
+
+* c7552-10000.input (10000 input patterns)
+
+|                  | Event-driven | compiled code |
+| :--------------: | :----------: | :-----------: |
+|  total CPU time  |   0.963047   |   0.429604    |
+| Max. memory (MB) |     2524     |     13416     |
+
+
+
 ## Discussion
 
 
 
 
 
-
+Notice that gate name may start with a number. However, it's not  valid variable name on C++. Thus, some modification has to be made to fit the requirements.
 
 ## 
 
@@ -64,6 +79,8 @@ In this example, n = 10000, x = 1, 4, 8, 16 for different cases and c = 5787. To
 
 ```
 make
-./ atpg ...
+./atpg -simulator c17.cc -input c17.input c17.bench
+g++ c17.cc
+./a.out
 ```
 
