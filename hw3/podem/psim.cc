@@ -278,23 +278,44 @@ void CIRCUIT::simulator(string filename) {
     
     for(int i=0; i<No_PI(); i++) {
 
-        fout << "if(" << PIGate(i)->GetName() << "[0][j]==0)\n";
-        fout << "{\n";
-        fout << "    if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
-        fout << "        fout<<\"F\";\n";
+        fout << "    if(" << PIGate(i)->GetName() << "[0][j]==0)\n";
+        fout << "    {\n";
+        fout << "        if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "            fout<<\"F\";\n";
+        fout << "        else\n";
+        fout << "            fout<<\"0\";\n";
+        fout << "    }\n";
         fout << "    else\n";
-        fout << "        fout<<\"0\";\n";
-        fout << "}\n";
-        fout << "else\n";
-        fout << "{\n";
-        fout << "    if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
-        fout << "        fout<<\"1\";\n";
-        fout << "    else\n";
-        fout << "        fout<<\"2\";\n";
-        fout << "}\n";
-
-
+        fout << "    {\n";
+        fout << "        if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "            fout<<\"1\";\n";
+        fout << "        else\n";
+        fout << "            fout<<\"2\";\n";
+        fout << "    }\n";
     }
+
+
+    fout << "fout<<\" \";\n";
+
+    for(int i=0; i<No_PO(); i++) {
+
+        fout << "    if(" << POGate(i)->GetName() << "[0][j]==0)\n";
+        fout << "    {\n";
+        fout << "        if(" << POGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "            fout<<\"F\";\n";
+        fout << "        else\n";
+        fout << "            fout<<\"0\";\n";
+        fout << "    }\n";
+        fout << "    else\n";
+        fout << "    {\n";
+        fout << "        if(" << POGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "            fout<<\"1\";\n";
+        fout << "        else\n";
+        fout << "            fout<<\"2\";\n";
+        fout << "    }\n";
+    }
+
+
 
 
     fout << "}\n";
