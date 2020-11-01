@@ -222,7 +222,7 @@ void CIRCUIT::simulator(string filename) {
     fout << "const unsigned PatternNum = 16;\n\n";
 
     fout << "void evaluate();\n";
-    // fout << "void printIO(unsigned idx);\n\n";
+    fout << "void printIO(unsigned idx);\n\n";
 
 
 
@@ -255,15 +255,18 @@ void CIRCUIT::simulator(string filename) {
         }
 
         fout << "\nevaluate();\n";
-        // fout << "printIO(" << pattern_idx << ");\n\n";  //CHANGE!!
+        fout << "printIO(" << pattern_idx << ");\n\n"; 
 
         MyScheduleAllPIs();
         // // PrintParallelIOs(pattern_idx);
     }
 
 
+    fout << "fout.close();\n";
+    fout << "return 0;\n\n";
+
     // end of main
-    fout << "\n}";
+    fout << "\n}\n\n";
 
 
 
@@ -315,7 +318,7 @@ void CIRCUIT::simulator(string filename) {
         fout << "    }\n";
     }
 
-
+    fout << "fout << endl;\n";
 
 
     fout << "}\n";
@@ -443,10 +446,10 @@ void CIRCUIT::MyParallelEvaluate(GATEPTR gptr, fstream &fout)
     if (gptr->Is_Inversion()) {
         new_value1.flip(); new_value2.flip();
         bitset<PatternNum> value(new_value1);
-        fout << "temp = " << gptr->Fanin(0)->GetName() << "[0];\n";
+        fout << "temp = " << gptr->GetName() << "[0];\n";
         new_value1 = new_value2; new_value2 = value;
-        fout << gptr->Fanin(0)->GetName() << "[0] = ~" << gptr->Fanin(0)->GetName() << "[1];\n";
-        fout << gptr->Fanin(0)->GetName() << "[1] = " << "~temp;\n";
+        fout << gptr->GetName() << "[0] = ~" << gptr->GetName() << "[1];\n";
+        fout << gptr->GetName() << "[1] = " << "~temp;\n";
     }
     // do it anyway !!
     // if (gptr->GetValue1() != new_value1 || gptr->GetValue2() != new_value2) {
