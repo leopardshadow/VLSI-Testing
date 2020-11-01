@@ -219,10 +219,10 @@ void CIRCUIT::simulator(string filename) {
     fout << "#include <fstream>\n";
 
     fout << "using namespace std;\n";
-    fout << "const unsigned PatternNum = 16;\n";
+    fout << "const unsigned PatternNum = 16;\n\n";
 
     fout << "void evaluate();\n";
-    fout << "void printIO(unsigned idx);\n";
+    // fout << "void printIO(unsigned idx);\n\n";
 
 
 
@@ -230,9 +230,11 @@ void CIRCUIT::simulator(string filename) {
         // "bitset<PatternNum> G_G1[2];"
         fout << "bitset<PatternNum> " << Gate(i)->GetName() << "[" << 2 << "];" << endl;
     }
-    fout << "bitset<PatternNum> temp" << "[" << 2 << "];" << endl;
+    fout << "bitset<PatternNum> temp" << endl;
 
     fout << "ofstream fout(\"" << "filename" << "\",ios::out);" << endl;
+
+    fout << "\n\nint main() {\n";
 
 
     // prepare input !!
@@ -248,18 +250,33 @@ void CIRCUIT::simulator(string filename) {
 	    }
 
         for (int i = 0; i < No_PI(); i++) {
-            fout << PIGate(i)->GetName() << "[0] = " << (int)(PIGate(i)->GetValue1().to_ulong()) << endl;
-            fout << PIGate(i)->GetName() << "[1] = " << (int)(PIGate(i)->GetValue2().to_ulong()) << endl;
+            fout << PIGate(i)->GetName() << "[0] = " << (int)(PIGate(i)->GetValue1().to_ulong()) << ";" << endl;
+            fout << PIGate(i)->GetName() << "[1] = " << (int)(PIGate(i)->GetValue2().to_ulong()) << ";" <<  endl;
         }
 
         fout << "\nevaluate();\n";
-        fout << "printIO(16);\n\n";  //CHANGE!!
+        // fout << "printIO(" << pattern_idx << ");\n\n";  //CHANGE!!
 
         MyScheduleAllPIs();
-        MyParallelLogicSim();
         // // PrintParallelIOs(pattern_idx);
     }
 
+
+    // end of main
+    fout << "\n}";
+
+
+
+    fout << "void evaluate() {\n\n";
+    
+    MyParallelLogicSim(fout);
+
+
+    fout << "}\n\n";
+
+
+
+    fout.close();
 }
 
 
@@ -325,26 +342,53 @@ void CIRCUIT::MyParallelEvaluate(GATEPTR gptr)
 
 
 
+
+void CIRCUIT::MyParallelLogicSim(fstream &fout) {
+
+    static unsigned evalCnt = 0;
+    GATE* gptr;
+    for (unsigned i = 0;i <= MaxLevel;i++) {
+
+        while (!Queue[i].empty()) {
+            gptr = Queue[i].front();
+            Queue[i].pop_front();
+            gptr->ResetFlag(SCHEDULED);
+            MyParallelEvaluate(gptr, fout);
+            evalCnt++;
+            // cout << "*";
+        }
+    }
+    cout << "eval count: " << evalCnt << endl;
+    return;
+}
+
+
 //Evaluate parallel value of gptr
-void CIRCUIT::MyParallelEvaluate(GATEPTR gptr, fstream fout)
+void CIRCUIT::MyParallelEvaluate(GATEPTR gptr, fstream &fout)
 {
     // cout << "evaluating " << gptr->GetName() << endl;
     register unsigned i;
     bitset<PatternNum> new_value1(gptr->Fanin(0)->GetValue1());
+    fout << gptr->GetName() << "[0] = " << gptr->Fanin(0)->GetName() << "[0];" << endl;
     bitset<PatternNum> new_value2(gptr->Fanin(0)->GetValue2());
+    fout << gptr->GetName() << "[1] = " << gptr->Fanin(0)->GetName() << "[1];" << endl;
     switch(gptr->GetFunction()) {
         case G_AND:
         case G_NAND:
             for (i = 1; i < gptr->No_Fanin(); ++i) {
                 new_value1 &= gptr->Fanin(i)->GetValue1();
+                fout << gptr->GetName() << "[0] &= " << gptr->Fanin(i)->GetName() << "[0];" << endl;
                 new_value2 &= gptr->Fanin(i)->GetValue2();
+                fout << gptr->GetName() << "[1] &= " << gptr->Fanin(i)->GetName() << "[1];" << endl;
             }
             break;
         case G_OR:
         case G_NOR:
             for (i = 1; i < gptr->No_Fanin(); ++i) {
                 new_value1 |= gptr->Fanin(i)->GetValue1();
+                fout << gptr->GetName() << "[0] |= " << gptr->Fanin(i)->GetName() << "[0];" << endl;
                 new_value2 |= gptr->Fanin(i)->GetValue2();
+                fout << gptr->GetName() << "[1] |= " << gptr->Fanin(i)->GetName() << "[1];" << endl;
             }
             break;
         default: break;
@@ -353,7 +397,10 @@ void CIRCUIT::MyParallelEvaluate(GATEPTR gptr, fstream fout)
     if (gptr->Is_Inversion()) {
         new_value1.flip(); new_value2.flip();
         bitset<PatternNum> value(new_value1);
+        fout << "temp = " << gptr->Fanin(0)->GetName() << "[0];\n";
         new_value1 = new_value2; new_value2 = value;
+        fout << gptr->Fanin(0)->GetName() << "[0] = ~" << gptr->Fanin(0)->GetName() << "[1];\n";
+        fout << gptr->Fanin(0)->GetName() << "[1] = " << "~temp;\n";
     }
     // do it anyway !!
     // if (gptr->GetValue1() != new_value1 || gptr->GetValue2() != new_value2) {
@@ -398,7 +445,7 @@ void CIRCUIT::MyScheduleAllPIs()
 
 
 // ~~Event-driven Parallel Pattern Logic simulation~~
-void CIRCUIT::MyParallelLogicSimVectors(fstream fout)
+void CIRCUIT::MyParallelLogicSimVectors(fstream &fout)
 {
     cout << "Run Parallel Logic simulation" << endl;
     unsigned pattern_num(0);
@@ -417,7 +464,7 @@ void CIRCUIT::MyParallelLogicSimVectors(fstream fout)
     }
 }
 
-void CIRCUIT::MyScheduleAllPIs(fstream fout)
+void CIRCUIT::MyScheduleAllPIs(fstream &fout)
 {
     for (unsigned i = 0;i < No_PI();i++) {
         MyScheduleFanout(PIGate(i));
