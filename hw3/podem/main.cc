@@ -119,17 +119,14 @@ int main(int argc, char ** argv)
     }
     else if (option.retrieve("packXinput")) {
 
-        unsigned int patNum = 2;
-
-
         Circuit.InitPattern(option.retrieve("input"));
-        Circuit.packXinput(patNum);
+        Circuit.MyParallelLogicSimVectors();
 
     }
     else if (option.retrieve("simulator")) {
         
         Circuit.InitPattern(option.retrieve("input"));
-        Circuit.MyParallelLogicSimVectors();
+        Circuit.simulator(option.retrieve("simulator"));
 
     }
 

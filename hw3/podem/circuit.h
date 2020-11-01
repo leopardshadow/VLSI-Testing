@@ -147,11 +147,15 @@ class CIRCUIT
 	void ScheduleAllPIs();
     //***********************************************************************//
     void packXinput(unsigned int patNum);
-    void simulator();
+    void simulator(string filename);
     void MyParallelLogicSim();
+    void MyParallelLogicSim(fstream fout);
     void MyParallelEvaluate(GATEPTR gptr);
+    void MyParallelEvaluate(GATEPTR gptr, fstream fout);
     void MyParallelLogicSimVectors();
+    void MyParallelLogicSimVectors(fstream fout);
     void MyScheduleAllPIs();
+    void MyScheduleAllPIs(fstream fout);
     void MyScheduleFanout(GATE* gptr);
 
 

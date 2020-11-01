@@ -18,6 +18,7 @@ class PATTERN
         void ReadNextPattern();
         void ReadNextPattern_t();
 	void ReadNextPattern(unsigned idx);
+    void MyReadNextPattern(unsigned idx);
         bool eof()
         {
             return (patterninput.eof());
