@@ -108,75 +108,104 @@ PO_G17[1] = G17[1];
 
 void printIO(unsigned idx) {
 for (unsigned j=0; j<idx; j++) {
-if(G1[0][j]==0)
-{
-    if(G1[1][j]==1)
-        fout<<"F";
+    if(G1[0][j]==0)
+    {
+        if(G1[1][j]==1)
+            fout<<"F";
+        else
+            fout<<"0";
+    }
     else
-        fout<<"0";
-}
-else
-{
-    if(G1[1][j]==1)
-        fout<<"1";
+    {
+        if(G1[1][j]==1)
+            fout<<"1";
+        else
+            fout<<"2";
+    }
+    if(G2[0][j]==0)
+    {
+        if(G2[1][j]==1)
+            fout<<"F";
+        else
+            fout<<"0";
+    }
     else
-        fout<<"2";
-}
-if(G2[0][j]==0)
-{
-    if(G2[1][j]==1)
-        fout<<"F";
+    {
+        if(G2[1][j]==1)
+            fout<<"1";
+        else
+            fout<<"2";
+    }
+    if(G3[0][j]==0)
+    {
+        if(G3[1][j]==1)
+            fout<<"F";
+        else
+            fout<<"0";
+    }
     else
-        fout<<"0";
-}
-else
-{
-    if(G2[1][j]==1)
-        fout<<"1";
+    {
+        if(G3[1][j]==1)
+            fout<<"1";
+        else
+            fout<<"2";
+    }
+    if(G4[0][j]==0)
+    {
+        if(G4[1][j]==1)
+            fout<<"F";
+        else
+            fout<<"0";
+    }
     else
-        fout<<"2";
-}
-if(G3[0][j]==0)
-{
-    if(G3[1][j]==1)
-        fout<<"F";
+    {
+        if(G4[1][j]==1)
+            fout<<"1";
+        else
+            fout<<"2";
+    }
+    if(G5[0][j]==0)
+    {
+        if(G5[1][j]==1)
+            fout<<"F";
+        else
+            fout<<"0";
+    }
     else
-        fout<<"0";
-}
-else
-{
-    if(G3[1][j]==1)
-        fout<<"1";
+    {
+        if(G5[1][j]==1)
+            fout<<"1";
+        else
+            fout<<"2";
+    }
+fout<<" ";
+    if(PO_G16[0][j]==0)
+    {
+        if(PO_G16[1][j]==1)
+            fout<<"F";
+        else
+            fout<<"0";
+    }
     else
-        fout<<"2";
-}
-if(G4[0][j]==0)
-{
-    if(G4[1][j]==1)
-        fout<<"F";
+    {
+        if(PO_G16[1][j]==1)
+            fout<<"1";
+        else
+            fout<<"2";
+    }
+    if(PO_G17[0][j]==0)
+    {
+        if(PO_G17[1][j]==1)
+            fout<<"F";
+        else
+            fout<<"0";
+    }
     else
-        fout<<"0";
-}
-else
-{
-    if(G4[1][j]==1)
-        fout<<"1";
-    else
-        fout<<"2";
-}
-if(G5[0][j]==0)
-{
-    if(G5[1][j]==1)
-        fout<<"F";
-    else
-        fout<<"0";
-}
-else
-{
-    if(G5[1][j]==1)
-        fout<<"1";
-    else
-        fout<<"2";
-}
+    {
+        if(PO_G17[1][j]==1)
+            fout<<"1";
+        else
+            fout<<"2";
+    }
 }
 }
