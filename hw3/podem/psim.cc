@@ -230,7 +230,7 @@ void CIRCUIT::simulator(string filename) {
         // "bitset<PatternNum> G_G1[2];"
         fout << "bitset<PatternNum> " << Gate(i)->GetName() << "[" << 2 << "];" << endl;
     }
-    fout << "bitset<PatternNum> temp" << endl;
+    fout << "bitset<PatternNum> temp;" << endl;
 
     fout << "ofstream fout(\"" << "filename" << "\",ios::out);" << endl;
 
@@ -268,12 +268,37 @@ void CIRCUIT::simulator(string filename) {
 
 
     fout << "void evaluate() {\n\n";
-    
     MyParallelLogicSim(fout);
-
-
     fout << "}\n\n";
 
+
+
+    fout << "void printIO(unsigned idx) {\n";
+    fout << "for (unsigned j=0; j<idx; j++) {\n";
+    
+    for(int i=0; i<No_PI(); i++) {
+
+        fout << "if(" << PIGate(i)->GetName() << "[0][j]==0)\n";
+        fout << "{\n";
+        fout << "    if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "        fout<<\"F\";\n";
+        fout << "    else\n";
+        fout << "        fout<<\"0\";\n";
+        fout << "}\n";
+        fout << "else\n";
+        fout << "{\n";
+        fout << "    if(" << PIGate(i)->GetName() << "[1][j]==1)\n";
+        fout << "        fout<<\"1\";\n";
+        fout << "    else\n";
+        fout << "        fout<<\"2\";\n";
+        fout << "}\n";
+
+
+    }
+
+
+    fout << "}\n";
+    fout << "}\n";
 
 
     fout.close();
