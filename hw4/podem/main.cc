@@ -37,6 +37,9 @@ int SetupOption(int argc, char ** argv)
             "set the output pattern file", 0);
     option.enroll("bt", GetLongOpt::OptionalValue,
             "set the backtrack limit", 0);
+    option.enroll("check_point", GetLongOpt::NoValue,
+            "hw4-a: check-point theorem", 0);
+
     int optind = option.parse(argc, argv);
     if ( optind < 1 ) { exit(0); }
     if ( option.retrieve("help") ) {
@@ -109,6 +112,15 @@ int main(int argc, char ** argv)
             Circuit.SetBackTrackLimit(atoi(option.retrieve("bt")));
         }
         Circuit.TFAtpg();
+    }
+    else if (option.retrieve("check_point")) {
+        // Circuit.MarkOutputGate();
+        // Circuit.GenerateAllTFaultList();
+        // Circuit.SortFaninByLevel();
+        // if (option.retrieve("bt")) {
+        //     Circuit.SetBackTrackLimit(atoi(option.retrieve("bt")));
+        // }
+        // Circuit.TFAtpg();
     }
     else {
         Circuit.GenerateAllFaultList();
