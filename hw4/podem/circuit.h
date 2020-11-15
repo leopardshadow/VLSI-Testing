@@ -138,6 +138,7 @@ class CIRCUIT
 
 	//defined in stfsim.cc for single pattern single transition-fault simulation
 	void GenerateAllTFaultList();
+    void CPGenerateAllTFaultList();
 	void TFaultSimVectors();
 	void TFaultSim_t();
 	void TFaultSim();

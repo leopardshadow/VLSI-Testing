@@ -114,12 +114,10 @@ int main(int argc, char ** argv)
         Circuit.TFAtpg();
     }
     else if (option.retrieve("check_point")) {
-        // Circuit.MarkOutputGate();
-        // Circuit.GenerateAllTFaultList();
+        Circuit.MarkOutputGate();
+        Circuit.GenerateAllTFaultList();
+        Circuit.CPGenerateAllTFaultList();
         // Circuit.SortFaninByLevel();
-        // if (option.retrieve("bt")) {
-        //     Circuit.SetBackTrackLimit(atoi(option.retrieve("bt")));
-        // }
         // Circuit.TFAtpg();
     }
     else {
