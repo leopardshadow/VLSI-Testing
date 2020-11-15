@@ -99,7 +99,7 @@ void CIRCUIT::CPGenerateAllTFaultList()
     cout << "+++++\n";
 
     list<TFAULT*>::iterator it;
-    list<TFAULT*> target = TFlist;
+    list<TFAULT*> target = CPFlist;
     for(it=target.begin(); it!=target.end(); it++) {
         cout << (*it)->GetInputGate()->GetName()  << " " <<
                 (*it)->GetOutputGate()->GetName() << " " <<
