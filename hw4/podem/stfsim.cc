@@ -95,7 +95,16 @@ void CIRCUIT::CPGenerateAllTFaultList()
     cout << UCPFlist.size() << endl;
     cout << TFlist.size() << endl;
     cout << "percentage of collapsed faults: " << 100.*UCPFlist.size()/TFlist.size() << endl;
-    // cout << "+++++\n";
+    
+    cout << "+++++\n";
+
+    list<TFAULT*>::iterator it;
+    list<TFAULT*> target = TFlist;
+    for(it=target.begin(); it!=target.end(); it++) {
+        cout << (*it)->GetInputGate()->GetName()  << " " <<
+                (*it)->GetOutputGate()->GetName() << " " <<
+                (*it)->GetValue() << endl;
+    }
 
     return;
 }
