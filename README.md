@@ -12,9 +12,9 @@ my solutions to VLSI testing course
 
 ## Prerequisites
 
-make
-g++
-`sudo apt-get install bison flex` (lex.yy.cc, readcircuit.tab.cc, readcircuit.tab.h)
-`sudo apt-get install libreadline-dev`
+* make
+* g++
+* `sudo apt-get install bison flex` (lex.yy.cc, readcircuit.tab.cc, readcircuit.tab.h)
+* `sudo apt-get install libreadline-dev`
 
 
