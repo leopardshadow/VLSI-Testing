@@ -9,3 +9,12 @@ my solutions to VLSI testing course
 * hw2 - logic simulation with unknown encoded
 * hw3 - pack several input patterns into one & generates compiled code simulation
 * hw4 -  
+
+## Prerequisites
+
+make
+g++
+`sudo apt-get install bison flex` (lex.yy.cc, readcircuit.tab.cc, readcircuit.tab.h)
+`sudo apt-get install libreadline-dev`
+
+
