@@ -4,7 +4,7 @@
 
 [TOC]
 
-## part.a
+## Part.a
 
 ### Checkpoint Theorem
 
@@ -22,7 +22,15 @@ When we use checkpoint theorem, we only consider those faults on primary input a
 
 Those faults in blue are discarded.
 
+### Implementation
 
+The implementation on finding checkpoints is easy. For a gate, there are following possibilities.
+
+* primary input: is **checkpoint**
+* primary output: is NOT checkpoint
+* gates in between (gptr)
+  * with no branch: is NOT checkpoint
+  * with branches (i.e. gptr->No_Fanout > 1): is **checkpoint**
 
 ### Test Cases
 
@@ -31,4 +39,10 @@ Those faults in blue are discarded.
 |  c17.bench  |       36        |             22              |             61.1111             |
 | c499.bench  |      2390       |            1282             |             53.6402             |
 | c7552.bench |      19456      |            8098             |             41.6221             |
+
+
+
+
+
+## Part.b
 
