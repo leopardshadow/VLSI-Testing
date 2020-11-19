@@ -45,6 +45,8 @@ X_{n+1} = (a X_n + c) mod M
 $$
 In [Numerical Recipes](https://en.wikipedia.org/wiki/Numerical_Recipes), a = 1664525, c = 1013904223 and M = 2^32 is used.
 
+Notice the problem of overflow!!! Choose proper data type!!!
+
 ### Results
 
 #### c17.bench (total 14 gates)
