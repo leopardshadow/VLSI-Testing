@@ -28,10 +28,10 @@ GetLongOpt option;
 
 int realRandom(int size) {
     // return int((rand()/(RAND_MAX + 1.0))*size);
-    const unsigned A = 1664525,
+    const unsigned long long A = 1664525,
                    C = 1013904223,
-                   M = (unsigned)(pow(2, 32));
-    static unsigned num = rand() % M;
+                   M = (unsigned long long)(pow(2, 32));
+    static unsigned long long num = rand() % M;
     num = (A * num + C) % M;
     return  int(size*num/double(M+1));
 }
