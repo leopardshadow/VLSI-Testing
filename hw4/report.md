@@ -46,3 +46,7 @@ The implementation on finding checkpoints is easy. For a gate, there are followi
 
 ## Part.b
 
+
+
+
+
