@@ -103,7 +103,11 @@ class CIRCUIT
 
         //defined in atpg.cc
         void GenerateAllFaultList();
-        void GenerateAllCPSAaultList();
+        //******************************//
+        void GenerateAllCPSAaultList();   // atpg.cc
+        void GenerateBridgingFaults();   // bridging.cc
+        void PrintBridgingFaults(string f);
+        //******************************//
         void GenerateFaultList();
         void Atpg();
         void SortFaninByLevel();

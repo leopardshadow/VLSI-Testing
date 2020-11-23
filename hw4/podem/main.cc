@@ -122,8 +122,12 @@ int main(int argc, char ** argv)
         Circuit.GenerateAllCPSAaultList();
     }
     else if (option.retrieve("bridging")) {
-        
-        
+
+        Circuit.GenerateBridgingFaults();
+
+        if (option.retrieve("output")) {
+            Circuit.PrintBridgingFaults(option.retrieve("output"));
+        }
     }
 
     else {
