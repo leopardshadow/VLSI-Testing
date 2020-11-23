@@ -8,11 +8,11 @@
 
 ### Checkpoint Theorem
 
-Checkpoint theorem tells us that we only have to consider those faults on primary input and fanout branches. Take c17.bench for example, the original faults happens at the blue point shown below.
+Checkpoint theorem tells us that we only have to consider those faults **on primary input and on fanout branches**. Take c17.bench for example, the original faults happens at the blue point shown below.
 
 ![](report.assets/Screenshot 2020-11-16 194904.png)
 
-There 18 points in total with two kinds of faults at each point, which is 36 total.
+There 18 points in total with s-a-1 amd s-a-0, two kinds of faults at each point, which is 36 total.
 
 When we use checkpoint theorem, we only consider those faults on primary input and brach fanouts. Hence, some faults are discarded. Those faults remain are shown in orange below.
 
@@ -36,9 +36,9 @@ The implementation on finding checkpoints is easy. For a gate, there are followi
 
 |    bench    | original faults | faults (checkpoint theorem) | % of faults have been collapsed |
 | :---------: | :-------------: | :-------------------------: | :-----------------------------: |
-|  c17.bench  |       36        |             22              |             61.1111             |
-| c499.bench  |      2390       |            1282             |             53.6402             |
-| c7552.bench |      19456      |            8098             |             41.6221             |
+|  c17.bench  |       36        |             22              |             38.8889             |
+| c499.bench  |      2390       |            1282             |             46.3598             |
+| c7552.bench |      19456      |            8098             |             58.3779             |
 
 
 
