@@ -115,7 +115,7 @@ int main(int argc, char ** argv)
     }
     else if (option.retrieve("check_point")) {
         Circuit.MarkOutputGate();
-        Circuit.GenerateAllTFaultList();
+        Circuit.GenerateAllFaultList();
         Circuit.GenerateAllCPSAaultList();
         // Circuit.SortFaninByLevel();
         // Circuit.TFAtpg();
