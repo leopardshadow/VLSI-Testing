@@ -39,6 +39,9 @@ int SetupOption(int argc, char ** argv)
             "set the backtrack limit", 0);
     option.enroll("check_point", GetLongOpt::NoValue,
             "hw4-a: check-point theorem", 0);
+    option.enroll("bridging", GetLongOpt::NoValue,
+            "hw4-b: generates bridging faults", 0);
+
 
     int optind = option.parse(argc, argv);
     if ( optind < 1 ) { exit(0); }
@@ -114,12 +117,15 @@ int main(int argc, char ** argv)
         Circuit.TFAtpg();
     }
     else if (option.retrieve("check_point")) {
-        Circuit.MarkOutputGate();
+        // Circuit.MarkOutputGate();
         Circuit.GenerateAllFaultList();
         Circuit.GenerateAllCPSAaultList();
-        // Circuit.SortFaninByLevel();
-        // Circuit.TFAtpg();
     }
+    else if (option.retrieve("bridging")) {
+
+        
+    }
+
     else {
         Circuit.GenerateAllFaultList();
         Circuit.SortFaninByLevel();
