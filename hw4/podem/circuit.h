@@ -2,6 +2,7 @@
 #define CIRCUIT_H
 #include "fault.h"
 #include "tfault.h"
+#include "bridgingFaults.h"
 #include "ReadPattern.h"
 #include <stdlib.h>
 
@@ -21,6 +22,9 @@ class CIRCUIT
         list<FAULT*> UFlist; //undetected fault list
         list<TFAULT*> TFlist; //collapsing fault list
         list<TFAULT*> UTFlist; //undetected fault list
+        //******************************//
+        vector<BRIDGING_FAULT*> BFlist; //collapsing fault list
+        //******************************//
         unsigned MaxLevel;
         unsigned BackTrackLimit; //backtrack limit for Podem
         typedef list<GATE*> ListofGate;
