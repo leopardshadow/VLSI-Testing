@@ -122,7 +122,7 @@ int main(int argc, char ** argv)
         Circuit.GenerateAllCPSAaultList();
     }
     else if (option.retrieve("bridging")) {
-
+        
         
     }
 
