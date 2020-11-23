@@ -6,8 +6,6 @@
 (G3, G4, OR)
 (G4, G5, AND)
 (G4, G5, OR)
-(PO_G16, PO_G17, AND)
-(PO_G16, PO_G17, OR)
 (G16, G17, AND)
 (G16, G17, OR)
 (n60, net14, AND)

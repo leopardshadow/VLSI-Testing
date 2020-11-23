@@ -17,7 +17,7 @@ void CIRCUIT::GenerateBridgingFaults() {
         GATE *g2 ( Gate(i) );
         GATE *g1 ( lastGateAtLevelN[g2->GetLevel()] );
 
-        if(g1!=nullptr) {
+        if(g1!=nullptr && g2->GetFunction()!=G_PO) {
             BFlist.push_back(new BRIDGING_FAULT(AND, g1, g2));
             BFlist.push_back(new BRIDGING_FAULT(OR , g1, g2));
         }
