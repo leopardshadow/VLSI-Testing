@@ -20,7 +20,7 @@ When we use checkpoint theorem, we only consider those faults on primary input a
 
 ![](report.assets/Screenshot 2020-11-16 194936.png)
 
-Those faults in blue are discarded.
+Those faults in blue are not checkpoints and thus discarded.
 
 ### Implementation
 
@@ -30,7 +30,7 @@ The implementation on finding checkpoints is easy. For a gate, there are followi
 * primary output: is NOT checkpoint
 * gates in between (gptr)
   * with no branch: is NOT checkpoint
-  * with branches (i.e. gptr->No_Fanout > 1): is **checkpoint**
+  * gptr's branches (i.e. gptr->No_Fanout > 1): are **checkpoints** (but gptr itself is not)
 
 ### Test Cases
 
