@@ -44,6 +44,74 @@ void CIRCUIT::GenerateAllFaultList()
     return;
 }
 
+
+
+//=============================================================================
+//generate a list for all transition faults using checkpoint theorem
+void CIRCUIT::GenerateAllCPSAaultList()
+{
+    list<TFAULT*> CPFlist; //collapsing fault list
+    list<TFAULT*> UCPFlist; //undetected fault list
+
+    // cout << "Generate transition fault list" << endl;
+    register unsigned i, j;
+    GATEFUNC fun;
+    GATEPTR gptr, fanout;
+    TFAULT *fptr;
+    for (i = 0;i<No_Gate();++i) {
+        gptr = Netlist[i]; fun = gptr->GetFunction();
+        if (fun == G_PO) { continue; } //skip PO
+        if (fun == G_PI) {
+            fptr = new TFAULT(gptr, gptr, S0);
+            CPFlist.push_front(fptr);
+            //add stem stuck-at 1 fault to CPFlist
+            fptr = new TFAULT(gptr, gptr, S1);
+            CPFlist.push_front(fptr);
+        }
+
+        //add stem stuck-at 0 fault to TFlist
+        // fptr = new TFAULT(gptr, gptr, S0);
+        // TFlist.push_front(fptr);
+        // //add stem stuck-at 1 fault to TFlist
+        // fptr = new TFAULT(gptr, gptr, S1);
+        // TFlist.push_front(fptr);
+
+        if (gptr->No_Fanout() == 1) { continue; } //no branch faults
+
+        //add branch fault
+        for (j = 0;j< gptr->No_Fanout();++j) {
+            fanout = gptr->Fanout(j);
+            fptr = new TFAULT(gptr, fanout, S0);
+            fptr->SetBranch(true);
+            CPFlist.push_front(fptr);
+            fptr = new TFAULT(gptr, fanout, S1);
+            fptr->SetBranch(true);
+            CPFlist.push_front(fptr);
+        } //end all fanouts
+    } //end all gates
+    //copy TFlist to undetected UTFlist (for fault simulation)
+    UCPFlist = CPFlist;
+
+
+    // cout << "+++++\n";
+    cout << UCPFlist.size() << endl;
+    cout << TFlist.size() << endl;
+    cout << "percentage of collapsed faults: " << 100.*UCPFlist.size()/TFlist.size() << endl;
+    
+    cout << "+++++\n";
+
+    list<TFAULT*>::iterator it;
+    list<TFAULT*> target = CPFlist;
+    for(it=target.begin(); it!=target.end(); it++) {
+        cout << (*it)->GetInputGate()->GetName()  << " " <<
+                (*it)->GetOutputGate()->GetName() << " " <<
+                (*it)->GetValue() << endl;
+    }
+
+    return;
+}
+
+
 //stuck-at fualt PODEM ATPG (fault dropping)
 void CIRCUIT::Atpg()
 {
