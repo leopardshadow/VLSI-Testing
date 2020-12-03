@@ -87,12 +87,12 @@ void CIRCUIT::BFaultSimVectors()
     cout << "Detected fault number = " << detected_num << endl;
     cout << "Undetected fault number = " << undetected_num << endl;
     cout << "---------------------------------------" << endl;
-    cout << "Equivalent fault number = " << Flist.size() << endl;
+    cout << "Equivalent fault number = " << BFlist.size() << endl;
     cout << "Equivalent detected fault number = " << eqv_detected_num << endl; 
     cout << "Equivalent undetected fault number = " << eqv_undetected_num << endl; 
     cout << "---------------------------------------" << endl;
     cout << "Fault Coverge = " << 100*detected_num/double(total_num) << "%" << endl;
-    cout << "Equivalent FC = " << 100*eqv_detected_num/double(Flist.size()) << "%" << endl;
+    cout << "Equivalent FC = " << 100*eqv_detected_num/double(BFlist.size()) << "%" << endl;
     cout << "---------------------------------------" << endl;
     return;
 }
@@ -105,8 +105,8 @@ void CIRCUIT::BFaultSim()
 {
     register unsigned i, fault_idx(0);
     GATEPTR gptr;
-    FAULT *fptr;
-    FAULT *simulate_flist[PatternNum];
+    BRIDGING_FAULT *fptr;
+    BRIDGING_FAULT *simulate_bflist[PatternNum];
     list<GATEPTR>::iterator gite;
     //initial all gates
     for (i = 0; i < Netlist.size(); ++i) {
@@ -114,8 +114,8 @@ void CIRCUIT::BFaultSim()
     }
 
     //for all undetected faults
-    list<FAULT*>::iterator fite;
-    for (fite = UFlist.begin();fite!=UFlist.end();++fite) {
+    vector<BRIDGING_FAULT*>::iterator fite;
+    for (fite = UBFlist.begin();fite!=UBFlist.end();++fite) {
         fptr = *fite;
         //skip redundant and detected faults
         if (fptr->GetStatus() == REDUNDANT || fptr->GetStatus() == DETECTED) { continue; }
@@ -134,7 +134,7 @@ void CIRCUIT::BFaultSim()
             InjectFaultValue(gptr, fault_idx, fptr->GetValue());
             gptr->SetFlag(FAULT_INJECTED);
             ScheduleFanout(gptr);
-            simulate_flist[fault_idx++] = fptr;
+            simulate_bflist[fault_idx++] = fptr;
         }
         else { //branch
             if (!CheckFaultyGate(fptr)) { continue; }
@@ -152,7 +152,7 @@ void CIRCUIT::BFaultSim()
             InjectFaultValue(gptr, fault_idx, fault_type);
             gptr->SetFlag(FAULT_INJECTED);
             ScheduleFanout(gptr);
-            simulate_flist[fault_idx++] = fptr;
+            simulate_bflist[fault_idx++] = fptr;
         }
 
         //collect PatternNum fault, do fault simulation
@@ -176,12 +176,12 @@ void CIRCUIT::BFaultSim()
                 gptr->ResetFaultFlag();
                 if (gptr->GetFlag(OUTPUT)) {
                     for (i = 0; i < fault_idx; ++i) {
-                        if (simulate_flist[i]->GetStatus() == DETECTED) { continue; }
+                        if (simulate_bflist[i]->GetStatus() == DETECTED) { continue; }
                         //faulty value != fault-free value && fault-free != X &&
                         //faulty value != X (WireValue1[i] == WireValue2[i])
                         if (gptr->GetValue() != VALUE(gptr->GetValue1(i)) && gptr->GetValue() != X 
                                 && gptr->GetValue1(i) == gptr->GetValue2(i)) {
-                            simulate_flist[i]->SetStatus(DETECTED);
+                            simulate_bflist[i]->SetStatus(DETECTED);
                         }
                     }
                 }
@@ -213,12 +213,12 @@ void CIRCUIT::BFaultSim()
             gptr->ResetFaultFlag();
             if (gptr->GetFlag(OUTPUT)) {
                 for (i = 0; i < fault_idx; ++i) {
-                    if (simulate_flist[i]->GetStatus() == DETECTED) { continue; }
+                    if (simulate_bflist[i]->GetStatus() == DETECTED) { continue; }
                     //faulty value != fault-free value && fault-free != X &&
                     //faulty value != X (WireValue1[i] == WireValue2[i])
                     if (gptr->GetValue() != VALUE(gptr->GetValue1(i)) && gptr->GetValue() != X 
                             && gptr->GetValue1(i) == gptr->GetValue2(i)) {
-                        simulate_flist[i]->SetStatus(DETECTED);
+                        simulate_bflist[i]->SetStatus(DETECTED);
                     }
                 }
             }
@@ -229,12 +229,16 @@ void CIRCUIT::BFaultSim()
     } //end fault simulation
 
     // remove detected faults
-    for (fite = UFlist.begin();fite != UFlist.end();) {
+    for (fite = UBFlist.begin();fite != UBFlist.end();) {
         fptr = *fite;
         if (fptr->GetStatus() == DETECTED || fptr->GetStatus() == REDUNDANT) {
-            fite = UFlist.erase(fite);
+            fite = UBFlist.erase(fite);
         }
         else { ++fite; }
     }
     return;
 }
+
+
+
+

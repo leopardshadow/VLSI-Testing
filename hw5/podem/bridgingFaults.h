@@ -2,20 +2,28 @@
 #define BRIDGING_FAULTS_H
 
 #include "gate.h"
+#include "fault.h"
 
 enum BFAULT_TYPE {AND, OR};
 
-class BRIDGING_FAULT
+class BRIDGING_FAULT : public FAULT
 {
     private:
         BFAULT_TYPE FType;
+        VALUE Value;
+        GATE* Input;
+        GATE* Output; //record output gate for branch fault
         GATE* gptr1;
         GATE* gptr2;
+        bool Branch; //fault is on branch
         unsigned EqvFaultNum; //equivalent fault number (includes itself)
         FAULT_STATUS Status;
 
     public:
-        BRIDGING_FAULT(BFAULT_TYPE FType, GATE* gptr1, GATE* gptr2) {
+    //***** needs modification on constructor
+        BRIDGING_FAULT(BFAULT_TYPE FType, GATE* gptr1, GATE* gptr2):
+            FAULT(gptr1, gptr2, S0) {
+            // Value(S0), Input(gptr1),Output(gptr2), Branch(false), EqvFaultNum(1), Status(UNKNOWN) {
             this->FType = FType;
             this->gptr1 = gptr1;
             this->gptr2 = gptr2;
@@ -26,12 +34,16 @@ class BRIDGING_FAULT
             out = out + (FType ? "OR" : "AND") + ")";
             return out;
         }
-
-        void SetEqvFaultNum(unsigned n) { EqvFaultNum = n; }
-        void IncEqvFaultNum() { ++EqvFaultNum; }
-        unsigned GetEqvFaultNum() { return EqvFaultNum; }
-        void SetStatus(FAULT_STATUS status) { Status = status; }
-        FAULT_STATUS GetStatus() { return Status; }
+        // VALUE GetValue() { return Value; }
+        // GATE* GetInputGate() { return Input; }
+        // GATE* GetOutputGate() { return Output; }
+        // void SetBranch(bool b) { Branch = b; }
+        // bool Is_Branch() { return Branch; }
+        // void SetEqvFaultNum(unsigned n) { EqvFaultNum = n; }
+        // void IncEqvFaultNum() { ++EqvFaultNum; }
+        // unsigned GetEqvFaultNum() { return EqvFaultNum; }
+        // void SetStatus(FAULT_STATUS status) { Status = status; }
+        // FAULT_STATUS GetStatus() { return Status; }
 
 };
 
