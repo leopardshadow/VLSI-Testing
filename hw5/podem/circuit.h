@@ -24,6 +24,8 @@ class CIRCUIT
         list<TFAULT*> UTFlist; //undetected fault list
         //******************************//
         vector<BRIDGING_FAULT*> BFlist; //collapsing fault list
+        vector<BRIDGING_FAULT*> UBFlist; //undetected fault list
+
         //******************************//
         unsigned MaxLevel;
         unsigned BackTrackLimit; //backtrack limit for Podem
@@ -111,6 +113,8 @@ class CIRCUIT
         void GenerateAllCPSAaultList();   // atpg.cc
         void GenerateBridgingFaults();   // bridging.cc
         void PrintBridgingFaults(string f);
+        void BFaultSimVectors();
+        void BFaultSim();
         //******************************//
         void GenerateFaultList();
         void Atpg();

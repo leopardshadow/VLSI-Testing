@@ -11,6 +11,9 @@ class BRIDGING_FAULT
         BFAULT_TYPE FType;
         GATE* gptr1;
         GATE* gptr2;
+        unsigned EqvFaultNum; //equivalent fault number (includes itself)
+        FAULT_STATUS Status;
+
     public:
         BRIDGING_FAULT(BFAULT_TYPE FType, GATE* gptr1, GATE* gptr2) {
             this->FType = FType;
@@ -23,6 +26,13 @@ class BRIDGING_FAULT
             out = out + (FType ? "OR" : "AND") + ")";
             return out;
         }
+
+        void SetEqvFaultNum(unsigned n) { EqvFaultNum = n; }
+        void IncEqvFaultNum() { ++EqvFaultNum; }
+        unsigned GetEqvFaultNum() { return EqvFaultNum; }
+        void SetStatus(FAULT_STATUS status) { Status = status; }
+        FAULT_STATUS GetStatus() { return Status; }
+
 };
 
 
