@@ -78,9 +78,9 @@ for different patterns {
 			if f not activated: skip
 			if f can be seen directly: skip
 			if g is stem:
-			
+				inject fault value
 			if g is branch:
-				
+				add the fault to the simulated list and inject it
 		}
 		do fault simulation
     )
