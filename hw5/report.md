@@ -62,3 +62,28 @@ The second case, c499.bench, in the contrary, are affected greatly by the number
 
  
 
+## Part.c
+
+### Algorithm
+
+The fault simulation for bridging faults are described below.
+
+```
+for different patterns {
+	run fault-free simulation
+	single pattern parallel bridging fault simulation (
+		set fault-free value for every gates
+		for all undetected faults f (@gate g) {
+			if f redundant: skip
+			if f not activated: skip
+			if f can be seen directly: skip
+			if g is stem:
+			
+			if g is branch:
+				
+		}
+		do fault simulation
+    )
+}
+```
+
