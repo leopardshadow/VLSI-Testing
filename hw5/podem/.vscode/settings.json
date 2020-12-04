@@ -5,6 +5,7 @@
         "random": "cpp",
         "numeric": "cpp",
         "cmath": "cpp",
-        "streambuf": "cpp"
+        "streambuf": "cpp",
+        "iostream": "cpp"
     }
 }

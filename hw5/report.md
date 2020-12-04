@@ -48,11 +48,11 @@ const unsigned PatternNum = 16;
 
 ### Results
 
-| CPU-time (s) |   1   |  4   |  8   |  16  |  32  |   64   |
-| :----------: | :---: | :--: | :--: | :--: | :--: | :----: |
-|  c17.bench   | 0.35  | 0.35 | 0.35 | 0.35 | 0.35 |  0.35  |
-|  c499.bench  | 18.68 |      |      |      |      | 17.08  |
-| c7552.bench  |       |      |      |      |      | 204.42 |
+| CPU-time (sec) |   1   |  4   |  8   |  16  |  32  |   64   |
+| :------------: | :---: | :--: | :--: | :--: | :--: | :----: |
+|   c17.bench    | 0.35  | 0.35 | 0.35 | 0.35 | 0.35 |  0.35  |
+|   c499.bench   | 18.68 |      |      |      |      | 17.08  |
+|  c7552.bench   |       |      |      |      |      | 204.42 |
 
 ### Discussion
 
@@ -75,10 +75,11 @@ for different patterns {
 		set fault-free value for every gates
 		for all undetected faults f (@gate g) {
 			if f redundant: skip
-			if f not activated: skip
-			if f can be seen directly: skip
+			if f not activated**: skip
+			if f can be seen directly:
+				set the fault to de DETECTED
 			if g is stem:
-				inject fault value
+				inject fault value**
 			if g is branch:
 				add the fault to the simulated list and inject it
 		}
@@ -86,4 +87,14 @@ for different patterns {
     )
 }
 ```
+
+The process running fault simulation is pretty much the same for stuck-at faults and bridging faults. Except for:
+
+1. the condition of fault activation
+   * for s-a-x faults: the signal is not x
+   * for bridging faults: the two signals have different values
+
+2. the behavior of fault
+   * for s-a-x faults: the signal is fixed to x
+   * for bridging faults: the two signals are changed to the same value, 0 (AND) / 1 (OR)
 

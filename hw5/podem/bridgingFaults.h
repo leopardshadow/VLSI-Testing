@@ -35,7 +35,19 @@ class BRIDGING_FAULT : public FAULT
             return out;
         }
         // VALUE GetValue() { return Value; }
+
+        VALUE GetValue() {
+            if(FType == AND) {
+                return S0; 
+            }
+            if(FType == OR ) { 
+                return S1;
+            }
+        }
         // GATE* GetInputGate() { return Input; }
+        GATE* GetInputGate1() { return gptr1; }
+        GATE* GetInputGate2() { return gptr2; }
+        BFAULT_TYPE getFaultType() { return FType; };
         // GATE* GetOutputGate() { return Output; }
         // void SetBranch(bool b) { Branch = b; }
         // bool Is_Branch() { return Branch; }

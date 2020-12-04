@@ -26,6 +26,10 @@ void CIRCUIT::GenerateBridgingFaults() {
 
         lastGateAtLevelN[g2->GetLevel()] = g2;
     }
+
+    // copy fault list to undetected for fault simulation !!!!!
+    UBFlist = BFlist;
+
 }
 
 
@@ -44,7 +48,7 @@ void CIRCUIT::PrintBridgingFaults(string f) {
 // fault simulation test patterns
 void CIRCUIT::BFaultSimVectors()
 {
-    cout << "Run stuck-at fault simulation" << endl;
+    cout << "Run bridging fault simulation" << endl;
     unsigned pattern_num(0);
     if(!Pattern.eof()){ // Readin the first vector
         while(!Pattern.eof()){
@@ -113,47 +117,51 @@ void CIRCUIT::BFaultSim()
         Netlist[i]->SetFaultFreeValue();
     }
 
+    // cout << "BFs " << UBFlist.size() << " " << BFlist.size() << endl;
+
     //for all undetected faults
     vector<BRIDGING_FAULT*>::iterator fite;
     for (fite = UBFlist.begin();fite!=UBFlist.end();++fite) {
         fptr = *fite;
         //skip redundant and detected faults
         if (fptr->GetStatus() == REDUNDANT || fptr->GetStatus() == DETECTED) { continue; }
+        
         //the fault is not active
-        if (fptr->GetValue() == fptr->GetInputGate()->GetValue()) { continue; }
-        //the fault can be directly seen
-        gptr = fptr->GetInputGate();
-        if (gptr->GetFlag(OUTPUT) && (!fptr->Is_Branch() || fptr->GetOutputGate()->GetFunction() == G_PO)) {
+        if (fptr->GetInputGate1()->GetValue() == fptr->GetInputGate2()->GetValue()) { continue; }
+        
+        if(fptr->getFaultType() == AND) {
+            if(fptr->GetInputGate1()->GetValue() == S1) {
+                gptr = fptr->GetInputGate1();
+            }
+            if(fptr->GetInputGate2()->GetValue() == S1) {
+                gptr = fptr->GetInputGate2();
+            }
+
+        }
+        if(fptr->getFaultType() == OR) {
+            if(fptr->GetInputGate1()->GetValue() == S0) {
+                gptr = fptr->GetInputGate1();
+            }
+            if(fptr->GetInputGate2()->GetValue() == S0) {
+                gptr = fptr->GetInputGate2();
+            }
+
+        }
+ 
+
+        if (gptr->GetFlag(OUTPUT)) {
             fptr->SetStatus(DETECTED);
             continue;
         }
-        if (!fptr->Is_Branch()) { //stem
-            if (!gptr->GetFlag(FAULTY)) {
-                gptr->SetFlag(FAULTY); GateStack.push_front(gptr);
-            }
-            InjectFaultValue(gptr, fault_idx, fptr->GetValue());
-            gptr->SetFlag(FAULT_INJECTED);
-            ScheduleFanout(gptr);
-            simulate_bflist[fault_idx++] = fptr;
+        if (!gptr->GetFlag(FAULTY)) {
+            gptr->SetFlag(FAULTY); GateStack.push_front(gptr);
         }
-        else { //branch
-            if (!CheckFaultyGate(fptr)) { continue; }
-            gptr = fptr->GetOutputGate();
-            //if the fault is shown at an output, it is detected
-            if (gptr->GetFlag(OUTPUT)) {
-                fptr->SetStatus(DETECTED);
-                continue;
-            }
-            if (!gptr->GetFlag(FAULTY)) {
-                gptr->SetFlag(FAULTY); GateStack.push_front(gptr);
-            }
-            // add the fault to the simulated list and inject it
-            VALUE fault_type = gptr->Is_Inversion()? NotTable[fptr->GetValue()]: fptr->GetValue();
-            InjectFaultValue(gptr, fault_idx, fault_type);
-            gptr->SetFlag(FAULT_INJECTED);
-            ScheduleFanout(gptr);
-            simulate_bflist[fault_idx++] = fptr;
-        }
+        // add the fault to the simulated list and inject it
+        InjectFaultValue(gptr, fault_idx, fptr->GetValue());
+        gptr->SetFlag(FAULT_INJECTED);
+        ScheduleFanout(gptr);
+        simulate_bflist[fault_idx++] = fptr;
+
 
         //collect PatternNum fault, do fault simulation
         if (fault_idx == PatternNum) {
@@ -227,6 +235,9 @@ void CIRCUIT::BFaultSim()
         GateStack.clear();
         fault_idx = 0;
     } //end fault simulation
+
+    // cout << "BFs " << UBFlist.size() << " " << BFlist.size() << "\n---\n\n";
+
 
     // remove detected faults
     for (fite = UBFlist.begin();fite != UBFlist.end();) {
