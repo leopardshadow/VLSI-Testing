@@ -30,7 +30,11 @@ Take c17.bench for example. The instructions are described as follows.
 
 ### Results
 
-
+| fault-coverage | (-fsim) | (-check_point) |
+| :------------: | :-----: | :------------: |
+|                |         |                |
+|                |         |                |
+|                |         |                |
 
 
 
@@ -38,13 +42,11 @@ Take c17.bench for example. The instructions are described as follows.
 
 ### Run
 
-The number is defined in line 18 in the file `typeemu.h`.
+The number of faults per pass is defined in line 18 in the file `typeemu.h`.
 
 ```c++
 const unsigned PatternNum = 16;
 ```
-
-
 
 ### Results
 
@@ -66,6 +68,8 @@ The second case, c499.bench, in the contrary, are affected greatly by the number
 
 ### Algorithm
 
+The key idea is, given a list of bridging faults, can a pattern detect some of the faults. We start with a pattern, run parallel fault simulation and compare the simulation results to remove detected faults.
+
 The fault simulation for bridging faults are described below.
 
 ```
@@ -73,28 +77,42 @@ for different patterns {
 	run fault-free simulation
 	single pattern parallel bridging fault simulation (
 		set fault-free value for every gates
-		for all undetected faults f (@gate g) {
+		for all undetected faults f {
 			if f redundant: skip
-			if f not activated**: skip
-			if f can be seen directly:
+			if f not activated (*1): skip
+			let g be the fault-occur gate
+			if g is PO:
 				set the fault to de DETECTED
-			if g is stem:
-				inject fault value**
-			if g is branch:
-				add the fault to the simulated list and inject it
+            add the fault to the simulated list and inject (*2) it
 		}
-		do fault simulation
+		do fault simulation and remove newly-detected faults
     )
 }
 ```
 
-The process running fault simulation is pretty much the same for stuck-at faults and bridging faults. Except for:
+The process running fault simulation is pretty much the same for stuck-at faults and bridging faults. Except for (marked as * above):
 
 1. the condition of fault activation
    * for s-a-x faults: the signal is not x
    * for bridging faults: the two signals have different values
 
-2. the behavior of fault
+2. the behavior of fault (inject value)
    * for s-a-x faults: the signal is fixed to x
-   * for bridging faults: the two signals are changed to the same value, 0 (AND) / 1 (OR)
+   * for bridging faults: one of the two signals are changed to 0 (AND) / 1 (OR), to make the two signals the same value
+
+### Test Cases
+
+Take c17.bench for example. There are 16 bridging faults in the beginning. The changes of undetected faults are shown in the table below. 
+
+|  G1-5   | newly-detected | Undetected |
+| :-----: | :------------: | :--------: |
+| (start) |       -        |     16     |
+|  11001  |       3        |     13     |
+|  00110  |       1        |     12     |
+|  01111  |       2        |     10     |
+|  10101  |       6        |     4      |
+|  00010  |       1        |     3      |
+|  10001  |       2        |     1      |
+|  11011  |       1        |     0      |
+|  11010  |       0        |     0      |
 

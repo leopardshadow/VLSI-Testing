@@ -129,6 +129,7 @@ void CIRCUIT::BFaultSim()
         //the fault is not active
         if (fptr->GetInputGate1()->GetValue() == fptr->GetInputGate2()->GetValue()) { continue; }
         
+        // now the fault is activated
         if(fptr->getFaultType() == AND) {
             if(fptr->GetInputGate1()->GetValue() == S1) {
                 gptr = fptr->GetInputGate1();
@@ -145,7 +146,6 @@ void CIRCUIT::BFaultSim()
             if(fptr->GetInputGate2()->GetValue() == S0) {
                 gptr = fptr->GetInputGate2();
             }
-
         }
  
 
@@ -236,17 +236,22 @@ void CIRCUIT::BFaultSim()
         fault_idx = 0;
     } //end fault simulation
 
-    // cout << "BFs " << UBFlist.size() << " " << BFlist.size() << "\n---\n\n";
 
 
     // remove detected faults
     for (fite = UBFlist.begin();fite != UBFlist.end();) {
         fptr = *fite;
         if (fptr->GetStatus() == DETECTED || fptr->GetStatus() == REDUNDANT) {
+            cout << fptr->output();
             fite = UBFlist.erase(fite);
         }
         else { ++fite; }
     }
+
+    cout << "\n";
+    cout << "BFs " << UBFlist.size() << " " << BFlist.size() << "\n=====\n\n\n";
+
+
     return;
 }
 
