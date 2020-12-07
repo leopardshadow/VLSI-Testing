@@ -82,6 +82,9 @@ void CIRCUIT::GenerateAllCPSAaultList()
         } //end all fanouts
     } //end all gates
 
+    Flist = CPFlist;
+    UFlist = Flist;
+
     // cout << "+++++\n";
     cout << CPFlist.size() << endl;
     cout << Flist.size() << endl;

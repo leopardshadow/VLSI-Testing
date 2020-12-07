@@ -119,11 +119,11 @@ int main(int argc, char ** argv)
         }
         Circuit.TFAtpg();
     }
-    else if (option.retrieve("check_point")) {
-        // Circuit.MarkOutputGate();
-        Circuit.GenerateAllFaultList();
-        Circuit.GenerateAllCPSAaultList();
-    }
+    // else if (option.retrieve("check_point")) {
+    //     // Circuit.MarkOutputGate();
+    //     Circuit.GenerateAllFaultList();
+    //     Circuit.GenerateAllCPSAaultList();
+    // }
     else if (option.retrieve("bridging")) {
 
         Circuit.GenerateBridgingFaults();
@@ -147,7 +147,12 @@ int main(int argc, char ** argv)
     }
 
     else {
-        Circuit.GenerateAllFaultList();
+        if (option.retrieve("check_point")) {
+            Circuit.GenerateAllCPSAaultList();
+        }
+        else {
+            Circuit.GenerateAllFaultList();
+        }
         Circuit.SortFaninByLevel();
         Circuit.MarkOutputGate();
         if (option.retrieve("fsim")) {

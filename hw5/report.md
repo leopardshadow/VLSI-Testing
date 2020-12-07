@@ -10,37 +10,41 @@ Take c17.bench for example. The instructions are described as follows.
 
 ### Run
 
-1. generate patterns for a circuit by running built-in ATPG
+1-a. generate patterns for a circuit by running built-in ATPG
 
 ```
 ./atpg -output c17.atpg ../circuits/iscas85/c17.bench
 ```
 
-2. run fault simulation to obtain fault coverages
-
-```
-./atpg -fsim -input c17_atpg c17.bench 
-```
-
-3. run fault simulation with check point theorem to obtain fault coverage
+1-b. generate patterns for a circuit by running ATPG based on checkpoint theorem
 
 ```
 ./atpg -check_point -input c17_atpg c17.bench 
 ```
 
+2-. run fault simulation to obtain fault coverages respectively for original and checlpoint-based ATPG
+
+```
+./atpg -fsim -input c17_atpg c17.bench 
+```
+
 ### Results
 
-| fault-coverage | (-fsim) | (-check_point) |
-| :------------: | :-----: | :------------: |
-|                |         |                |
-|                |         |                |
-|                |         |                |
-
-
+|   circuit   | original | checkpoint |
+| :---------: | :------: | :--------: |
+|  c17.bench  |   100%   |    100%    |
+| c499.bench  |  96.99%  |   96.99%   |
+| c7552.bench |  98.42%  |   98.43%   |
 
 ## Part.b
 
 ### Run
+
+To generates random patterns, use what we have done in hw2.
+
+```
+./atpg -pattern -num 1000000 -output c17_pattern c17.bench
+```
 
 The number of faults per pass is defined in line 18 in the file `typeemu.h`.
 
@@ -56,19 +60,17 @@ Modify the number and run
 
 ### Results
 
-| CPU-time (sec) |   1   |  4   |  8   |  16  |  32  |   64   |
-| :------------: | :---: | :--: | :--: | :--: | :--: | :----: |
-|   c17.bench    | 0.35  | 0.35 | 0.35 | 0.35 | 0.35 |  0.35  |
-|   c499.bench   | 18.68 |      |      |      |      | 17.08  |
-|  c7552.bench   |       |      |      |      |      | 204.42 |
+| CPU-time (sec) |   1    |   8    |   16   |   32   |   64   |
+| :------------: | :----: | :----: | :----: | :----: | :----: |
+|   c17.bench    |  0.35  |  0.35  |  0.35  |  0.35  |  0.35  |
+|   c499.bench   | 18.68  | 17.85  | 17.70  | 17.05  | 17.37  |
+|  c2670.bench   | 127.96 | 121.03 | 115.73 | 109.92 | 105.55 |
 
 ### Discussion
 
 The case c17.bench is too small to see the changes.
 
-The second case, c499.bench, in the contrary, are affected greatly by the number of faults per pass.
-
- 
+The second and the third case, which are bigger circuits, in the contrary, the execution time are reduced when the number of faults per pass is increased.
 
 ## Part.c
 
