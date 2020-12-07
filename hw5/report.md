@@ -48,6 +48,12 @@ The number of faults per pass is defined in line 18 in the file `typeemu.h`.
 const unsigned PatternNum = 16;
 ```
 
+Modify the number and run
+
+```
+./atpg -fsim -input c17_pattern c17.bench 
+```
+
 ### Results
 
 | CPU-time (sec) |   1   |  4   |  8   |  16  |  32  |   64   |
