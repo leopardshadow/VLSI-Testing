@@ -120,15 +120,15 @@ The process running fault simulation is pretty much the same for stuck-at faults
 
 Take c17.bench for example. There are 16 bridging faults in the beginning. The changes of undetected faults are shown in the table below. 
 
-|  G1-5   | newly-detected | Undetected |
-| :-----: | :------------: | :--------: |
-| (start) |       -        |     16     |
-|  11001  |       3        |     13     |
-|  00110  |       1        |     12     |
-|  01111  |       2        |     10     |
-|  10101  |       6        |     4      |
-|  00010  |       1        |     3      |
-|  10001  |       2        |     1      |
-|  11011  |       1        |     0      |
-|  11010  |       0        |     0      |
+|  G1-5   | newly-detected faults | Undetected faults |
+| :-----: | :-------------------: | :---------------: |
+| (start) |           -           |        16         |
+|  11001  |           3           |        13         |
+|  00110  |           1           |        12         |
+|  01111  |           2           |        10         |
+|  10101  |           6           |         4         |
+|  00010  |           1           |         3         |
+|  10001  |           2           |         1         |
+|  11011  |           1           |         0         |
+|  11010  |           0           |         0         |
 
