@@ -242,14 +242,14 @@ void CIRCUIT::BFaultSim()
     for (fite = UBFlist.begin();fite != UBFlist.end();) {
         fptr = *fite;
         if (fptr->GetStatus() == DETECTED || fptr->GetStatus() == REDUNDANT) {
-            cout << fptr->output();
+            // cout << fptr->output();
             fite = UBFlist.erase(fite);
         }
         else { ++fite; }
     }
 
-    cout << "\n";
-    cout << "BFs " << UBFlist.size() << " " << BFlist.size() << "\n=====\n\n\n";
+    // cout << "\n";
+    // cout << "BFs " << UBFlist.size() << " " << BFlist.size() << "\n=====\n\n\n";
 
 
     return;

@@ -10,13 +10,13 @@ Take c17.bench for example. The instructions are described as follows.
 
 ### Run
 
-1-a. generate patterns for a circuit by running built-in ATPG
+1-a. generate patterns for a circuit by running **built-in** ATPG
 
 ```
 ./atpg -output c17.atpg ../circuits/iscas85/c17.bench
 ```
 
-1-b. generate patterns for a circuit by running ATPG based on checkpoint theorem
+1-b. generate patterns for a circuit by running ATPG based on **checkpoint theorem**
 
 ```
 ./atpg -check_point -input c17_atpg c17.bench 
@@ -73,6 +73,14 @@ The case c17.bench is too small to see the changes.
 The second and the third case, which are bigger circuits, in the contrary, the execution time are reduced when the number of faults per pass is increased.
 
 ## Part.c
+
+### Run
+
+```
+./atpg -bridging_fsim -input [input_pattern_file] [circuit_name]
+# for example,
+./atpg -bridging_fsim -input c17_atpg c17.bench
+```
 
 ### Algorithm
 
