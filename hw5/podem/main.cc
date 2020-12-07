@@ -41,12 +41,9 @@ int SetupOption(int argc, char ** argv)
             "hw4-a: check-point theorem", 0);
     option.enroll("bridging", GetLongOpt::NoValue,
             "hw4-b: generates bridging faults", 0);
-<<<<<<< HEAD
     option.enroll("bridging_fsim", GetLongOpt::NoValue,
             "hw5-c: bridging faults simulation", 0);
 
-=======
->>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
 
 
     int optind = option.parse(argc, argv);
@@ -135,7 +132,6 @@ int main(int argc, char ** argv)
             Circuit.PrintBridgingFaults(option.retrieve("output"));
         }
     }
-<<<<<<< HEAD
     else if (option.retrieve("bridging_fsim")) {
 
         cout << "\ngenerates bridging faults\n\n";
@@ -149,8 +145,6 @@ int main(int argc, char ** argv)
         Circuit.BFaultSimVectors();
         
     }
-=======
->>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
 
     else {
         Circuit.GenerateAllFaultList();

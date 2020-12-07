@@ -3,11 +3,8 @@
 #include "circuit.h"
 #include "gate.h"
 #include "bridgingFaults.h"
-<<<<<<< HEAD
 #include "GetLongOpt.h"
 
-=======
->>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
 using namespace std;
 
 void CIRCUIT::GenerateBridgingFaults() {
@@ -29,13 +26,10 @@ void CIRCUIT::GenerateBridgingFaults() {
 
         lastGateAtLevelN[g2->GetLevel()] = g2;
     }
-<<<<<<< HEAD
 
     // copy fault list to undetected for fault simulation !!!!!
     UBFlist = BFlist;
 
-=======
->>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
 }
 
 
@@ -47,7 +41,6 @@ void CIRCUIT::PrintBridgingFaults(string f) {
     for(unsigned i=0; i<BFlist.size() ; i++) {
         fout << BFlist[i]->output() << endl;
     }
-<<<<<<< HEAD
 }
 
 
@@ -265,6 +258,3 @@ void CIRCUIT::BFaultSim()
 
 
 
-=======
-}
->>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
