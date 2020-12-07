@@ -15,7 +15,11 @@ const VALUE CV[] = {X, X, X, X, X, S0, S0, S1, S1, X, X, X};
 //Noncontrolling Values
 const VALUE NCV[] = {X, X, X, X, X, S1, S1, S0, S0, X, X, X};
 
+<<<<<<< HEAD
 const unsigned PatternNum = 1; //default:16
+=======
+const unsigned PatternNum = 16;
+>>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
 
 const VALUE NotTable[] = {S1, S0, X, B, D, ILLIGAL};
 

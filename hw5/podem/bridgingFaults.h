@@ -2,6 +2,7 @@
 #define BRIDGING_FAULTS_H
 
 #include "gate.h"
+<<<<<<< HEAD
 #include "fault.h"
 
 enum BFAULT_TYPE {AND, OR};
@@ -24,6 +25,19 @@ class BRIDGING_FAULT : public FAULT
         BRIDGING_FAULT(BFAULT_TYPE FType, GATE* gptr1, GATE* gptr2):
             FAULT(gptr1, gptr2, S0) {
             // Value(S0), Input(gptr1),Output(gptr2), Branch(false), EqvFaultNum(1), Status(UNKNOWN) {
+=======
+
+enum BFAULT_TYPE {AND, OR};
+
+class BRIDGING_FAULT
+{
+    private:
+        BFAULT_TYPE FType;
+        GATE* gptr1;
+        GATE* gptr2;
+    public:
+        BRIDGING_FAULT(BFAULT_TYPE FType, GATE* gptr1, GATE* gptr2) {
+>>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
             this->FType = FType;
             this->gptr1 = gptr1;
             this->gptr2 = gptr2;
@@ -34,6 +48,7 @@ class BRIDGING_FAULT : public FAULT
             out = out + (FType ? "OR" : "AND") + ")";
             return out;
         }
+<<<<<<< HEAD
         // VALUE GetValue() { return Value; }
 
         VALUE GetValue() {
@@ -57,6 +72,8 @@ class BRIDGING_FAULT : public FAULT
         // void SetStatus(FAULT_STATUS status) { Status = status; }
         // FAULT_STATUS GetStatus() { return Status; }
 
+=======
+>>>>>>> 520e291abb9e60479b3184b5aa00f40c69ff6ad4
 };
 
 
