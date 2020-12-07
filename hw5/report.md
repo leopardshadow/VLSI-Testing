@@ -13,7 +13,7 @@ Take c17.bench for example. The instructions are described as follows.
 1-a. generate patterns for a circuit by running **built-in** ATPG
 
 ```
-./atpg -output c17.atpg ../circuits/iscas85/c17.bench
+./atpg -output c17.atpg c17.bench
 ```
 
 1-b. generate patterns for a circuit by running ATPG based on **checkpoint theorem**
@@ -30,11 +30,15 @@ Take c17.bench for example. The instructions are described as follows.
 
 ### Results
 
-|   circuit   | original | checkpoint |
-| :---------: | :------: | :--------: |
-|  c17.bench  |   100%   |    100%    |
-| c499.bench  |  96.99%  |   96.99%   |
-| c7552.bench |  98.42%  |   98.43%   |
+The right two columns shows the fault coverage for built-in and checkpoint-based ATPG respectively, with the number of patterns shown inside ( ).
+
+|   circuit   |   original   |  checkpoint  |
+| :---------: | :----------: | :----------: |
+|  c17.bench  |   100% (8)   |   100% (7)   |
+| c499.bench  | 96.99% (79)  | 96.99% (80)  |
+| c2670.bench | 96.29% (167) | 96.29% (159) |
+| c5315.bench | 99.45% (200) | 99.45% (181) |
+| c7552.bench | 98.42% (361) | 98.43% (342) |
 
 ## Part.b
 
