@@ -9,20 +9,20 @@
 ### Run
 
 ```
-./atpg -bt <backtrack_number> -output <output_file> <circuit>
+./atpg -bt [backtrack_number] -output [pattern][circuit]
 
 # Example
 ./atpg -bt 1 -output b17_1_vectors b17.bench
 ```
 
-### Result
+### Results
 
 | -bt  | \# patterns | fault coverage (%) | CPU run time (s) | actual \# backtrack |
 | :--: | :---------: | :----------------: | :--------------: | :-----------------: |
 |  1   |    41647    |       55.00        |      838.08      |        68413        |
 |  10  |    72511    |       82.09        |     1235.09      |       376982        |
 | 100  |    83711    |       90.01        |     1520.50      |       1821691       |
-| 1000 |             |                    |                  |                     |
+| 1000 |    86025    |       91.62        |     3767.59      |      12664818       |
 
 ### Discussion
 
@@ -34,11 +34,28 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 ## Part.b
 
+### Run
+
+```
+./atpg -input [pattern] [circuit]
+
+# Example
+./atpg -input b17_1_vectors b17.bench 
+```
+
 
 
 
 
 ## Part.c
+
+### net17 stuck-at-0
+
+
+
+
+
+### n60 stuck-at-1
 
 
 

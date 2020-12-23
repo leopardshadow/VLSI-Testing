@@ -1,0 +1,2 @@
+net17 stuck-at-0
+n60 stuck-at-1
