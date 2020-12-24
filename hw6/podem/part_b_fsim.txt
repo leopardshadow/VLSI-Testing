@@ -1,0 +1,210 @@
+./atpg -fsim -input b17_1_cp_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 25694
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 120426
+Undetected fault number = 22458
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 120426
+Equivalent undetected fault number = 22458
+---------------------------------------
+Fault Coverge = 84.28%
+Equivalent FC = 84.28%
+---------------------------------------
+total CPU time = 126.38
+
+./atpg -fsim -input b17_1_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 41647
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 122354
+Undetected fault number = 20530
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 122354
+Equivalent undetected fault number = 20530
+---------------------------------------
+Fault Coverge = 85.63%
+Equivalent FC = 85.63%
+---------------------------------------
+total CPU time = 190.97
+
+./atpg -fsim -input b17_10_cp_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 44235
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 137034
+Undetected fault number = 5850
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 137034
+Equivalent undetected fault number = 5850
+---------------------------------------
+Fault Coverge = 95.91%
+Equivalent FC = 95.91%
+---------------------------------------
+total CPU time = 139.94
+
+./atpg -fsim -input b17_10_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 72511
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 137199
+Undetected fault number = 5685
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 137199
+Equivalent undetected fault number = 5685
+---------------------------------------
+Fault Coverge = 96.02%
+Equivalent FC = 96.02%
+---------------------------------------
+total CPU time = 226.39
+
+./atpg -fsim -input b17_100_cp_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 50563
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 138876
+Undetected fault number = 4008
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 138876
+Equivalent undetected fault number = 4008
+---------------------------------------
+Fault Coverge = 97.19%
+Equivalent FC = 97.19%
+---------------------------------------
+total CPU time = 145.79
+
+./atpg -fsim -input b17_100_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 83711
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 138881
+Undetected fault number = 4003
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 138881
+Equivalent undetected fault number = 4003
+---------------------------------------
+Fault Coverge = 97.20%
+Equivalent FC = 97.20%
+---------------------------------------
+total CPU time = 238.48
+
+./atpg -fsim -input b17_1000_cp_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 51924
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 138875
+Undetected fault number = 4009
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 138875
+Equivalent undetected fault number = 4009
+---------------------------------------
+Fault Coverge = 97.19%
+Equivalent FC = 97.19%
+---------------------------------------
+total CPU time = 157.19
+
+./atpg -fsim -input b17_1000_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 86025
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 138992
+Undetected fault number = 3892
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 138992
+Equivalent undetected fault number = 3892
+---------------------------------------
+Fault Coverge = 97.28%
+Equivalent FC = 97.28%
+---------------------------------------
+total CPU time = 243.68
+
+./atpg -fsim -input b17_cp_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 53071
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 138999
+Undetected fault number = 3885
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 138999
+Equivalent undetected fault number = 3885
+---------------------------------------
+Fault Coverge = 97.28%
+Equivalent FC = 97.28%
+---------------------------------------
+total CPU time = 145.68
+
+./atpg -fsim -input b17_vectors b17.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault simulation
+---------------------------------------
+Test pattern number = 87963
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 139083
+Undetected fault number = 3801
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 139083
+Equivalent undetected fault number = 3801
+---------------------------------------
+Fault Coverge = 97.34%
+Equivalent FC = 97.34%
+---------------------------------------
+total CPU time = 269.25
+
