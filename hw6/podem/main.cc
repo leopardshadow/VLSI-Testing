@@ -147,11 +147,13 @@ int main(int argc, char ** argv)
     }
 
     else {
+        
+        Circuit.GenerateAllFaultList();
+
         if (option.retrieve("check_point")) {
             Circuit.GenerateAllCPSAaultList();
         }
         else {
-            Circuit.GenerateAllFaultList();
         }
         Circuit.SortFaninByLevel();
         Circuit.MarkOutputGate();

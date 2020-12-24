@@ -9,7 +9,7 @@
 ### Run
 
 ```
-./atpg -bt [backtrack_number] -output [pattern][circuit]
+./atpg -bt [backtrack_number] -output [pattern] [circuit]
 
 # Example
 ./atpg -bt 1 -output b17_1_vectors b17.bench
@@ -28,19 +28,19 @@
 
 When the number of backtrack increases, fault coverage increases but running time also becomes longer. 
 
-
-
-
-
 ## Part.b
 
 ### Run
 
 ```
-./atpg -input [pattern] [circuit]
+# collapsed fault list (checkpoint fault list) 
+./atpg -output [pattern] [circuit]
 
-# Example
-./atpg -input b17_1_vectors b17.bench 
+# total fault list
+./atpg -output [pattern] [circuit]
+
+# run fault simulation
+./atpg -input [pattern] [circuit]
 ```
 
 
@@ -63,7 +63,19 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 ## Part.d
 
+### b17.bench
 
+
+
+### s35932_com.bench
+
+
+
+### s38417_com.bench
+
+
+
+### s38584_com.bench
 
 
 
