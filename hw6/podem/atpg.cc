@@ -8,6 +8,16 @@ using namespace std;
 
 extern GetLongOpt option;
 
+
+string printValue(VALUE v) {
+    switch(v) {
+        case S0: return "0";
+        case S1: return "1";
+        case X:  return "X";
+        default: return "?";
+    }
+}
+
 //generate all stuck-at fault list
 void CIRCUIT::GenerateAllFaultList()
 {
@@ -153,9 +163,9 @@ void CIRCUIT::Atpg()
                 ++pattern_num;
                 //run fault simulation for fault dropping
                 for (i = 0;i < PIlist.size();++i) { 
-			ScheduleFanout(PIlist[i]); 
-                        if (option.retrieve("output")){ OutputStrm << PIlist[i]->GetValue();}
-		}
+			        ScheduleFanout(PIlist[i]); 
+                    if (option.retrieve("output")){ OutputStrm << PIlist[i]->GetValue();}
+		        }
                 if (option.retrieve("output")){ OutputStrm << endl;}
                 for (i = PIlist.size();i<Netlist.size();++i) { Netlist[i]->SetValue(X); }
                 LogicSim();
@@ -241,14 +251,32 @@ ATPG_STATUS CIRCUIT::Podem(FAULT* fptr, unsigned &total_backtrack_num)
     MarkPropagateTree(fptr->GetOutputGate());
     //propagate fault free value
     status = SetUniqueImpliedValue(fptr);
+    if(tracePodem) {
+        cout << "SetUniqueImpliedValue " << status << endl;
+    }
     switch (status) {
         case TRUE:
             LogicSim();
+            if(tracePodem) {
+                cout << "\n\nlogicSim:\n----------\n";
+                for(int i=0; i<No_Gate(); i++) {
+                    cout << Gate(i)->GetName() << " " << printValue(Gate(i)->GetValue()) << endl;
+                }
+                cout << "---------- end of fsim result\n\n";
+            }
             //inject faulty value
             if (FaultEvaluate(fptr)) {
+                if(tracePodem) { cout << "+ FaultEvaluate : true" << endl; }
                 //forward implication
                 ScheduleFanout(fptr->GetOutputGate());
                 LogicSim();
+                if(tracePodem) {
+                    cout << "\n\nlogicSim:\n----------\n";
+                    for(int i=0; i<No_Gate(); i++) {
+                        cout << Gate(i)->GetName() << " " << printValue(Gate(i)->GetValue()) << endl;
+                    }
+                    cout << "---------- end of fsim result\n\n";
+                }
             }
             //check if the fault has propagated to PO
             if (!CheckTest()) { status = FALSE; }
@@ -266,7 +294,7 @@ ATPG_STATUS CIRCUIT::Podem(FAULT* fptr, unsigned &total_backtrack_num)
             ScheduleFanout(pi_gptr);
             //push to decision tree
             if(tracePodem) {
-                cout << pi_gptr->GetName() << " " << pi_gptr->GetValue() << endl;
+                cout << "* push to decision tree  " << pi_gptr->GetName() << " " << pi_gptr->GetValue() << endl;
             }
             GateStack.push_back(pi_gptr);
             decision_gptr = pi_gptr;
@@ -275,6 +303,9 @@ ATPG_STATUS CIRCUIT::Podem(FAULT* fptr, unsigned &total_backtrack_num)
             while (!GateStack.empty() && !pi_gptr) {
                 //all decision tried (1 and 0)
                 if (decision_gptr->GetFlag(ALL_ASSIGNED)) {
+                    if(tracePodem) {
+                        cout << "have tried all possibility for " << decision_gptr->GetName() << endl;
+                    }
                     decision_gptr->ResetFlag(ALL_ASSIGNED);
                     decision_gptr->SetValue(X);
                     ScheduleFanout(decision_gptr);
@@ -301,6 +332,7 @@ ATPG_STATUS CIRCUIT::Podem(FAULT* fptr, unsigned &total_backtrack_num)
             LogicSim();
             //fault injection
             if(FaultEvaluate(fptr)) {
+                if(tracePodem) { cout << "- FaultEvaluate : true" << endl; }
                 //forward implication
                 ScheduleFanout(fptr->GetOutputGate());
                 LogicSim();
@@ -321,6 +353,15 @@ ATPG_STATUS CIRCUIT::Podem(FAULT* fptr, unsigned &total_backtrack_num)
     //clear stacks
     GateStack.clear(); PropagateTree.clear();
     
+    if(tracePodem) {
+        cout << "the result of ATPG before assign unknown values\n--------------------\n";
+        for (i = 0; i<PIlist.size(); ++i) {
+            cout << PIlist[i]->GetName() << " " << printValue(PIlist[i]->GetValue()) << endl;;
+        }
+        cout << "\n\n\n";
+    }
+    
+
     //assign true values to PIs
     if (status ==  TRUE) {
 		for (i = 0;i<PIlist.size();++i) {
@@ -393,6 +434,9 @@ ATPG_STATUS CIRCUIT::BackwardImply(GATEPTR gptr, VALUE value)
             return CONFLICT;
         }
         gptr->SetValue(value); ScheduleFanout(gptr);
+        if(tracePodem) {
+            cout << "backward imply " << gptr->GetName() << " " << gptr->GetValue() << endl;
+        }
         return TRUE;
     }
     //not PI gate
@@ -434,6 +478,9 @@ ATPG_STATUS CIRCUIT::BackwardImply(GATEPTR gptr, VALUE value)
             }
             break;
         default: break;
+    }
+    if(tracePodem) {
+        cout << "backwardImply returns " << status << endl;
     }
     return status;
 }
@@ -534,6 +581,7 @@ GATEPTR CIRCUIT::TestPossible(FAULT* fptr)
         }
         else { return 0; }
     }
+    cout << "FindPIAssignment call " << decision_gptr->GetName() << " " << decision_value << endl;
     return FindPIAssignment(decision_gptr, decision_value);
 }
 
@@ -574,6 +622,9 @@ GATEPTR CIRCUIT::FindPIAssignment(GATEPTR gptr, VALUE value)
             break;
         default:
             break;
+    }
+    if(tracePodem) {
+        cout << "FindPIAssignment returns " << j_gptr->GetName() << " " <<  j_value << endl;
     }
     if (j_gptr) { return FindPIAssignment(j_gptr, j_value); }
     return 0;

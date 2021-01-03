@@ -152,12 +152,15 @@ int main(int argc, char ** argv)
         // for(int i=0; i<Circuit.No_Gate(); i++) {
         //     cout << i << " " << Circuit.Gate(i)->GetName() << endl;
         // }
+        // cout << "\n\n\n";
 
         // net17 stuck-at-0
-        Circuit.setFault(Circuit.Gate(11), Circuit.Gate(11), S0);
+        // cout << "s-a-0 fault at " << Circuit.Gate(11)->GetName() << endl;
+        // Circuit.setFault(Circuit.Gate(11), Circuit.Gate(11), S0);
 
         // n60 stuck-at-1
-        // Circuit.setFault(Circuit.Gate(9), Circuit.Gate(9), S1);
+        cout << "s-a-1 fault at " << Circuit.Gate(9)->GetName() << endl;
+        Circuit.setFault(Circuit.Gate(9), Circuit.Gate(9), S1);
 
         Circuit.SortFaninByLevel();
         Circuit.MarkOutputGate();
