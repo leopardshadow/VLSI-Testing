@@ -169,5 +169,8 @@ class CIRCUIT
 	GATEPTR FindPIAssignment_t(GATEPTR gptr, VALUE value);
 	GATEPTR FindEasiestControl_t(GATEPTR gptr);
 	GATEPTR FindHardestControl_t(GATEPTR gptr);
+
+    // hw6-c (ATPG for a designated fault) in ATPG.cc
+    void setFault(GATEPTR gptr, GATEPTR fanout, VALUE);
 };
 #endif

@@ -44,6 +44,12 @@ void CIRCUIT::GenerateAllFaultList()
     return;
 }
 
+void  CIRCUIT::setFault(GATEPTR gptr, GATEPTR fanout, VALUE) {
+    FAULT *fptr = new FAULT(gptr, fanout, S0);
+    Flist.push_front(fptr);
+    UFlist = Flist;
+    return;
+}
 
 
 //=============================================================================

@@ -43,6 +43,8 @@ int SetupOption(int argc, char ** argv)
             "hw4-b: generates bridging faults", 0);
     option.enroll("bridging_fsim", GetLongOpt::NoValue,
             "hw5-c: bridging faults simulation", 0);
+    option.enroll("hw6_c", GetLongOpt::NoValue,
+            "hw6-c: ATPG tracing for a designated fault", 0);
 
 
 
@@ -145,7 +147,25 @@ int main(int argc, char ** argv)
         Circuit.BFaultSimVectors();
         
     }
+    else if (option.retrieve("hw6_c")) {
 
+        // for(int i=0; i<Circuit.No_Gate(); i++) {
+        //     cout << i << " " << Circuit.Gate(i)->GetName() << endl;
+        // }
+
+        // hw6 - part.c
+
+        // net17 stuck-at-0
+        Circuit.setFault(Circuit.Gate(11), Circuit.Gate(11), S0);
+
+        // n60 stuck-at-1
+        // Circuit.setFault(Circuit.Gate(9), Circuit.Gate(9), S1);
+
+        Circuit.SortFaninByLevel();
+        Circuit.MarkOutputGate();
+        Circuit.Atpg();
+   
+    }
     else {
         
         Circuit.GenerateAllFaultList();
@@ -168,6 +188,7 @@ int main(int argc, char ** argv)
                 Circuit.SetBackTrackLimit(atoi(option.retrieve("bt")));
             }
             //stuck-at fualt ATPG
+            
             Circuit.Atpg();
         }
     }
