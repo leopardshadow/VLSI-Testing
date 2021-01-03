@@ -45,6 +45,8 @@ int SetupOption(int argc, char ** argv)
             "hw5-c: bridging faults simulation", 0);
     option.enroll("hw6_c", GetLongOpt::NoValue,
             "hw6-c: ATPG tracing for a designated fault", 0);
+    option.enroll("random_pattern", GetLongOpt::NoValue,
+            "hw6-4: random pattern generation before ATPG", 0);
 
 
 
@@ -173,6 +175,12 @@ int main(int argc, char ** argv)
         else {
             Circuit.Atpg();
         }
+    }
+    else if (option.retrieve("random_pattern")) {
+        Circuit.GenerateAllFaultList();
+        Circuit.SortFaninByLevel();
+        Circuit.MarkOutputGate();
+        Circuit.Atpg();
     }
     else {
         
