@@ -44,7 +44,7 @@ void CIRCUIT::GenerateAllFaultList()
     return;
 }
 
-void  CIRCUIT::setFault(GATEPTR gptr, GATEPTR fanout, VALUE) {
+void CIRCUIT::setFault(GATEPTR gptr, GATEPTR fanout, VALUE) {
     FAULT *fptr = new FAULT(gptr, fanout, S0);
     Flist.push_front(fptr);
     UFlist = Flist;
@@ -114,6 +114,10 @@ void CIRCUIT::GenerateAllCPSAaultList()
 //stuck-at fualt PODEM ATPG (fault dropping)
 void CIRCUIT::Atpg()
 {
+    if(tracePodem) {
+        cout << "hw6-c: print the atpg process for a designated fault~" << endl << endl;
+    }
+
     cout << "Run stuck-at fault ATPG" << endl;
     unsigned i, total_backtrack_num(0), pattern_num(0);
     ATPG_STATUS status;
@@ -192,6 +196,10 @@ void CIRCUIT::Atpg()
     }
     total_num = detected_num + abort_num + redundant_num;
 
+    if(tracePodem) {
+        cout << "========================================\n\n\n";
+    }
+
     cout.setf(ios::fixed);
     cout.precision(2);
     cout << "---------------------------------------" << endl;
@@ -257,6 +265,9 @@ ATPG_STATUS CIRCUIT::Podem(FAULT* fptr, unsigned &total_backtrack_num)
         if (pi_gptr) { //decision found
             ScheduleFanout(pi_gptr);
             //push to decision tree
+            if(tracePodem) {
+                cout << pi_gptr->GetName() << " " << pi_gptr->GetValue() << endl;
+            }
             GateStack.push_back(pi_gptr);
             decision_gptr = pi_gptr;
         }
@@ -274,6 +285,9 @@ ATPG_STATUS CIRCUIT::Podem(FAULT* fptr, unsigned &total_backtrack_num)
                 //inverse current decision value
                 else {
                     decision_gptr->InverseValue();
+                    if(tracePodem) {
+                        cout << "inverse current decision value " << decision_gptr->GetName() << " " << decision_gptr->GetValue() << endl;
+                    }
                     ScheduleFanout(decision_gptr);
                     decision_gptr->SetFlag(ALL_ASSIGNED);
                     ++backtrack_num;
@@ -339,7 +353,12 @@ ATPG_STATUS CIRCUIT::SetUniqueImpliedValue(FAULT* fptr)
         case CONFLICT: return CONFLICT; break;
         case FALSE: break;
     }
-    if (!fptr->Is_Branch()) { return status; }
+    if (!fptr->Is_Branch()) {
+        if(tracePodem) {
+            cout << "!fptr->Is_Branch()  SetUniqueImpliedValue " << status << endl;
+        }
+        return status;
+    }
     //if branch, need to check side inputs of the output gate
     GATEPTR ogptr(fptr->GetOutputGate());
     VALUE ncv(NCV[ogptr->GetFunction()]);
@@ -351,6 +370,9 @@ ATPG_STATUS CIRCUIT::SetUniqueImpliedValue(FAULT* fptr)
             case CONFLICT: return CONFLICT; break;
             case FALSE: break;
         }
+    }
+    if(tracePodem) {
+        cout << "branch  SetUniqueImpliedValue " << status << endl;
     }
     return status;
 }

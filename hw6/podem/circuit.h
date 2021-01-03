@@ -172,5 +172,6 @@ class CIRCUIT
 
     // hw6-c (ATPG for a designated fault) in ATPG.cc
     void setFault(GATEPTR gptr, GATEPTR fanout, VALUE);
+    bool tracePodem = true;
 };
 #endif

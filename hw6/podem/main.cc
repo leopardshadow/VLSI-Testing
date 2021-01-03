@@ -153,8 +153,6 @@ int main(int argc, char ** argv)
         //     cout << i << " " << Circuit.Gate(i)->GetName() << endl;
         // }
 
-        // hw6 - part.c
-
         // net17 stuck-at-0
         Circuit.setFault(Circuit.Gate(11), Circuit.Gate(11), S0);
 
@@ -163,8 +161,15 @@ int main(int argc, char ** argv)
 
         Circuit.SortFaninByLevel();
         Circuit.MarkOutputGate();
-        Circuit.Atpg();
-   
+
+        if (option.retrieve("fsim")) {
+            //stuck-at fault simulator
+            Circuit.InitPattern(option.retrieve("input"));
+            Circuit.FaultSimVectors();
+        }
+        else {
+            Circuit.Atpg();
+        }
     }
     else {
         
