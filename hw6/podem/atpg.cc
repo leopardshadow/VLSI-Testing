@@ -3,6 +3,7 @@
 #include <iostream>
 #include "circuit.h"
 #include "GetLongOpt.h"
+#include <string.h>
 #include <algorithm>   
 using namespace std;
 
@@ -581,7 +582,9 @@ GATEPTR CIRCUIT::TestPossible(FAULT* fptr)
         }
         else { return 0; }
     }
-    cout << "FindPIAssignment call " << decision_gptr->GetName() << " " << decision_value << endl;
+    if(tracePodem) {
+        cout << "FindPIAssignment call " << decision_gptr->GetName() << " " << decision_value << endl;
+    }
     return FindPIAssignment(decision_gptr, decision_value);
 }
 
@@ -736,22 +739,24 @@ void CIRCUIT::TraceDetectedStemFault(GATEPTR gptr, VALUE val)
 
 
 
+//		for (i = 0;i<PIlist.size();++i) {
+			//  PIlist[i]->SetValue(VALUE(2.0 * rand()/(RAND_MAX + 1.0))); break;
 
 
 // do random pattern generation for 1000 times first void CIRCUIT::Atpg()
-void CIRCUIT::randomPattern()
+void CIRCUIT::RandomPattern()
 {
-
-    cout << "Run stuck-at fault ATPG" << endl;
+    cout << "Run stuck-at fault random pattern generation first" << endl;
     unsigned i, total_backtrack_num(0), pattern_num(0);
     ATPG_STATUS status;
     FAULT* fptr;
     list<FAULT*>::iterator fite;
     
     //Prepare the output files
+    char rp[2000] = "rp_";
     ofstream OutputStrm;
     if (option.retrieve("output")){
-        OutputStrm.open((char*)option.retrieve("output"),ios::out);
+        OutputStrm.open((char*)(strcat(rp, option.retrieve("output"))),ios::out);
         if(!OutputStrm){
               cout << "Unable to open output file: "
                    << option.retrieve("output") << endl;
@@ -766,38 +771,68 @@ void CIRCUIT::randomPattern()
 	    }
 	    OutputStrm << endl;
     }
-    for (fite = Flist.begin(); fite != Flist.end();++fite) {
-        fptr = *fite;
-        if (fptr->GetStatus() == DETECTED) { continue; }
-        //run podem algorithm
-        status = Podem(fptr, total_backtrack_num);
-        switch (status) {
-            case TRUE:
-                fptr->SetStatus(DETECTED);
-                ++pattern_num;
-                //run fault simulation for fault dropping
-                for (i = 0;i < PIlist.size();++i) { 
-			        ScheduleFanout(PIlist[i]); 
-                    if (option.retrieve("output")){ OutputStrm << PIlist[i]->GetValue();}
-		        }
-                if (option.retrieve("output")){ OutputStrm << endl;}
-                for (i = PIlist.size();i<Netlist.size();++i) { Netlist[i]->SetValue(X); }
-                LogicSim();
-                FaultSim();
-                break;
-            case CONFLICT:
-                fptr->SetStatus(REDUNDANT);
-                break;
-            case FALSE:
-                fptr->SetStatus(ABORT);
-                break;
+    for (pattern_num=0; pattern_num<1000; pattern_num++) {
+        // fptr = *fite;
+        // if (fptr->GetStatus() == DETECTED) { continue; }
+
+        //run random pattern generation
+
+        for (i = 0;i<PIlist.size();++i) {
+			PIlist[i]->SetValue(VALUE(2.0 * rand()/(RAND_MAX + 1.0)));
         }
-    } //end all faults
+
+        SchedulePI();
+
+        //run fault simulation for fault dropping
+        for (i = 0;i < PIlist.size();++i) { 
+            ScheduleFanout(PIlist[i]); 
+            if (option.retrieve("output")){ OutputStrm << PIlist[i]->GetValue();}
+        }
+        if (option.retrieve("output")){ OutputStrm << endl;}
+        // for (i = PIlist.size();i<Netlist.size();++i) { Netlist[i]->SetValue(X); }
+
+        LogicSim();
+
+        FaultSim();
+         
+        unsigned total_number(0);
+        unsigned undetected_number(0), detected_number(0);
+
+        for (fite = Flist.begin();fite!=Flist.end();++fite) {
+            fptr = *fite;
+            switch (fptr->GetStatus()) {
+                case DETECTED:
+                    // ++eqv_detected_number;
+                    detected_number += fptr->GetEqvFaultNum();
+                    break;
+                default:
+                    // ++eqv_undetected_number;
+                    undetected_number += fptr->GetEqvFaultNum();
+                    break;
+            }
+        }
+        total_number = detected_number + undetected_number;
+        if(detected_number/double(total_number) > 0.9) {
+            cout << "--- reach 90% and break\n\n";
+            break;
+        }
+
+        // cout << pattern_num << endl;
+
+    } // random pattern generation
+
+
+    // for (fite = Flist.begin(); fite != Flist.end();++fite) {
+    //     fptr = *fite;
+    //     cout << fptr->GetInputGate()->GetName() << " " << fptr->GetOutputGate()->GetName() << " " << fptr->GetStatus() << endl;
+    // }
+
+
 
     //compute fault coverage
     unsigned total_num(0);
-    unsigned abort_num(0), redundant_num(0), detected_num(0);
-    unsigned eqv_abort_num(0), eqv_redundant_num(0), eqv_detected_num(0);
+    unsigned undetected_num(0), detected_num(0);
+    unsigned eqv_undetected_num(0), eqv_detected_num(0);
     for (fite = Flist.begin();fite!=Flist.end();++fite) {
         fptr = *fite;
         switch (fptr->GetStatus()) {
@@ -805,46 +840,30 @@ void CIRCUIT::randomPattern()
                 ++eqv_detected_num;
                 detected_num += fptr->GetEqvFaultNum();
                 break;
-            case REDUNDANT:
-                ++eqv_redundant_num;
-                redundant_num += fptr->GetEqvFaultNum();
-                break;
-            case ABORT:
-                ++eqv_abort_num;
-                abort_num += fptr->GetEqvFaultNum();
-                break;
             default:
-                cerr << "Unknown fault type exists" << endl;
+                ++eqv_undetected_num;
+                undetected_num += fptr->GetEqvFaultNum();
                 break;
         }
     }
-    total_num = detected_num + abort_num + redundant_num;
-
-    if(tracePodem) {
-        cout << "========================================\n\n\n";
-    }
-
+    total_num = detected_num + undetected_num;
     cout.setf(ios::fixed);
     cout.precision(2);
     cout << "---------------------------------------" << endl;
-    cout << "Test pattern number = " << pattern_num << endl;
-    cout << "Total backtrack number = " << total_backtrack_num << endl;
+    cout << "(Random) Test pattern number = " << pattern_num << endl;
     cout << "---------------------------------------" << endl;
     cout << "Total fault number = " << total_num << endl;
     cout << "Detected fault number = " << detected_num << endl;
-    cout << "Undetected fault number = " << abort_num + redundant_num << endl;
-    cout << "Abort fault number = " << abort_num << endl;
-    cout << "Redundant fault number = " << redundant_num << endl;
+    cout << "Undetected fault number = " << undetected_num << endl;
     cout << "---------------------------------------" << endl;
-    cout << "Total equivalent fault number = " << Flist.size() << endl;
-    cout << "Equivalent detected fault number = " << eqv_detected_num << endl;
-    cout << "Equivalent undetected fault number = " << eqv_abort_num + eqv_redundant_num << endl;
-    cout << "Equivalent abort fault number = " << eqv_abort_num << endl;
-    cout << "Equivalent redundant fault number = " << eqv_redundant_num << endl;
+    cout << "Equivalent fault number = " << Flist.size() << endl;
+    cout << "Equivalent detected fault number = " << eqv_detected_num << endl; 
+    cout << "Equivalent undetected fault number = " << eqv_undetected_num << endl; 
     cout << "---------------------------------------" << endl;
     cout << "Fault Coverge = " << 100*detected_num/double(total_num) << "%" << endl;
     cout << "Equivalent FC = " << 100*eqv_detected_num/double(Flist.size()) << "%" << endl;
-    cout << "Fault Efficiency = " << 100*detected_num/double(total_num - redundant_num) << "%" << endl;
     cout << "---------------------------------------" << endl;
+    cout << "\n\n=======================================\n\n";
     return;
+
 }

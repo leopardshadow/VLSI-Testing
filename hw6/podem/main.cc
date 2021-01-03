@@ -177,9 +177,11 @@ int main(int argc, char ** argv)
         }
     }
     else if (option.retrieve("random_pattern")) {
+        cout << "random pattern!!!!!\n\n";
         Circuit.GenerateAllFaultList();
         Circuit.SortFaninByLevel();
         Circuit.MarkOutputGate();
+        Circuit.RandomPattern();
         Circuit.Atpg();
     }
     else {
