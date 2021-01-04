@@ -138,7 +138,12 @@ void CIRCUIT::Atpg()
     //Prepare the output files
     ofstream OutputStrm;
     if (option.retrieve("output")){
-        OutputStrm.open((char*)option.retrieve("output"),ios::out);
+        if(option.retrieve("random_pattern")) {
+            OutputStrm.open((char*)option.retrieve("output"),ios::out | ios::app);
+        }
+        else {
+            OutputStrm.open((char*)option.retrieve("output"),ios::out);
+        }
         if(!OutputStrm){
               cout << "Unable to open output file: "
                    << option.retrieve("output") << endl;
@@ -147,7 +152,7 @@ void CIRCUIT::Atpg()
         }
     }
 
-    if (option.retrieve("output")){
+    if (option.retrieve("output") && !option.retrieve("random_pattern")){
 	    for (i = 0;i<PIlist.size();++i) {
 		OutputStrm << "PI " << PIlist[i]->GetName() << " ";
 	    }
@@ -753,10 +758,9 @@ void CIRCUIT::RandomPattern()
     list<FAULT*>::iterator fite;
     
     //Prepare the output files
-    char rp[2000] = "rp_";
     ofstream OutputStrm;
     if (option.retrieve("output")){
-        OutputStrm.open((char*)(strcat(rp, option.retrieve("output"))),ios::out);
+        OutputStrm.open((char*)option.retrieve("output"),ios::out);
         if(!OutputStrm){
               cout << "Unable to open output file: "
                    << option.retrieve("output") << endl;
