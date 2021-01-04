@@ -1,0 +1,273 @@
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master  ./atpg -random_pattern -output b17pat b17.bench                    
+Start parsing input file
+Finish reading circuit file
+random pattern!!!!!
+
+Generate stuck-at fault list
+Run stuck-at fault random pattern generation first
+---------------------------------------
+(Random) Test pattern number = 1000
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 67893
+Undetected fault number = 74991
+---------------------------------------
+Equivalent fault number = 142884
+Equivalent detected fault number = 67893
+Equivalent undetected fault number = 74991
+---------------------------------------
+Fault Coverge = 47.52%
+Equivalent FC = 47.52%
+---------------------------------------
+
+
+=======================================
+
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 40156
+Total backtrack number = 85113745
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 133912
+Undetected fault number = 8972
+Abort fault number = 7497
+Redundant fault number = 1475
+---------------------------------------
+Total equivalent fault number = 142884
+Equivalent detected fault number = 133912
+Equivalent undetected fault number = 8972
+Equivalent abort fault number = 7497
+Equivalent redundant fault number = 1475
+---------------------------------------
+Fault Coverge = 93.72%
+Equivalent FC = 93.72%
+Fault Efficiency = 94.70%
+---------------------------------------
+total CPU time = 9389.91
+
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master ±  ./atpg -random_pattern -output s35932pat ../circuits/iscas89_com/s35932_com.bench 
+Start parsing input file
+Finish reading circuit file
+random pattern!!!!!
+
+Generate stuck-at fault list
+Run stuck-at fault random pattern generation first
+---------------------------------------
+(Random) Test pattern number = 1000
+---------------------------------------
+Total fault number = 71224
+Detected fault number = 63880
+Undetected fault number = 7344
+---------------------------------------
+Equivalent fault number = 71224
+Equivalent detected fault number = 63880
+Equivalent undetected fault number = 7344
+---------------------------------------
+Fault Coverge = 89.69%
+Equivalent FC = 89.69%
+---------------------------------------
+
+
+=======================================
+
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 0
+Total backtrack number = 242688
+---------------------------------------
+Total fault number = 71224
+Detected fault number = 63880
+Undetected fault number = 7344
+Abort fault number = 0
+Redundant fault number = 7344
+---------------------------------------
+Total equivalent fault number = 71224
+Equivalent detected fault number = 63880
+Equivalent undetected fault number = 7344
+Equivalent abort fault number = 0
+Equivalent redundant fault number = 7344
+---------------------------------------
+Fault Coverge = 89.69%
+Equivalent FC = 89.69%
+Fault Efficiency = 100.00%
+---------------------------------------
+total CPU time = 50.60
+
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master ±  ./atpg -random_pattern -output s38417pat ../circuits/iscas89_com/s38417_com.bench
+Start parsing input file
+Finish reading circuit file
+random pattern!!!!!
+
+Generate stuck-at fault list
+Run stuck-at fault random pattern generation first
+---------------------------------------
+(Random) Test pattern number = 1000
+---------------------------------------
+Total fault number = 76678
+Detected fault number = 68538
+Undetected fault number = 8140
+---------------------------------------
+Equivalent fault number = 76678
+Equivalent detected fault number = 68538
+Equivalent undetected fault number = 8140
+---------------------------------------
+Fault Coverge = 89.38%
+Equivalent FC = 89.38%
+---------------------------------------
+
+
+=======================================
+
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 1121
+Total backtrack number = 525656
+---------------------------------------
+Total fault number = 76678
+Detected fault number = 76427
+Undetected fault number = 251
+Abort fault number = 46
+Redundant fault number = 205
+---------------------------------------
+Total equivalent fault number = 76678
+Equivalent detected fault number = 76427
+Equivalent undetected fault number = 251
+Equivalent abort fault number = 46
+Equivalent redundant fault number = 205
+---------------------------------------
+Fault Coverge = 99.67%
+Equivalent FC = 99.67%
+Fault Efficiency = 99.94%
+---------------------------------------
+total CPU time = 15.72
+
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master ±  ./atpg -random_pattern -output s38584pat ../circuits/iscas89_com/s38584_com.bench
+Start parsing input file
+Finish reading circuit file
+random pattern!!!!!
+
+Generate stuck-at fault list
+Run stuck-at fault random pattern generation first
+---------------------------------------
+(Random) Test pattern number = 1000
+---------------------------------------
+Total fault number = 76864
+Detected fault number = 68426
+Undetected fault number = 8438
+---------------------------------------
+Equivalent fault number = 76864
+Equivalent detected fault number = 68426
+Equivalent undetected fault number = 8438
+---------------------------------------
+Fault Coverge = 89.02%
+Equivalent FC = 89.02%
+---------------------------------------
+
+
+=======================================
+
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 593
+Total backtrack number = 96230
+---------------------------------------
+Total fault number = 76864
+Detected fault number = 73457
+Undetected fault number = 3407
+Abort fault number = 3
+Redundant fault number = 3404
+---------------------------------------
+Total equivalent fault number = 76864
+Equivalent detected fault number = 73457
+Equivalent undetected fault number = 3407
+Equivalent abort fault number = 3
+Equivalent redundant fault number = 3404
+---------------------------------------
+Fault Coverge = 95.57%
+Equivalent FC = 95.57%
+Fault Efficiency = 100.00%
+---------------------------------------
+total CPU time = 10.16
+
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master ±  ./atpg -output s35932p ../circuits/iscas89_com/s35932_com.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 77
+Total backtrack number = 242709
+---------------------------------------
+Total fault number = 71224
+Detected fault number = 63842
+Undetected fault number = 7382
+Abort fault number = 0
+Redundant fault number = 7382
+---------------------------------------
+Total equivalent fault number = 71224
+Equivalent detected fault number = 63842
+Equivalent undetected fault number = 7382
+Equivalent abort fault number = 0
+Equivalent redundant fault number = 7382
+---------------------------------------
+Fault Coverge = 89.64%
+Equivalent FC = 89.64%
+Fault Efficiency = 100.00%
+---------------------------------------
+total CPU time = 50.03
+
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master ±  ./atpg -output s38417p ../circuits/iscas89_com/s38417_com.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 1373
+Total backtrack number = 562177
+---------------------------------------
+Total fault number = 76678
+Detected fault number = 76433
+Undetected fault number = 245
+Abort fault number = 40
+Redundant fault number = 205
+---------------------------------------
+Total equivalent fault number = 76678
+Equivalent detected fault number = 76433
+Equivalent undetected fault number = 245
+Equivalent abort fault number = 40
+Equivalent redundant fault number = 205
+---------------------------------------
+Fault Coverge = 99.68%
+Equivalent FC = 99.68%
+Fault Efficiency = 99.95%
+---------------------------------------
+total CPU time = 13.91
+
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master ±  ./atpg -output s38584p ../circuits/iscas89_com/s38584_com.bench 
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 856
+Total backtrack number = 96247
+---------------------------------------
+Total fault number = 76864
+Detected fault number = 73457
+Undetected fault number = 3407
+Abort fault number = 3
+Redundant fault number = 3404
+---------------------------------------
+Total equivalent fault number = 76864
+Equivalent detected fault number = 73457
+Equivalent undetected fault number = 3407
+Equivalent abort fault number = 3
+Equivalent redundant fault number = 3404
+---------------------------------------
+Fault Coverge = 95.57%
+Equivalent FC = 95.57%
+Fault Efficiency = 100.00%
+---------------------------------------
+total CPU time = 7.19
+
