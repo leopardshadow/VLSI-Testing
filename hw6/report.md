@@ -23,6 +23,7 @@
 |  10  |    72511    |       82.09        |     1235.09      |       376982        |
 | 100  |    83711    |       90.01        |     1520.50      |       1821691       |
 | 1000 |    86025    |       91.62        |     3767.59      |      12664818       |
+|  no  |    87963    |       93.00        |     22627.57     |      95087176       |
 
 ### Discussion
 
@@ -33,17 +34,20 @@ When the number of backtrack increases, fault coverage increases but running tim
 ### Run
 
 ```
-# collapsed fault list (checkpoint fault list) 
-./atpg -output [pattern] [circuit]
+# ATPG based on fault list using checkpoint theorem
+./atpg -output -check_point [pattern] [circuit]
 
-# total fault list
+# ATPG based on total fault list
 ./atpg -output [pattern] [circuit]
 
 # run fault simulation
 ./atpg -input [pattern] [circuit]
 ```
 
-
+|            | \# patterns | fault coverage (%) - while atpg | fault coverage (%) - using fsim |
+| :--------: | :---------: | :-----------------------------: | :-----------------------------: |
+|  original  |    87963    |              93.00              |             97.34%              |
+| checkpoint |             |                                 |                                 |
 
 
 
@@ -80,4 +84,3 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 
 ## Part.e
-
