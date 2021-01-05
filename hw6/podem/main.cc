@@ -187,8 +187,10 @@ int main(int argc, char ** argv)
         Circuit.Atpg();
     }
     else if (option.retrieve("bridging_atpg")) {
-
-
+        Circuit.GenerateBridgingFaults();
+        Circuit.SortFaninByLevel();
+        Circuit.MarkOutputGate();
+        Circuit.BridgingAtpg();
     }
     else {
         

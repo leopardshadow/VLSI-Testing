@@ -173,7 +173,10 @@ class CIRCUIT
     // hw6-c (ATPG for a designated fault) in ATPG.cc
     void setFault(GATEPTR gptr, GATEPTR fanout, VALUE);
     bool tracePodem = false;
-    // hw6-4
+    // hw6-d
     void RandomPattern();
+    // hw6-e
+    void BridgingAtpg();
+    ATPG_STATUS BridgingPodem(FAULT* fptr, unsigned &total_backtrack_num, GATEPTR gp, VALUE v);
 };
 #endif

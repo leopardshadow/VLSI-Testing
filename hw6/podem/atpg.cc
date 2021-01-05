@@ -871,3 +871,4 @@ void CIRCUIT::RandomPattern()
     return;
 
 }
+
