@@ -271,3 +271,31 @@ Fault Efficiency = 100.00%
 ---------------------------------------
 total CPU time = 7.19
 
+
+ ccl@ccl-ed  ~/Desktop/VLSI-Testing/hw6/podem   master ±  ./atpg -output b17p b17.bench                                  
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 87963
+Total backtrack number = 95087176
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 132877
+Undetected fault number = 10007
+Abort fault number = 8378
+Redundant fault number = 1629
+---------------------------------------
+Total equivalent fault number = 142884
+Equivalent detected fault number = 132877
+Equivalent undetected fault number = 10007
+Equivalent abort fault number = 8378
+Equivalent redundant fault number = 1629
+---------------------------------------
+Fault Coverge = 93.00%
+Equivalent FC = 93.00%
+Fault Efficiency = 94.07%
+---------------------------------------
+total CPU time = 21711.50
+
