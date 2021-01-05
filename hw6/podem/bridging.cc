@@ -317,7 +317,7 @@ void CIRCUIT::BridgingAtpg() {
         //run podem algorithm
         status = BridgingPodem(fptr, total_backtrack_num, (*fite)->GetInputGate2(), fv);
         if (status == TRUE) {
-            fptr->SetStatus(DETECTED);
+            (*fite)->SetStatus(DETECTED);
             ++pattern_num;
             //run fault simulation for fault dropping
             for (i = 0;i < PIlist.size();++i) { 
@@ -342,7 +342,7 @@ void CIRCUIT::BridgingAtpg() {
 
             switch (status) {
                 case TRUE:
-                    fptr->SetStatus(DETECTED);
+                    (*fite)->SetStatus(DETECTED);
                     ++pattern_num;
                     //run fault simulation for fault dropping
                     for (i = 0;i < PIlist.size();++i) { 
@@ -355,17 +355,16 @@ void CIRCUIT::BridgingAtpg() {
                     BFaultSim();
                     break;
                 case CONFLICT:
-                    fptr->SetStatus(REDUNDANT);
+                    (*fite)->SetStatus(REDUNDANT);
                     break;
                 case FALSE:
-                    fptr->SetStatus(ABORT);
+                    (*fite)->SetStatus(ABORT);
                     break;
                 
             }
 
-            // if(fptr->GetStatus() == UNKNOWN) {
-            //     fptr->SetStatus(ABORT);
-            // }
+        // cout << "" << ((BRIDGING_FAULT*)fptr)->output() << " " << fptr->GetStatus() << endl;
+
 
         }
 
