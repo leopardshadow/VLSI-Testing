@@ -4,7 +4,7 @@
 
 [TOC]
 
-## Part.a
+## Part.a - backtrack number
 
 ### Run
 
@@ -29,7 +29,7 @@
 
 When the number of backtrack increases, fault coverage increases but running time also becomes longer. 
 
-## Part.b
+## Part.b - ATPG with checkpoint theorem
 
 ### Run
 
@@ -51,7 +51,7 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 
 
-## Part.c
+## Part.c - PODEM
 
 ### net17 stuck-at-0
 
@@ -65,7 +65,7 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 
 
-## Part.d
+## Part.d - random pattern before ATPG
 
 ```
 ./atpg -random_pattern -output [output_pattern] [circuit_name]
@@ -83,7 +83,7 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 | fault coverage (%) | \# patterns | total CPU time (sec) |
 | :----------------: | :---------: | :------------------: |
-|                    |             |                      |
+|       93.00        |    87963    |       21711.50       |
 
 * random pattern generation + original ATPG 
 
@@ -97,7 +97,7 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 | fault coverage (%) | \# patterns | total CPU time (sec) |
 | :----------------: | :---------: | :------------------: |
-|                    |             |                      |
+|       89.64        |     77      |        50.03         |
 
 * random pattern generation + original ATPG 
 
@@ -111,7 +111,7 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 | fault coverage (%) | \# patterns | total CPU time (sec) |
 | :----------------: | :---------: | :------------------: |
-|                    |             |                      |
+|       99.68        |    1373     |        13.91         |
 
 * random pattern generation + original ATPG 
 
@@ -125,7 +125,7 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 | fault coverage (%) | \# patterns | total CPU time (sec) |
 | :----------------: | :---------: | :------------------: |
-|                    |             |                      |
+|       95.57        |     856     |         7.19         |
 
 * random pattern generation + original ATPG 
 
@@ -135,4 +135,10 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 ### 
 
-## Part.e
+## Part.e - ATPG for bridging faults
+
+In this part, I tried to transform the origianl problem, ATPG for bridging faults to ATPG for single stuck-at faults.
+
+Consider two neighboring gates A and B, for type-AND bridging faults, it can be viewd as A s-a-0 when B is 0 or B-s-a-0 when A is ; for type-OR, similarly, it can be viewed as A s-a-1 when B is 1 or B s-a-1 when A is 1. For each type of fault, if one of two conditions is satisfied, we say that the fault can be detected. 
+
+### Results
