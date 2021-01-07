@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "atomic": "cpp",
+        "functional": "cpp",
+        "random": "cpp",
+        "numeric": "cpp",
+        "cmath": "cpp",
+        "streambuf": "cpp",
+        "iostream": "cpp"
+    }
+}

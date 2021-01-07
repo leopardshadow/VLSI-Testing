@@ -1,0 +1,26 @@
+Start parsing input file
+Finish reading circuit file
+Generate stuck-at fault list
+Run stuck-at fault ATPG
+---------------------------------------
+Test pattern number = 41647
+Total backtrack number = 68413
+---------------------------------------
+Total fault number = 142884
+Detected fault number = 78584
+Undetected fault number = 64300
+Abort fault number = 63861
+Redundant fault number = 439
+---------------------------------------
+Total equivalent fault number = 142884
+Equivalent detected fault number = 78584
+Equivalent undetected fault number = 64300
+Equivalent abort fault number = 63861
+Equivalent redundant fault number = 439
+---------------------------------------
+Fault Coverge = 55.00%
+Equivalent FC = 55.00%
+Fault Efficiency = 55.17%
+---------------------------------------
+total CPU time = 838.08
+

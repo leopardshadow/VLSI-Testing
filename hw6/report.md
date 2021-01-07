@@ -62,6 +62,8 @@ For net17 s-a-0, it does decisions on the following sequences:
 1. G1 = 0
 2. G2 = 0
 
+![](c17-hw6.png)
+
 ### n60 stuck-at-1
 
 For n60 s-a-1, it does decisions on the following sequences:
@@ -69,6 +71,8 @@ For n60 s-a-1, it does decisions on the following sequences:
 1. G2 = 0
 2. G5 = 0
 3. G3 = 0
+
+![](c17-hw6111.png)
 
 Since c17.bench is a simple circuit, no conflicts found during search. The decisions are not flipped after making.
 
@@ -141,13 +145,13 @@ The number before -> is the fault coverage after generating 1000 patterns or rea
 
 ### Discussuin
 
-For a large circuit, random pattern generation greatly reduces the number of patterns and time.
+From above results, I found that for a large circuit, random pattern generation greatly reduces the number of patterns and time. It is necessarily true for a small one. 
 
 ## Part.e - ATPG for bridging faults
 
-In this part, I tried to transform the origianl problem, ATPG for bridging faults to ATPG for single stuck-at faults.
+In this part, I tried to transform the original problem, ATPG for bridging faults to ATPG for single stuck-at faults.
 
-Consider two neighboring gates A and B, for type-AND bridging faults, it can be viewd as A s-a-0 when B is 0 or B-s-a-0 when A is ; for type-OR, similarly, it can be viewed as A s-a-1 when B is 1 or B s-a-1 when A is 1. For each type of fault, if one of two conditions is satisfied, we say that the fault can be detected.
+Consider two neighboring gates A and B, for type-AND bridging faults, it can be viewed as A s-a-0 when B is 0 or B-s-a-0 when A is ; for type-OR, similarly, it can be viewed as A s-a-1 when B is 1 or B s-a-1 when A is 1. For each type of fault, if one of two conditions is satisfied, we say that the fault can be detected.
 
 ### Run
 
