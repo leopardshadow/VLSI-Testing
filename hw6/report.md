@@ -55,15 +55,20 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 ### net17 stuck-at-0
 
+For net17 s-a-0, it does decisions on the following sequences:
 
-
-
+1. G1 = 0
+2. G2 = 0
 
 ### n60 stuck-at-1
 
+For n60 s-a-1, it does decisions on the following sequences:
 
+1. G2 = 0
+2. G5 = 0
+3. G3 = 0
 
-
+Since c17.bench is a simple circuit, no conflicts found during search. The decisions are not flipped after making.
 
 ## Part.d - random pattern before ATPG
 
@@ -72,10 +77,6 @@ When the number of backtrack increases, fault coverage increases but running tim
 
 ./atpg -random_pattern -output c17pat c17.bench
 ```
-
-
-
-
 
 ### b17.bench
 
