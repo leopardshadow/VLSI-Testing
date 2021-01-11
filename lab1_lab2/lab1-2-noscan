@@ -1,0 +1,40 @@
+read_file -format verilog s38584_seq.v
+
+current_design s38584_seq
+
+link
+
+uniquify
+
+set_wire_load_model -name wl10 -library l90sprvt_typ
+
+# NO
+set_scan_configuration -style multiplexed_flip_flop
+
+
+create_clock CK -period 10
+
+## !!
+compile -map_effort medium
+
+
+## NO
+set_scan_configuration -chain_count 10
+create_test_protocol -infer_clock -infer_asynch
+
+
+## NO
+preview_dft
+dft_drc
+insert_dft
+
+
+report_area
+
+report_timing
+
+report_power
+
+
+write -hierarchy -format verilog -output s38584_seq_noscan.v
+write_sdc s38584_seq_noscan.sdc

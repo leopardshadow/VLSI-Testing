@@ -2,22 +2,25 @@
 
 <h3 align="right"> 309510133 - Cheng-Cheng Lo </h3>
 
-|            | Area   | Power (uW) | Fault count | Coverage (collapsed) (%) | ATPG Run Time(s) | Pattern |
-| ---------- | :----- | :--------: | :---------: | :----------------------: | :--------------: | :-----: |
-| NonScanned |        |            |             |                          |                  |         |
-| Scanned    | 105072 |    271     |    4415     |          99.34           |                  |   159   |
+* pre_norm
 
+|            |  Area  | Power (W) | Fault count | Coverage (collapsed) (%) | ATPG Run Time(s) | Pattern |
+| ---------- | :----: | :-------: | :---------: | :----------------------: | :--------------: | :-----: |
+| NonScanned | 98072  |   260u    |             |                          |                  |         |
+| Scanned    | 105072 |   271u    |    4415     |          99.34           |       0.72       |   159   |
 
+* s38584_seq
 
-|            | Area | Power (uW) | Fault count | Coverage (collapsed) (%) | ATPG Run Time(s) | Pattern |
-| ---------- | :--- | :--------: | :---------: | :----------------------: | :--------------: | :-----: |
-| NonScanned |      |            |             |                          |                  |         |
-| Scanned    |      |            |             |                          |                  |         |
+|            |  Area   | Power (W) | Fault count | Coverage (collapsed) (%) | ATPG Run Time(s) | Pattern |
+| ---------- | :-----: | :-------: | :---------: | :----------------------: | :--------------: | :-----: |
+| NonScanned | 1081468 |  1.8636m  |             |                          |                  |         |
+| Scanned    | 1223322 |  5.8111m  |    42188    |           100            |       1.32       |   136   |
 
+* different design flows for pre_norm
 
-
-|            | Area | Power (uW) | Fault count | Coverage (collapsed) (%) | ATPG Run Time(s) | Pattern |
-| ---------- | :--- | :--------: | :---------: | :----------------------: | :--------------: | :-----: |
-| NonScanned |      |            |             |                          |                  |         |
-| Scanned    |      |            |             |                          |                  |         |
+|  Flow   | \#Faults | Test Coverage (%) | \#Patterns | Run time (s) |
+| :-----: | :------: | :---------------: | :--------: | :----------: |
+| DC+TMAX |   4415   |       99.34       |    159     |              |
+| DFT+FS  |          |                   |            |              |
+|  DC+FS  |          |                   |            |              |
 

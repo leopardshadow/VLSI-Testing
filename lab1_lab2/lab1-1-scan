@@ -1,0 +1,84 @@
+read_file -format verilog pre_norm.v
+
+current_design pre_norm
+
+link
+
+uniquify
+
+set_wire_load_model -name wl10 -library l90sprvt_typ
+
+set_scan_configuration -style multiplexed_flip_flop
+
+
+create_clock clk -period 10
+
+compile -scan -map_effort medium
+
+
+set_scan_configuration -chain_count 10
+
+create_test_protocol -infer_clock -infer_asynch
+
+preview_dft
+dft_drc
+insert_dft
+
+
+report_area
+
+report_timing
+
+report_power
+
+
+
+
+dft_drc
+
+report_scan_path
+
+
+write -hierarchy -format verilog -output pre_norm_scan.v
+write_test_protocol -output pre_norm_scan.stil
+write_sdc pre_norm_scan.sdc
+
+
+
+exit
+
+
+
+#####
+
+
+read_netlist pre_norm_scan.v
+
+read_netlist l90sprvt.v -library
+
+run_build_model pre_norm
+
+
+run_drc pre_norm_scan.stil
+
+set_faults -model stuck
+
+add_faults -all
+
+### scan chain 
+set_atpg -merge high -verbose -abort_limit 250 -coverage 100 -decision random 
+
+run_atpg
+
+
+
+
+set_faults -summary verbose
+
+set_faults -report collapsed
+
+report_summaries
+
+write_faults pre_norm_faults.rpt -all -replace
+
+write_patterns pre_norm_test_patterns.stil -format stil -replace
