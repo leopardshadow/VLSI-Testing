@@ -38,3 +38,43 @@ report_power
 
 write -hierarchy -format verilog -output s38584_seq_noscan.v
 write_sdc s38584_seq_noscan.sdc
+
+
+-----
+
+## BUILD-T> 
+
+read_netlist s38584_seq_noscan.v
+
+read_netlist l90sprvt.v -library
+
+ report_modules -summary
+
+run_build_model s38584_seq
+
+## DRC-T> 
+
+run_drc
+
+## TEST-T> 
+
+set_faults -model stuck
+
+add_faults -all
+
+
+set_atpg -merge high -verbose -full_seq_time {3600 86400} -full_seq_atpg
+
+run_atpg
+
+
+set_faults -summary verbose
+
+set_faults -report collapsed
+
+report_summaries
+
+
+write_faults s38584_seq_faults_noscan1.rpt -all -replace
+
+write_patterns s38584_seq_test_patterns_noscan1.stil -format stil -replace
