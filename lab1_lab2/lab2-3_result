@@ -1,0 +1,31 @@
+ATPG> report statistics
+           Statistics Report          
+            Stuck-at Faults           
+--------------------------------------
+Fault Classes               #faults   
+                            (total)   
+----------------------  --------------
+  FU (full)                  6012     
+  --------------------  --------------
+  UO (unobserved)           9 ( 0.15%)
+  DS (det_simulation)    5337 (88.77%)
+  DI (det_implication)    544 ( 9.05%)
+  UU (unused)              20 ( 0.33%)
+  TI (tied)                 2 ( 0.03%)
+  RE (redundant)          100 ( 1.66%)
+--------------------------------------
+Fault Sub-classes                     
+  --------------------                
+  UC+UO                               
+    AAB  (atpg_abort)       9 ( 0.15%)
+--------------------------------------
+Coverage                              
+  --------------------                
+  test_coverage                99.85% 
+  fault_coverage               97.82% 
+  atpg_effectiveness           99.85% 
+--------------------------------------
+#test_patterns                    195 
+#simulated_patterns               226 
+CPU_time (secs)                   4.4 
+--------------------------------------

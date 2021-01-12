@@ -27,9 +27,22 @@ write_atpg_setup pre_norm_scan -replace
 
 ---
 
+fastscan pre_norm_scan.v -verilog -lib l90sprvt.atpg -nogui
+
+dofile pre_norm_scan.dofile
+
+set_system_mode atpg
+
+set_fault_type stuck
+
+create_patterns -auto
 
 
 
+report statistics
 
 
 
+save patterns pre_norm_scan.pat -verilog –proc –replace
+
+save patterns pre_norm_scan_tstl2.pat -TSTL2 –replace
