@@ -1,0 +1,54 @@
+ MAX total CPU time reached : timeUsed = 24:55:54.29, MAX = 24:00:00.00 ... Sequential Test Generation terminated
+ 102 faults were identified as detected by implication, test coverage is now 9.98%.
+ 
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       4986
+ Possibly detected                PT       1129
+ Undetectable                     UD         39
+ ATPG untestable                  AU          5
+ Not detected                     ND      49521
+ -----------------------------------------------
+ total faults                             55680
+ test coverage                             9.98%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           6
+     #basic_scan patterns                     4
+     #full_sequential patterns                2
+ -----------------------------------------------
+TEST-T> 
+TEST-T> set_faults -summary verbose
+TEST-T> set_faults -report collapsed
+TEST-T> report_summaries
+      Collapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       3082
+   detected_by_simulation         DS      (2980)
+   detected_by_implication        DI       (102)
+ Possibly detected                PT       1129
+   not_analyzed-pos_detected      NP      (1129)
+ Undetectable                     UD         36
+   undetectable-unused            UU         (6)
+   undetectable-tied              UT        (29)
+   undetectable-blocked           UB         (1)
+ ATPG untestable                  AU          3
+   atpg_untestable-not_detected   AN         (3)
+ Not detected                     ND      29713
+   not-controlled                 NC      (8877)
+   not-observed                   NO     (20836)
+ -----------------------------------------------
+ total faults                             33963
+ test coverage                            10.75%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           6
+     #basic_scan patterns                     4
+     #full_sequential patterns                2
+ -----------------------------------------------
