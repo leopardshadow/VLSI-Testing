@@ -1,0 +1,35 @@
+dftadvisor pre_norm_noscan.v -verilog -lib l90sprvt.atpg -nogui
+
+add_clocks 0 clk
+
+report_clocks
+
+set_scan_type m
+
+set_test_logic -clock on -reset on
+
+set_system_mode dft
+
+report_statistics
+
+insert_test_logic -number 10
+
+report_scan_chains
+
+
+report_test_logic
+
+write netlist pre_norm_scan.v -verilog -replace
+
+write_atpg_setup pre_norm_scan -replace
+
+
+
+---
+
+
+
+
+
+
+
