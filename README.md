@@ -2,7 +2,9 @@
 
 my solutions to VLSI testing course
 
-[Course Website](http://tiger.ee.nctu.edu.tw/course/Testing2020Fall/schedule.html)
+[Course Website \(2020Fall\)](http://tiger.ee.nctu.edu.tw/course/Testing2020Fall/schedule.html)
+
+My reviews on this course can be found in [my blog](https://blog.cchenglo.com/posts/nctu/vlsi-testing/).
 
 * hw0 - basic understanding to the provided PODEM code
 * hw1 - find all the paths from designated pair of input and output
